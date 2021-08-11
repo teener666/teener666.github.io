@@ -561,4 +561,507 @@
         <tag>渗透测试学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>BUUCTF MISC 一</title>
+    <url>/2021/08/11/CTF-MISC-%E4%B8%80/</url>
+    <content><![CDATA[<h1 id="BUUCTF-MISC-WP-一"><a href="#BUUCTF-MISC-WP-一" class="headerlink" title="BUUCTF MISC WP(一)"></a>BUUCTF MISC WP(一)</h1><p>做CTF MISC,我们要了解<a href="https://blog.csdn.net/dyw_666666/article/details/89973048">CTF必备密码编码大全</a>。</p>
+<p><a href="https://www.freebuf.com/sectool/282074.html">主要的CTF MISC工具下载</a>。</p>
+<span id="more"></span>
+
+<h1 id="签到"><a href="#签到" class="headerlink" title="签到"></a>签到</h1><h2 id="白捡-flag-flag-buu-ctf"><a href="#白捡-flag-flag-buu-ctf" class="headerlink" title="白捡 flag:flag{buu_ctf}"></a>白捡 flag:<code>flag&#123;buu_ctf&#125;</code></h2><h2 id="金三胖"><a href="#金三胖" class="headerlink" title="金三胖"></a>金三胖</h2><p><a href="https://tu.sioe.cn/gj/fenjie/">gif图片在线分解</a></p>
+<p>flag:<code>flag&#123;he11ohongke&#125;</code></p>
+<h2 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h2><p>扫描二维码显示secret is here，binwalk -e分解一下，有个压缩包，</p>
+<p>注:<strong>binwalk下载</strong></p>
+<p><a href="https://www.cnblogs.com/0yst3r-2046/p/12218770.html">binwalk在Windows10和kali_Linux下的安装及使用教程</a></p>
+<p><a href="http://yll0024.xyz/images/pasted-77.png"><img src="http://yll0024.xyz/images/pasted-77.png" alt="玖涯博客"></a></p>
+<p>根据提示，压缩包密码是四位数字，用Advanced Archive Password Recovery爆破就行了</p>
+<p><a href="http://yll0024.xyz/images/pasted-78.png"><img src="http://yll0024.xyz/images/pasted-78.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;vjpw_wnoei&#125;</code></p>
+<h2 id="N种方法解决"><a href="#N种方法解决" class="headerlink" title="N种方法解决"></a>N种方法解决</h2><p>里面有个KEY.exe，直接运行不了，用winhex看一下</p>
+<p><a href="http://yll0024.xyz/images/pasted-79.png"><img src="http://yll0024.xyz/images/pasted-79.png" alt="玖涯博客"></a></p>
+<p>emmm，base64转图片（<a href="http://tool.chinaz.com/tools/imgtobase">在线base64转图片</a>）,把内容全复制进去，转出一张二维码，扫一下就有了(按照格式，最前面用flag包裹)。<br><code>flag&#123;dca57f966e4e4e31fd5b15417da63269&#125;</code></p>
+<h2 id="你竟然赶我走"><a href="#你竟然赶我走" class="headerlink" title="你竟然赶我走"></a>你竟然赶我走</h2><p>用Stegsolve分析一下File format就行了,注意去掉多余的空格</p>
+<p><a href="http://yll0024.xyz/images/pasted-82.png"><img src="http://yll0024.xyz/images/pasted-82.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;stego_is_s0_bor1ing&#125;</code></p>
+<h2 id="大白"><a href="#大白" class="headerlink" title="大白"></a>大白</h2><p>这个一开始方向做错了，我先用binwalk分解，分解出了一个zlib，后面尝试解压zlib失败，然后我用winhex看了一下，发现这是一张完整的图片，因为文件头是89 50 4E 47，文件尾是IEND，这是标准的png文件结构，然后尝试修改图片高度(一般png格式的图片可能考修改图片高度)</p>
+<p><a href="http://yll0024.xyz/images/pasted-80.png"><img src="http://yll0024.xyz/images/pasted-80.png" alt="玖涯博客"></a></p>
+<p>如图所示第二行六七个字节是文件高度，把第六个字节稍微改大点就行了，改的太大会看不到图片</p>
+<p><a href="http://yll0024.xyz/images/pasted-81.png"><img src="http://yll0024.xyz/images/pasted-81.png" alt="玖涯博客"></a></p>
+<p>得到flag:<code>flag&#123;He1l0_d4_ba1&#125;</code></p>
+<h2 id="基础破解"><a href="#基础破解" class="headerlink" title="基础破解"></a>基础破解</h2><p>简单的爆破，4位数字，用Advanced Archive Password Recovery跑一下</p>
+<p><a href="http://yll0024.xyz/images/pasted-83.png"><img src="http://yll0024.xyz/images/pasted-83.png" alt="玖涯博客"></a></p>
+<p>然后base64解密一下就行了<a href="http://tool.chinaz.com/Tools/Base64.aspx">base64在线解密</a></p>
+<p>flag:<code>flag&#123;70354300a5100ba78068805661b93a5c&#125;</code></p>
+<h2 id="乌镇峰会种图"><a href="#乌镇峰会种图" class="headerlink" title="乌镇峰会种图"></a>乌镇峰会种图</h2><p>binwalk分离一下，没有其他文件，看一下属性-&gt;详细信息（exif）也没什么信息，继续用Stegsolve分析一下File format，在最后找到flag(去掉多余的空格)</p>
+<p>flag:<code>flag&#123;97314e7864a8f62627b26f3f998c37f1&#125;</code></p>
+<p><a href="http://yll0024.xyz/images/pasted-84.png"><img src="http://yll0024.xyz/images/pasted-84.png" alt="玖涯博客"></a></p>
+<h2 id="LSB"><a href="#LSB" class="headerlink" title="LSB"></a>LSB</h2><p>最低有效位隐写，可用Stegsolve手动慢慢找，也可以用zsteg工具检测</p>
+<p>kali安装zsteg：gem install zsteg</p>
+<p>zsteg xxx.png/bmp直接把图片检测一下</p>
+<p><a href="http://yll0024.xyz/images/pasted-85.png"><img src="http://yll0024.xyz/images/pasted-85.png" alt="玖涯博客"></a></p>
+<p>zsteg显示分别在r,g,b第一位，顺序rgb，最低有效位隐藏有文件</p>
+<p><a href="http://yll0024.xyz/images/pasted-86.png"><img src="http://yll0024.xyz/images/pasted-86.png" alt="玖涯博客"></a></p>
+<p>因为zsteg的bit从1开始，Stegsolve的bit从0开始，所以在Stegsolve中选择Red,Green,Blue的第0位，顺序RGB，LSBfirst，preview一下果然有个png图片，save bin，保存为png格式，出现一张二维码，扫一下获得flag</p>
+<p>flag:<code>flag&#123;1sb_i4_s0_Ea4y&#125;</code></p>
+<h2 id="文件中的秘密"><a href="#文件中的秘密" class="headerlink" title="文件中的秘密"></a>文件中的秘密</h2><p>flag在exif信息中，右键属性-&gt;详细信息</p>
+<p><a href="http://yll0024.xyz/images/pasted-87.png"><img src="http://yll0024.xyz/images/pasted-87.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;870c5a72806115cb5439345d8b014396&#125;</code></p>
+<h2 id="wireshark"><a href="#wireshark" class="headerlink" title="wireshark"></a>wireshark</h2><p>用wireshark打开慢慢找</p>
+<p><a href="http://yll0024.xyz/images/pasted-88.png"><img src="http://yll0024.xyz/images/pasted-88.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;ffb7567a1d4f4abdffdb54e022f8facd&#125;</code></p>
+<h2 id="rar"><a href="#rar" class="headerlink" title="rar"></a>rar</h2><p>4位数字密码爆破，做过多次了</p>
+<p>flag:<code>flag&#123;1773c5da790bd3caff38e3decd180eb7&#125;</code></p>
+<h2 id="qr"><a href="#qr" class="headerlink" title="qr"></a>qr</h2><p>emmm….扫码就是flag</p>
+<p>flag:<code>flag&#123;878865ce73370a4ce607d21ca01b5e59&#125;</code></p>
+<h2 id="zip伪加密"><a href="#zip伪加密" class="headerlink" title="zip伪加密"></a>zip伪加密</h2><p>题目标题就给出答案了….winhex打开</p>
+<p><a href="http://yll0024.xyz/images/pasted-89.png"><img src="http://yll0024.xyz/images/pasted-89.png" alt="玖涯博客"></a></p>
+<p>50 4B 03 04 zip文件头</p>
+<p>14 00 解压文件所需 pkware 版本</p>
+<p>00 00 全局方式位标记（是否有密码，00 00 无密码 09 00 有密码）</p>
+<p>第六个字节改成00</p>
+<p>flag:<code>flag&#123;Adm1N-B2G-kU-SZIP&#125;</code></p>
+<h2 id="被嗅探的流量"><a href="#被嗅探的流量" class="headerlink" title="被嗅探的流量"></a>被嗅探的流量</h2><p>wireshark打开，发现一个POST包很可疑</p>
+<p><a href="http://yll0024.xyz/images/pasted-91.png"><img src="http://yll0024.xyz/images/pasted-91.png" alt="玖涯博客"></a></p>
+<p>右键追踪TCP流</p>
+<p><a href="http://yll0024.xyz/images/pasted-92.png"><img src="http://yll0024.xyz/images/pasted-92.png" alt="玖涯博客"></a></p>
+<p>这次POST请求没有上传任何文件，接着往下看，又发现一个TCP包，里面有POST请求</p>
+<p><a href="http://yll0024.xyz/images/pasted-93.png"><img src="http://yll0024.xyz/images/pasted-93.png" alt="玖涯博客"></a></p>
+<p>右键追踪TCP流</p>
+<p><a href="http://yll0024.xyz/images/pasted-94.png"><img src="http://yll0024.xyz/images/pasted-94.png" alt="玖涯博客"></a></p>
+<p>这次上传了一个JPG文件，在文件流最后发现flag</p>
+<p>flag:<code>flag&#123;da73d88936010da1eeeb36e945ec4b97&#125;</code></p>
+<h2 id="ningen"><a href="#ningen" class="headerlink" title="ningen"></a>ningen</h2><p>binwalk分解，四位数字密码爆破，老套路了。。。flag:<code>flag&#123;b025fc9ca797a67d2103bfbc407a6d5f&#125;</code></p>
+<h2 id="镜子里面的世界"><a href="#镜子里面的世界" class="headerlink" title="镜子里面的世界"></a>镜子里面的世界</h2><p>binwalk没有分离出什么东西来，zsteg看一下就有flag了</p>
+<p><a href="http://yll0024.xyz/images/pasted-90.png"><img src="http://yll0024.xyz/images/pasted-90.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;st3g0_saurus_wr3cks&#125;</code></p>
+<h2 id="小明的保险箱"><a href="#小明的保险箱" class="headerlink" title="小明的保险箱"></a>小明的保险箱</h2><p>远古时代的套路，binwalk分离文件，4位数字密码爆破。flag:<code>flag&#123;75a3d68bf071ee188c418ea6cf0bb043&#125;</code></p>
+<h2 id="爱因斯坦"><a href="#爱因斯坦" class="headerlink" title="爱因斯坦"></a>爱因斯坦</h2><p>emm…做了这么多题了，首先试试binwalk，分离出一个压缩包，感觉又是4位数字密码爆破，爆了一下没爆出来。然后想到伪加密，修改zip加密标记，结果压缩包损坏，也不是伪加密。查看图片exif信息，发现压缩包密码</p>
+<p><a href="http://yll0024.xyz/images/pasted-95.png"><img src="http://yll0024.xyz/images/pasted-95.png" alt="玖涯博客"></a></p>
+<p>解压得到flag:<code>flag&#123;dd22a92bf2cceb6c0cd0d6b83ff51606&#125;</code></p>
+<h2 id="easycap"><a href="#easycap" class="headerlink" title="easycap"></a>easycap</h2><p>wireshark打开后全是TCP包，随便点一个，追踪tcp流，出现flag:<code>flag&#123;385b87afc8671dee07550290d16a8071&#125;</code></p>
+<h2 id="另外一个世界"><a href="#另外一个世界" class="headerlink" title="另外一个世界"></a>另外一个世界</h2><p>winhex打开，在最后发现一串可疑字符串（也可用strings monster.jpg看字符串）</p>
+<p><a href="http://yll0024.xyz/images/pasted-96.png"><img src="http://yll0024.xyz/images/pasted-96.png" alt="玖涯博客"></a></p>
+<p>二进制转字符串，就是flag</p>
+<p><a href="http://yll0024.xyz/images/pasted-97.png"><img src="http://yll0024.xyz/images/pasted-97.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;koekj3s&#125;</code></p>
+<h2 id="FLAG"><a href="#FLAG" class="headerlink" title="FLAG"></a>FLAG</h2><p>binwalk没分离出来,zsteg发现zip压缩包</p>
+<p><a href="http://yll0024.xyz/images/pasted-98.png"><img src="http://yll0024.xyz/images/pasted-98.png" alt="玖涯博客"></a></p>
+<p>根据信息，用StegSolve选择r,g,b的第0个bit，顺序rgb，LSBfirst，然后Save bin保存为zip，解压后发现一个没有后缀名的文件，用winhex看看文件头</p>
+<p><a href="http://yll0024.xyz/images/pasted-99.png"><img src="http://yll0024.xyz/images/pasted-99.png" alt="玖涯博客"></a></p>
+<p>文件头显示是linux可执行文件，拖入kali执行</p>
+<p><a href="http://yll0024.xyz/images/pasted-100.png"><img src="http://yll0024.xyz/images/pasted-100.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;dd0gf4c3tok3yb0ard4g41n~~~&#125;</code></p>
+<h2 id="假如给我三天光明"><a href="#假如给我三天光明" class="headerlink" title="假如给我三天光明"></a>假如给我三天光明</h2><p>得到图片和音频压缩包文件，图片下面的猜测为摩尔斯电码（错误），猜测为01二进制ASCII编码（错误），参看网上writeup了解为盲文。对照盲文对照表得：<code>kmdonowg</code>。猜测是压缩包的密码，解压得到音频，听着是摩尔斯电码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-.-.  -  ..-.  .--  .--.  .  ..  -----  ---..  --...  ...--  ..---  ..--..  ..---  ...--  -..  --..</span><br></pre></td></tr></table></figure>
+
+<p>解密得：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CTFWPEI08732?23DZ</span><br></pre></td></tr></table></figure>
+
+<p>将CTF去掉改成flag提交：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;wpei08732?23dz&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="隐藏的钥匙"><a href="#隐藏的钥匙" class="headerlink" title="隐藏的钥匙"></a>隐藏的钥匙</h2><p>下载的图片使用hxd查看，搜索txt未果，搜索flag，成功找到。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212407937-826374983.png" alt="image-20201113135149881"></p>
+<p>括号中的进行base64解密得到flag：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;377cbadda1eca2f2f73d36277781f00a&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="最简单的misc-y1ng"><a href="#最简单的misc-y1ng" class="headerlink" title="最简单的misc-y1ng"></a>最简单的misc-y1ng</h2><p>下载的压缩包需要解密，题目没有密码提示，猜测伪加密，放入hxd中拉到最后发现还有pk开头的，将pk开头的再横向偏移四个单位，将09 00改为00 00，解压成功。将得到的secret文件放入进制查看器hxd中查看，没有开头，尾部为AE 42 60 82，这是png文件的尾部格式。故将文件头改为89 50 4E 47，保存为png文件，得到一张图片（我失败了，图片打不开，参看别人的writeup），打开显示一串数字和字母结合的字符，猜测为ASCII编码，且为16进制，用<strong>captfencoder-1.3.0</strong>工具解密得到：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;y1ngzuishuai&#125;</span><br></pre></td></tr></table></figure>
+
+<p>BJD改为flag即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;y1ngzuishuai&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>常见的文件头尾格式</strong>：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212440107-2049055665.png" alt="image-20201113141825962"></p>
+<h2 id="A-Beautiful-Picture"><a href="#A-Beautiful-Picture" class="headerlink" title="A_Beautiful_Picture"></a>A_Beautiful_Picture</h2><p>图片放入hxd和stegsolve中都没有发现什么，参看别人的writeup说是图片的长宽不对等，利用hxd将图片的宽修改为与长相等并保存：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212439092-2053554416.png" alt="image-20201113143400741"></p>
+<p>查看图片下方显示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;PnG_He1ghT_1s_WR0ng&#125;</span><br></pre></td></tr></table></figure>
+
+<p>将BJD改为flag提交。</p>
+<h2 id="神秘龙卷风"><a href="#神秘龙卷风" class="headerlink" title="神秘龙卷风"></a>神秘龙卷风</h2><p>根据题目提示：科学家用四位数字命名，即是此rar压缩包的加密方式，使用<strong>RARPasswordUnlocker</strong>暴力破解得到密码：<code>5463</code>。打开得到的txt文件，没见过此种编码方式：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212443246-1450103875.png" alt="image-20201119125844585"></p>
+<p>参看别人的writeup，说是<code>brainfuck</code>代码，使用在线网站工具<strong>建立新的工程</strong>并将txt中的东西复制粘贴到代码区运行得到flag。此网站链接：<a href="http://bf.doleczek.pl/">http://bf.doleczek.pl/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;e4bbef8bdf9743f8bf5b727a9f6332a8&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="小姐姐-y1ng"><a href="#小姐姐-y1ng" class="headerlink" title="小姐姐-y1ng"></a>小姐姐-y1ng</h2><p>图片用hxd查看，直接搜索BJD没搜到，搜txt没搜到，stegsolve无果，参看别人题解在进制查看器（hxd、winhex都是）中搜索bjd即有flag。why/(ㄒoㄒ)/。也不知道自己第一次怎么搜的居然没搜到T^T。bjd改为flag提交。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;haokanma_xjj&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="后门查杀"><a href="#后门查杀" class="headerlink" title="后门查杀"></a>后门查杀</h2><p>下载得到一个html文件夹，后门查杀和webshell是知识盲区。一个个找确实费时，参看网上的writeup得知有个专门扫描webshell、网站木马等的安全软件叫：<strong>D盾</strong>。下载D盾压缩包，打开<strong>D_Safe_Manage.exe</strong>，在查杀中将待查杀的文件拖入，如图：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212447450-1533339998.png" alt="image-20201114090443329"></p>
+<p>打开对应文件，md5码只有pass处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;6ac45fb83b3bc355c024f5034b947dd3&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="荷兰宽带数据泄露"><a href="#荷兰宽带数据泄露" class="headerlink" title="荷兰宽带数据泄露"></a>荷兰宽带数据泄露</h2><p>用进制查看器等打开都没啥信息，无头绪，宽带数据泄露，此前没碰到过，果断参看别人writeup得知：宽带数据也就是路由器信息数据需要用<strong>RouterPassView（路由器通行证视图）</strong>查看，去网上下载，打开查看，题目对flag没有任何提示，直接搜flag未果。之前有题的flag是管理员的登录密码，路由器信息数据中一般也会包含账号密码，搜密码，包上flag，错误，测试账号，正确。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;053700357621&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45897326/article/details/103936479">https://blog.csdn.net/weixin_45897326/article/details/103936479</a></p>
+<h2 id="来首歌吧"><a href="#来首歌吧" class="headerlink" title="来首歌吧"></a>来首歌吧</h2><p>用<strong>audacity</strong>打开，发现：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212456892-564557737.png" alt="image-20201116150005316"></p>
+<p>将其放大（Ctrl+鼠标滚轮），发现其特征像摩尔斯电码，短杆敲为. 长杆敲为-。间隔地方用空格隔开，可得：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">..... -... -.-. ----. ..--- ..... -.... ....- ----. -.-. -... ----- .---- ---.. ---.. ..-. ..... ..--- . -.... .---- --... -.. --... ----- ----. ..--- ----. .---- ----. .---- -.-.</span><br></pre></td></tr></table></figure>
+
+<p>用在线摩尔斯电码工具解得：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5BC925649CB0188F52E617D70929191C</span><br></pre></td></tr></table></figure>
+
+<p>包上flag：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;5BC925649CB0188F52E617D70929191C&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>总结</strong>：不知道为何用<strong>CaptfEncoder-win-x64-1.3.0.exe</strong>解得的摩尔斯电码结果有点出入，需要了解下原因，不止一次了（很有可能格式不对）。</p>
+<h2 id="数据包中的线索"><a href="#数据包中的线索" class="headerlink" title="数据包中的线索"></a>数据包中的线索</h2><p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212500195-122901242.png" alt="image-20201117154111788"></p>
+<p>至此，无头绪了，参看他人writeup，说这块数据是base64加密的图片，拉到最下面撇去最后一行的那个0，确实是以=结尾，导出http对象，打开fenxi.php文件，整个文件内的内容就是base64加密后的图片，将此数据完善一下，开头加上：<code>data:image/png;base64,</code>编码内容紧跟其后，输入浏览器（学到了）：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212511593-884384661.png" alt="image-20201117154630905"></p>
+<p>即可展示出图片：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212508710-508016229.png" alt="image-20201117154718954"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;209acebf6324a09671abc31c869de72c&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a href="https://blog.csdn.net/l11III1111/article/details/107804111">https://blog.csdn.net/l11III1111/article/details/107804111</a></p>
+<h2 id="九连环"><a href="#九连环" class="headerlink" title="九连环*"></a>九连环*</h2><p>图片用hxd查看，发现是个zip，里面带有一个加密压缩包和图片，用<strong>foremost</strong>分离：<code>foremost [文件名]</code>。得到一个加密压缩包，题目没有提示，猜测是伪加密，但是我破解不了。参看别人writeup得：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212514318-1349362796.png" alt="image-20201118155703851"></p>
+<p>标记处原本为<code>01</code>，伪加密了，改成<code>00</code>。查看全局处最上面asd/PK处，没有进行伪加密，解压压缩包。</p>
+<p><strong>注</strong>：不知为何我照着做一遍，内部的图片就是出不来，存在问题。</p>
+<p>另外需要用到的工具：<strong>steghide</strong>，用于分析隐藏在图片中的信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;1RTo8w@&amp;4nK@z*XL&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a href="https://www.cnblogs.com/yunqian2017/p/13298178.html">https://www.cnblogs.com/yunqian2017/p/13298178.html</a></p>
+<h2 id="面具下的flag"><a href="#面具下的flag" class="headerlink" title="面具下的flag"></a>面具下的flag</h2><p>下载得到的图片放入hxd中查看，开头是被篡改的文件。拉到尾部发现压缩包，并进行了伪加密，修改09为00，另存为zip压缩包，解压得到：<code>flag.vmdk</code>文件，这是虚拟机文件的格式，猜想这要是放到vmare虚拟机中有点不太可能，无解了。参看别人witeup：可用7z解压vmdk文件，在kali中进行解压，语句：<code>7z x flag.vmdk -o./</code>，得到了四个文件夹：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212519780-643061161.png" alt="image-20201119125413231"></p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212522466-977633396.png" alt="image-20201119125501501"></p>
+<p>其中有一个key_part_one和key_part_two。打开key_part_one，得到的编码方式与<strong>神秘龙卷风</strong>中的编码方式很像，即<code>brainfuck</code>编码，放入brainfuck和ook编码的集合在线网站（<a href="https://www.splitbrain.org/services/ook%EF%BC%89%E4%B8%AD%E8%A7%A3%E7%A0%81%E5%BE%97%E5%88%B0%EF%BC%9A">https://www.splitbrain.org/services/ook）中解码得到：</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5</span><br></pre></td></tr></table></figure>
+
+<p>在key_part_two文件夹中，有俩个文件夹，此文件夹<img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212525083-1818141137.png" alt="image-20201119130330723">明确说明了第二部分的flag在里面，打开，全是Ook。放入上述网站中解码得到：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
+
+<p>合并flag：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45485719/article/details/107417878">https://blog.csdn.net/weixin_45485719/article/details/107417878</a></p>
+<h2 id="webshell后门"><a href="#webshell后门" class="headerlink" title="webshell后门"></a>webshell后门</h2><p>借鉴前面后门查杀的思路，将得到的压缩包解压到webshell后门文件夹，拖入到D盾中进行扫描：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212528917-1290385871.png" alt="image-20201120101432083"></p>
+<p>目标锁定上面三个文件，按顺序寻找，右键点击打开文件，发现上图打框的文件就有flag。搜索password不行，md5码写在pass，直接搜索pass即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;ba8e6c6f35a53933b871480bb9a9545c&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>CTF</category>
+      </categories>
+      <tags>
+        <tag>BUU MISC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WEB安全前后端基础</title>
+    <url>/2021/08/11/WEB%E5%AE%89%E5%85%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h2 id="后端基础PHP—表单验证"><a href="#后端基础PHP—表单验证" class="headerlink" title="后端基础PHP—表单验证"></a>后端基础PHP—表单验证</h2><h3 id="1-什么是表单"><a href="#1-什么是表单" class="headerlink" title="1.什么是表单"></a>1.什么是表单</h3><blockquote>
+<p>表单在网页中主要<strong>负责数据采集</strong>功能。</p>
+<p>一个表单有<strong>三个基本组成部分</strong>：</p>
+<p><strong>表单标签</strong>：这里面包含了处理表单数据所用CGI程序的URL以及数据提交到服务器的方法。</p>
+<p><strong>表单域</strong>：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。</p>
+<p><strong>表单按钮</strong>：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的CGI脚本或者取消输入，还可以用表单按钮来控制其他定义了处理脚本的处理工作。</p>
+<span id="more"></span>
+</blockquote>
+<p>使用场景：</p>
+<p><strong>登录框 搜索框 留言框 上传框</strong>……（各种框）</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://image.3001.net/images/20210623/1624438454_60d2f6b6405b378f2606d.png!small?1624438452911" alt="1624438454_60d2f6b6405b378f2606d.png!small?1624438452911"></th>
+<th><img src="https://image.3001.net/images/20210623/1624438465_60d2f6c12dae5263df296.png!small?1624438463812" alt="1624438465_60d2f6c12dae5263df296.png!small?1624438463812"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-如何创建一个表单"><a href="#2-如何创建一个表单" class="headerlink" title="2.如何创建一个表单"></a>2.如何创建一个表单</h3><blockquote>
+<p><strong>表单标签</strong>： <form action="URL" method="GET/POST"></form></p>
+<p><strong>表单域</strong>：即表单组件，主要有 文本框、密码框、隐藏域、复选框、单选框、文件上传框 多行文本框(文本域) 下拉选择框 ……</p>
+<p><strong>表单按钮</strong>： 提交按钮 复位按钮 一般按钮</p>
+</blockquote>
+<p><img src="https://image.3001.net/images/20210623/1624441055_60d300dfa6f3e4754ea6a.png!small?1624441056111" alt="1624441055_60d300dfa6f3e4754ea6a.png!small?1624441056111"></p>
+<h3 id="3-PHP和数据库交互"><a href="#3-PHP和数据库交互" class="headerlink" title="3.PHP和数据库交互"></a>3.PHP和数据库交互</h3><blockquote>
+<p>PHP如何实现人机交互，用户如何才能把自己写的东西给PHP PHP如何接收？</p>
+<p><strong>提交使用的就是表单</strong></p>
+<p>接收分为<strong>三种</strong></p>
+<p><strong>$_GET</strong> //接收GET传参</p>
+<p><strong>$_POST</strong>//接收POST传参</p>
+<p><strong>$_REQUEST</strong>//接收POST 和 GET传参</p>
+<p>数组如何命名**$cars=array(“Volvo”,”BMW”,”Toyota”);**</p>
+</blockquote>
+<p><strong>表单实际上做到的是将数据提交到后端脚本，然后后端脚本接受后进行处理</strong>。</p>
+<p>我们这里说的是<strong>PHP和mysql数据库</strong>交互：</p>
+<blockquote>
+<p>我们会用到一个PHP的扩展mysqli （不用担心，这是自带的插件，我们可以理解为是一套函数就行了） <strong>连接数据库</strong>:mysqli_connect(‘127.0.0.1’,’root’,’root’,’3_9’) (连接地址,连接账户,连接密码,连接数据库）</p>
+<p><strong>执行数据库语句</strong>：mysqli_query($conn,$sql)  （数据库连接函数，执行的SQL语句）</p>
+<p>通过数据库查询语句<strong>执行后得到的数据是一个对象</strong>，</p>
+<p>我们需要<strong>将对象转化为数组</strong></p>
+<p>从结果<strong>集取所有对象变为数组 mysqli_fetch_array($result)</strong> （执行数据库获得的结果集）</p>
+<p><img src="https://image.3001.net/images/20210623/1624450284_60d324ec5bc6aa512727d.png!small?1624450283323" alt="1624450284_60d324ec5bc6aa512727d.png!small?1624450283323"></p>
+<p>数据库基础结构：</p>
+<p><strong>库 表 字段 数据</strong>=&gt; 库就是仓库 表就如同xls表，字段就是表头，数据就是内容</p>
+</blockquote>
+<h3 id="4-实战"><a href="#4-实战" class="headerlink" title="4.实战"></a>4.实战</h3><blockquote>
+<p>描述：写一个登陆表单，并实现其注册 + 登录功能。</p>
+<p>2、注册和登录功能都必须有</p>
+<p>提示：     登录成功后需要给回显</p>
+</blockquote>
+<p>\1) 在Phpstudy的<strong>根目录</strong>(一般在Phpstudy的WWW目录)创建 <strong>login.php和register.php</strong></p>
+<p><img src="https://image.3001.net/images/20210624/1624528657_60d4571133038ff0d55ac.png!small?1624528656766" alt="1624528657_60d4571133038ff0d55ac.png!small?1624528656766"></p>
+<p>\2) <strong>创建自己的库，表，字段，数据</strong>。可以用<strong>MySQL-Front</strong></p>
+<p><strong>3) 代码</strong></p>
+<p><strong>login.php：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;登录网页&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;h1&gt;欢迎来到登陆界面! &lt;/h1&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form name=&quot;login&quot; action=&quot;login.php&quot; method=&quot;post&quot;&gt;</span><br><span class="line">        用户名:&lt;p&gt;&lt;input type=text name=&quot;name&quot;&gt;&lt;/p&gt;</span><br><span class="line">        密码:&lt;p&gt;&lt;input type=password name=&quot;password&quot;&gt;&lt;/p&gt;</span><br><span class="line">        &lt;input type=&quot;submit&quot;  name=&quot;submit&quot; value=&quot;登录&quot; &gt;</span><br><span class="line">    &lt;p&gt;还没有账号?请去&lt;a href=&quot;./register.php&quot;&gt;注册账号&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">@$a = $_POST[&#x27;name&#x27;];//&#x27;@&#x27;清除报错信息</span><br><span class="line">@$b = $_POST[&#x27;password&#x27;]; //获取表单数据</span><br><span class="line">$c = mysqli_connect(&#x27;127.0.0.1&#x27;,&#x27;root&#x27;,&#x27;root&#x27;,&#x27;txtx&#x27;); //链接数据库</span><br><span class="line">$s =&quot;select*from wlb where username=&#x27;$a&#x27; and password=&#x27;$b&#x27;&quot;; //查询数据库记录</span><br><span class="line">$result = mysqli_query($c,$s); //执行函数</span><br><span class="line">$d = mysqli_fetch_array($result);  //从结果集中取得一行作为关联数组</span><br><span class="line">if (empty($_POST[&#x27;name&#x27;]) || empty($_POST[&#x27;password&#x27;])) &#123;</span><br><span class="line">    die(&#x27;用户名或密码为空&#x27;);</span><br><span class="line">    &#125; //判断数据是否为空数据</span><br><span class="line">if</span><br><span class="line"> ($a == $d[&#x27;username&#x27;] and $b == $d[&#x27;password&#x27;]) //比对数据库数据并判断</span><br><span class="line">&#123;</span><br><span class="line">    echo $a.&#x27;,欢迎回来 &#x27;; </span><br><span class="line">    exit;</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">echo&quot;登录失败，用户名不存在或密码错误&quot;;</span><br><span class="line">&#125; </span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>register.php：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;用户注册页面&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;注册页面&lt;/h1&gt;</span><br><span class="line">&lt;form action=&quot;register.php&quot; method=&quot;post&quot;&gt;</span><br><span class="line">&lt;p&gt;用户名：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;密 码： &lt;input type=&quot;password&quot; name=&quot;password&quot; &gt;&lt;/p&gt;</span><br><span class="line">&lt;input  type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;注册&quot;  &gt;</span><br><span class="line">&lt;p&gt;已有账号？请前往&lt;a href=&quot;./login.php&quot;&gt;登录&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;	 </span><br><span class="line">   </span><br><span class="line">&lt;?php@$name=$_POST[&#x27;name&#x27;];@$password=$_POST[&#x27;password&#x27;]; //获取表单数据$conn = mysqli_connect(&#x27;127.0.0.1&#x27;,&#x27;root&#x27;,&#x27;root&#x27;,&#x27;txtx&#x27;); //链接数据库$sql=&quot;select *from wlb where username=&#x27;$name&#x27;&quot;;$result = mysqli_query($conn,$sql); //执行函数$fetch = mysqli_fetch_array($result); if (!isset($_POST[&#x27;name&#x27;]) || !isset($_POST[&#x27;password&#x27;])) &#123;die(&#x27;缺少用户名密码&#x27;); &#125;if (empty($_POST[&#x27;name&#x27;]) || empty($_POST[&#x27;password&#x27;])) &#123;die(&#x27;用户名或密码为空&#x27;);&#125; //判断数据是否为空数据if($fetch[&#x27;username&#x27;]==$name)&#123;die(&#x27;该用户已注册&#x27;);&#125;else&#123;$insert=&quot;insert into wlb(username,password) values(&#x27;$name&#x27;,&#x27;$password&#x27;)&quot;;//往数据库插入表单数据mysqli_query($conn,$insert);echo &quot;注册成功&quot;;&#125;?&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>4)验证效果:</strong></p>
+<p><strong>进入登录页面</strong></p>
+<table>
+<thead>
+<tr>
+<th>输入正确的账号密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624529846_60d45bb63da0302387c4e.png!small?1624529845333" alt="1624529846_60d45bb63da0302387c4e.png!small?1624529845333"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>输入错误的账号密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624529943_60d45c17734543437f575.png!small?1624529942612" alt="1624529943_60d45c17734543437f575.png!small?1624529942612"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>输入空的账号或密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624530250_60d45d4a6a7de3ac4faa5.png!small?1624530249488" alt="1624530250_60d45d4a6a7de3ac4faa5.png!small?1624530249488"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>进入注册界面</strong></p>
+<table>
+<thead>
+<tr>
+<th>注册<strong>非空且账号不为wlb</strong>的 账号和密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624531757_60d4632d620bf53af1639.png!small?1624531756343" alt="1624531757_60d4632d620bf53af1639.png!small?1624531756343"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>注册的数据成功进入数据库</th>
+<th><img src="https://image.3001.net/images/20210624/1624544316_60d4943cb360b417bbd2b.png!small?1624544316102" alt="1624544316_60d4943cb360b417bbd2b.png!small?1624544316102"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>若注册空的账号或密码</th>
+<th><img src="https://image.3001.net/images/20210624/1624544596_60d495544ee6d317aa949.png!small?1624544595651" alt="1624544596_60d495544ee6d317aa949.png!small?1624544595651"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>若注册相同的用户名</th>
+<th><img src="https://image.3001.net/images/20210624/1624544731_60d495dbdd6c44ea96595.png!small?1624544731388" alt="1624544731_60d495dbdd6c44ea96595.png!small?1624544731388"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>用新的账号密码登录</strong></p>
+<table>
+<thead>
+<tr>
+<th><img src="https://image.3001.net/images/20210624/1624545148_60d4977c5062aaec45202.png!small?1624545147472" alt="1624545148_60d4977c5062aaec45202.png!small?1624545147472"></th>
+<th><img src="https://image.3001.net/images/20210624/1624545156_60d497844c41a348ba64a.png!small?1624545155462" alt="1624545156_60d497844c41a348ba64a.png!small?1624545155462"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="PHP后端基础—正则表达式"><a href="#PHP后端基础—正则表达式" class="headerlink" title="PHP后端基础—正则表达式"></a>PHP后端基础—正则表达式</h2><h3 id="1-初识别SQL注入"><a href="#1-初识别SQL注入" class="headerlink" title="1.初识别SQL注入"></a>1.初识别SQL注入</h3><p>登录代码<strong>后端的php代码</strong></p>
+<p><img src="https://image.3001.net/images/20210625/1624598320_60d56730f08e6ffb24be5.png!small?1624598321664" alt="1624598320_60d56730f08e6ffb24be5.png!small?1624598321664">发现在登录密码框里面写 ‘or 1=1#   <strong>也能登录成功</strong></p>
+<p><strong>什么是注入：</strong></p>
+<blockquote>
+<p>注入攻击的本质，是<strong>把用户输入的数据当做代码执行</strong>。</p>
+<p>两个关键条件：</p>
+<p>第一个 <strong>是用户能够控制输入</strong> </p>
+<p>第二个 <strong>是原本程序要执行的代码，拼接了用户输入的数据然后进行执行</strong> </p>
+</blockquote>
+<p><strong>SQL注入：</strong></p>
+<blockquote>
+<p>户输入的数据当做<strong>SQL语句</strong>的代码执行</p>
+</blockquote>
+<p><strong>常见的防护软件主流核心：</strong></p>
+<blockquote>
+<p><strong>通过正则来过滤传参</strong></p>
+</blockquote>
+<h3 id="2-什么是正则表达式？"><a href="#2-什么是正则表达式？" class="headerlink" title="2.什么是正则表达式？"></a>2.什么是正则表达式？</h3><blockquote>
+<p><strong>正则表达式</strong>（英语：Regular Expression，常简写为regex、regexp或RE），又称<strong>正则表示式</strong>、<strong>正则表示法</strong>、<strong>规则表达式</strong>、<strong>常规表示法</strong>，是计算机科学的一个概念。正则表达式使用<strong>单个字符串来描述、匹配一系列匹配某个句法规则的字符串</strong>。在很多文本编辑器里，正则表达式通常被用来<strong>检索、替换那些匹配某个模式的文本</strong>。</p>
+</blockquote>
+<p>正则表达式的<strong>特点</strong>：</p>
+<blockquote>
+<p>\1. 灵活性、逻辑性和功能性非常强；</p>
+<p>\2. 可以迅速地用极简单的方式达到字符串的复杂控制。</p>
+<p>\3. 对于刚接触的人来说，比较晦涩难懂。</p>
+</blockquote>
+<p>正则表达式<strong>用途</strong>：</p>
+<blockquote>
+<p><strong>判断字符串是否符合某一规则</strong>（判断是否符合手机号、邮箱规则）。</p>
+<p><strong>从一个字符串中找出符合规则的所有子字符串</strong>（取HTML标签名）。</p>
+</blockquote>
+<p><strong>3.PHP中的正则表达式：</strong></p>
+<p><strong>注：HP中使用正则规则一定要加代表正则的标识/ /</strong></p>
+<blockquote>
+<p><strong>preg_match_all</strong>(正则表达式、匹配字符串、匹配到的东西放入数组)</p>
+<p>返回<strong>匹配到的次数</strong> </p>
+<p><strong>preg_replace</strong> (正则表达式、替换成什么、匹配字符串)</p>
+<p>返回<strong>替换后的结果</strong> </p>
+<p>替换<strong>支持数组</strong>格式</p>
+</blockquote>
+<h3 id="4-正则表达式的语法"><a href="#4-正则表达式的语法" class="headerlink" title="4.正则表达式的语法"></a>4.正则表达式的语法</h3><p><strong>字符：</strong></p>
+<blockquote>
+<p>常用<strong>转义字符</strong>：</p>
+<p>数字：\d 非数字：\D</p>
+<p>空白字符（空格、制表符、换页符等）：\s 非空白字符：\S</p>
+<p>单词字符（26个英文字母+数字+下划线_）：\w 非单词字符：\W</p>
+</blockquote>
+<blockquote>
+<p><strong>自定义字符结合</strong></p>
+<p><strong>字符集合</strong>：[单个字符或字符区间]，用于<strong>匹配集合内字符.</strong></p>
+<p>如：</p>
+<p>**[a-z]**表示a-z这26个小写字母</p>
+<p>**[0-9a-z]**表示0-9这10个数字和a-z26个小写字母</p>
+<p>**[135a-h]**表示包含数字1，3，5和字母a-h这8个字母</p>
+<p>注意：两个不同字符段间请<strong>勿使用,隔开</strong>。</p>
+<p><strong>非集</strong>：[^单个字符或字符区间]，用于<strong>匹配非集合内字符</strong>。</p>
+<p>如：</p>
+<p>**[^0-9]**表示匹配所有非数字字符。</p>
+<p>**[^a-zA-Z]**表示匹配所以非字母字符。</p>
+</blockquote>
+<p><strong>关键字：</strong></p>
+<blockquote>
+<p>()    =&gt; 和数学一样很像，代表这是一个整体。</p>
+<p>^    =&gt;  匹配输入字符串的开始位置</p>
+<p>$    =&gt; 匹配输入字符串的结尾位置</p>
+<p>.     =&gt; 通配符[代表任意字符][不匹配换行]</p>
+<p>*     =&gt; 匹配0次或者多次</p>
+<p>+    =&gt; 匹配1次或者多次</p>
+<p>\     =&gt; 转义字符<br>|      =&gt;  两项之间的一个选择。</p>
+</blockquote>
+<p><strong>限定符加修饰符：</strong></p>
+<blockquote>
+<p><strong>限定符：</strong> </p>
+<p>{n}   =&gt; 例如:  0{8}   意思是指 只有连起来8个0才会被匹配</p>
+<p>{n,}   =&gt;例如： 0{2,}   意思是 只要有2个0及其以上的就会被匹配</p>
+<p>{n,m}  =&gt;  例如： 0{2,4} 意思是最少匹配2个0，最多匹配4个0</p>
+<p>注：被匹配时，<strong>默认匹配最多的次数</strong></p>
+<p><strong>修饰符：</strong></p>
+<p>/i   =&gt; <strong>不区分大小写</strong>  </p>
+<p>/A   =&gt; 匹配规则必须<strong>从头开始匹配</strong></p>
+<p>/s   =&gt; .将<strong>匹配一切字符</strong></p>
+<p>/x   =&gt; 正则表达式中的<strong>空白字符会被忽略</strong> </p>
+</blockquote>
+<h3 id="5-实战正则"><a href="#5-实战正则" class="headerlink" title="5.实战正则"></a>5.实战正则</h3><p><strong>代码段：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php  </span><br><span class="line">$key=&#x27;flag&#123;********************************&#125;&#x27;; </span><br><span class="line">$Regular= preg_match(&quot;/zkaq.*key.&#123;2,9&#125;:\/.*\/(key*key)/i&quot;, trim($_GET[&quot;id&quot;]), $match); </span><br><span class="line">if( $Regular )&#123;  </span><br><span class="line">  die(&#x27;key: &#x27;.$key); </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<p><strong>解题思路：</strong></p>
+<blockquote>
+<p>代码中当 <strong>if 语句</strong>中的 <strong>$Regular</strong> 为真时，<strong>结束运行并输出字符key:和变量key</strong>，从而<strong>得到flag</strong><br><strong>preg_match()函数：</strong>按正则表达式去匹配字符串，<strong>匹配到一次就停止并返回1，没有匹配到则返回0</strong>；<br>trim（）函数，<strong>去除字符串两端空白符</strong>；</p>
+</blockquote>
+<p><strong>正则解析：</strong></p>
+<table>
+<thead>
+<tr>
+<th>1.</th>
+<th>zkaq ==&gt;zkaq</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2.</td>
+<td>.* ==&gt;除换行符外匹配任意字符0次或多次(可选0次 直接忽略)</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>key ==&gt;key</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>.{2,9} ==&gt;除换行符外匹配任意字符最少2次最多9次(可选字符2和1)</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>: ==&gt;:</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>/ ==&gt;转义斜杠(/)</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>( ) ==&gt;代表一个整体</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>key* ==&gt;ke y*匹配0次或多次</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>/i ==&gt;不区分大小写</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>最后结果 ==&gt;zkaqkey21://kekey</td>
+</tr>
+</tbody></table>
+<p>将结果GET传参赋值给参数id,得到FLAG。</p>
+<p>分享一个掌控安全的0基础福利编程课程：</p>
+<p>====》先有了基础才能后面才能学的更快哦。</p>
+<p>链接：<a href="https://pan.baidu.com/s/1oVdSaSwWSoo0u0ASsNPhcA">https://pan.baidu.com/s/1oVdSaSwWSoo0u0ASsNPhcA</a><br>提取码：TXTX</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>渗透测试学习</tag>
+      </tags>
+  </entry>
 </search>

@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lab/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lab/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lab/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lab/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/tubiao.jfif?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/tubiao.jfif?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="BUU MISC," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="BUUCTF MISC WP(一)做CTF MISC,我们要了解CTF必备密码编码大全。 主要的CTF MISC工具下载。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BUUCTF MISC 一">
+<meta property="og:url" content="https://teener666.github.io/2021/08/11/CTF-MISC-%E4%B8%80/index.html">
+<meta property="og:site_name" content="Teener666&#39;s blogs">
+<meta property="og:description" content="BUUCTF MISC WP(一)做CTF MISC,我们要了解CTF必备密码编码大全。 主要的CTF MISC工具下载。">
+<meta property="og:locale">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-77.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-78.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-79.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-82.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-80.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-81.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-83.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-84.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-85.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-86.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-87.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-88.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-89.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-91.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-92.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-93.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-94.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-90.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-95.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-96.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-97.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-98.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-99.png">
+<meta property="og:image" content="http://yll0024.xyz/images/pasted-100.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212407937-826374983.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212440107-2049055665.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212439092-2053554416.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212443246-1450103875.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212447450-1533339998.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212456892-564557737.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212500195-122901242.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212511593-884384661.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212508710-508016229.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212514318-1349362796.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212519780-643061161.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212522466-977633396.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212525083-1818141137.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212528917-1290385871.png">
+<meta property="article:published_time" content="2021-08-11T02:42:50.000Z">
+<meta property="article:modified_time" content="2021-08-11T03:31:09.179Z">
+<meta property="article:author" content="teener666">
+<meta property="article:tag" content="BUU MISC">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yll0024.xyz/images/pasted-77.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://teener666.github.io/2021/08/11/CTF-MISC-一/"/>
+
+
+
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+  <title>BUUCTF MISC 一 | Teener666's blogs</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <!-- GitHub-start -->
+    <a href="https://github.com/teener666" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+       src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
+    </a>
+    <!-- GitHub-end -->
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Teener666's blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">最清晰的脚印留在最泥泞的路上。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://teener666.github.io/2021/08/11/CTF-MISC-%E4%B8%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/katu.jfif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Teener666's blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">BUUCTF MISC 一</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-11T10:42:50+08:00">
+                2021-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CTF/" itemprop="url" rel="index">
+                    <span itemprop="name">CTF</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.8k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10 minute 
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="BUUCTF-MISC-WP-一"><a href="#BUUCTF-MISC-WP-一" class="headerlink" title="BUUCTF MISC WP(一)"></a>BUUCTF MISC WP(一)</h1><p>做CTF MISC,我们要了解<a target="_blank" rel="noopener" href="https://blog.csdn.net/dyw_666666/article/details/89973048">CTF必备密码编码大全</a>。</p>
+<p><a target="_blank" rel="noopener" href="https://www.freebuf.com/sectool/282074.html">主要的CTF MISC工具下载</a>。</p>
+<span id="more"></span>
+
+<h1 id="签到"><a href="#签到" class="headerlink" title="签到"></a>签到</h1><h2 id="白捡-flag-flag-buu-ctf"><a href="#白捡-flag-flag-buu-ctf" class="headerlink" title="白捡 flag:flag{buu_ctf}"></a>白捡 flag:<code>flag&#123;buu_ctf&#125;</code></h2><h2 id="金三胖"><a href="#金三胖" class="headerlink" title="金三胖"></a>金三胖</h2><p><a target="_blank" rel="noopener" href="https://tu.sioe.cn/gj/fenjie/">gif图片在线分解</a></p>
+<p>flag:<code>flag&#123;he11ohongke&#125;</code></p>
+<h2 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h2><p>扫描二维码显示secret is here，binwalk -e分解一下，有个压缩包，</p>
+<p>注:<strong>binwalk下载</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/0yst3r-2046/p/12218770.html">binwalk在Windows10和kali_Linux下的安装及使用教程</a></p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-77.png"><img src="http://yll0024.xyz/images/pasted-77.png" alt="玖涯博客"></a></p>
+<p>根据提示，压缩包密码是四位数字，用Advanced Archive Password Recovery爆破就行了</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-78.png"><img src="http://yll0024.xyz/images/pasted-78.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;vjpw_wnoei&#125;</code></p>
+<h2 id="N种方法解决"><a href="#N种方法解决" class="headerlink" title="N种方法解决"></a>N种方法解决</h2><p>里面有个KEY.exe，直接运行不了，用winhex看一下</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-79.png"><img src="http://yll0024.xyz/images/pasted-79.png" alt="玖涯博客"></a></p>
+<p>emmm，base64转图片（<a target="_blank" rel="noopener" href="http://tool.chinaz.com/tools/imgtobase">在线base64转图片</a>）,把内容全复制进去，转出一张二维码，扫一下就有了(按照格式，最前面用flag包裹)。<br><code>flag&#123;dca57f966e4e4e31fd5b15417da63269&#125;</code></p>
+<h2 id="你竟然赶我走"><a href="#你竟然赶我走" class="headerlink" title="你竟然赶我走"></a>你竟然赶我走</h2><p>用Stegsolve分析一下File format就行了,注意去掉多余的空格</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-82.png"><img src="http://yll0024.xyz/images/pasted-82.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;stego_is_s0_bor1ing&#125;</code></p>
+<h2 id="大白"><a href="#大白" class="headerlink" title="大白"></a>大白</h2><p>这个一开始方向做错了，我先用binwalk分解，分解出了一个zlib，后面尝试解压zlib失败，然后我用winhex看了一下，发现这是一张完整的图片，因为文件头是89 50 4E 47，文件尾是IEND，这是标准的png文件结构，然后尝试修改图片高度(一般png格式的图片可能考修改图片高度)</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-80.png"><img src="http://yll0024.xyz/images/pasted-80.png" alt="玖涯博客"></a></p>
+<p>如图所示第二行六七个字节是文件高度，把第六个字节稍微改大点就行了，改的太大会看不到图片</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-81.png"><img src="http://yll0024.xyz/images/pasted-81.png" alt="玖涯博客"></a></p>
+<p>得到flag:<code>flag&#123;He1l0_d4_ba1&#125;</code></p>
+<h2 id="基础破解"><a href="#基础破解" class="headerlink" title="基础破解"></a>基础破解</h2><p>简单的爆破，4位数字，用Advanced Archive Password Recovery跑一下</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-83.png"><img src="http://yll0024.xyz/images/pasted-83.png" alt="玖涯博客"></a></p>
+<p>然后base64解密一下就行了<a target="_blank" rel="noopener" href="http://tool.chinaz.com/Tools/Base64.aspx">base64在线解密</a></p>
+<p>flag:<code>flag&#123;70354300a5100ba78068805661b93a5c&#125;</code></p>
+<h2 id="乌镇峰会种图"><a href="#乌镇峰会种图" class="headerlink" title="乌镇峰会种图"></a>乌镇峰会种图</h2><p>binwalk分离一下，没有其他文件，看一下属性-&gt;详细信息（exif）也没什么信息，继续用Stegsolve分析一下File format，在最后找到flag(去掉多余的空格)</p>
+<p>flag:<code>flag&#123;97314e7864a8f62627b26f3f998c37f1&#125;</code></p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-84.png"><img src="http://yll0024.xyz/images/pasted-84.png" alt="玖涯博客"></a></p>
+<h2 id="LSB"><a href="#LSB" class="headerlink" title="LSB"></a>LSB</h2><p>最低有效位隐写，可用Stegsolve手动慢慢找，也可以用zsteg工具检测</p>
+<p>kali安装zsteg：gem install zsteg</p>
+<p>zsteg xxx.png/bmp直接把图片检测一下</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-85.png"><img src="http://yll0024.xyz/images/pasted-85.png" alt="玖涯博客"></a></p>
+<p>zsteg显示分别在r,g,b第一位，顺序rgb，最低有效位隐藏有文件</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-86.png"><img src="http://yll0024.xyz/images/pasted-86.png" alt="玖涯博客"></a></p>
+<p>因为zsteg的bit从1开始，Stegsolve的bit从0开始，所以在Stegsolve中选择Red,Green,Blue的第0位，顺序RGB，LSBfirst，preview一下果然有个png图片，save bin，保存为png格式，出现一张二维码，扫一下获得flag</p>
+<p>flag:<code>flag&#123;1sb_i4_s0_Ea4y&#125;</code></p>
+<h2 id="文件中的秘密"><a href="#文件中的秘密" class="headerlink" title="文件中的秘密"></a>文件中的秘密</h2><p>flag在exif信息中，右键属性-&gt;详细信息</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-87.png"><img src="http://yll0024.xyz/images/pasted-87.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;870c5a72806115cb5439345d8b014396&#125;</code></p>
+<h2 id="wireshark"><a href="#wireshark" class="headerlink" title="wireshark"></a>wireshark</h2><p>用wireshark打开慢慢找</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-88.png"><img src="http://yll0024.xyz/images/pasted-88.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;ffb7567a1d4f4abdffdb54e022f8facd&#125;</code></p>
+<h2 id="rar"><a href="#rar" class="headerlink" title="rar"></a>rar</h2><p>4位数字密码爆破，做过多次了</p>
+<p>flag:<code>flag&#123;1773c5da790bd3caff38e3decd180eb7&#125;</code></p>
+<h2 id="qr"><a href="#qr" class="headerlink" title="qr"></a>qr</h2><p>emmm….扫码就是flag</p>
+<p>flag:<code>flag&#123;878865ce73370a4ce607d21ca01b5e59&#125;</code></p>
+<h2 id="zip伪加密"><a href="#zip伪加密" class="headerlink" title="zip伪加密"></a>zip伪加密</h2><p>题目标题就给出答案了….winhex打开</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-89.png"><img src="http://yll0024.xyz/images/pasted-89.png" alt="玖涯博客"></a></p>
+<p>50 4B 03 04 zip文件头</p>
+<p>14 00 解压文件所需 pkware 版本</p>
+<p>00 00 全局方式位标记（是否有密码，00 00 无密码 09 00 有密码）</p>
+<p>第六个字节改成00</p>
+<p>flag:<code>flag&#123;Adm1N-B2G-kU-SZIP&#125;</code></p>
+<h2 id="被嗅探的流量"><a href="#被嗅探的流量" class="headerlink" title="被嗅探的流量"></a>被嗅探的流量</h2><p>wireshark打开，发现一个POST包很可疑</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-91.png"><img src="http://yll0024.xyz/images/pasted-91.png" alt="玖涯博客"></a></p>
+<p>右键追踪TCP流</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-92.png"><img src="http://yll0024.xyz/images/pasted-92.png" alt="玖涯博客"></a></p>
+<p>这次POST请求没有上传任何文件，接着往下看，又发现一个TCP包，里面有POST请求</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-93.png"><img src="http://yll0024.xyz/images/pasted-93.png" alt="玖涯博客"></a></p>
+<p>右键追踪TCP流</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-94.png"><img src="http://yll0024.xyz/images/pasted-94.png" alt="玖涯博客"></a></p>
+<p>这次上传了一个JPG文件，在文件流最后发现flag</p>
+<p>flag:<code>flag&#123;da73d88936010da1eeeb36e945ec4b97&#125;</code></p>
+<h2 id="ningen"><a href="#ningen" class="headerlink" title="ningen"></a>ningen</h2><p>binwalk分解，四位数字密码爆破，老套路了。。。flag:<code>flag&#123;b025fc9ca797a67d2103bfbc407a6d5f&#125;</code></p>
+<h2 id="镜子里面的世界"><a href="#镜子里面的世界" class="headerlink" title="镜子里面的世界"></a>镜子里面的世界</h2><p>binwalk没有分离出什么东西来，zsteg看一下就有flag了</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-90.png"><img src="http://yll0024.xyz/images/pasted-90.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;st3g0_saurus_wr3cks&#125;</code></p>
+<h2 id="小明的保险箱"><a href="#小明的保险箱" class="headerlink" title="小明的保险箱"></a>小明的保险箱</h2><p>远古时代的套路，binwalk分离文件，4位数字密码爆破。flag:<code>flag&#123;75a3d68bf071ee188c418ea6cf0bb043&#125;</code></p>
+<h2 id="爱因斯坦"><a href="#爱因斯坦" class="headerlink" title="爱因斯坦"></a>爱因斯坦</h2><p>emm…做了这么多题了，首先试试binwalk，分离出一个压缩包，感觉又是4位数字密码爆破，爆了一下没爆出来。然后想到伪加密，修改zip加密标记，结果压缩包损坏，也不是伪加密。查看图片exif信息，发现压缩包密码</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-95.png"><img src="http://yll0024.xyz/images/pasted-95.png" alt="玖涯博客"></a></p>
+<p>解压得到flag:<code>flag&#123;dd22a92bf2cceb6c0cd0d6b83ff51606&#125;</code></p>
+<h2 id="easycap"><a href="#easycap" class="headerlink" title="easycap"></a>easycap</h2><p>wireshark打开后全是TCP包，随便点一个，追踪tcp流，出现flag:<code>flag&#123;385b87afc8671dee07550290d16a8071&#125;</code></p>
+<h2 id="另外一个世界"><a href="#另外一个世界" class="headerlink" title="另外一个世界"></a>另外一个世界</h2><p>winhex打开，在最后发现一串可疑字符串（也可用strings monster.jpg看字符串）</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-96.png"><img src="http://yll0024.xyz/images/pasted-96.png" alt="玖涯博客"></a></p>
+<p>二进制转字符串，就是flag</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-97.png"><img src="http://yll0024.xyz/images/pasted-97.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;koekj3s&#125;</code></p>
+<h2 id="FLAG"><a href="#FLAG" class="headerlink" title="FLAG"></a>FLAG</h2><p>binwalk没分离出来,zsteg发现zip压缩包</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-98.png"><img src="http://yll0024.xyz/images/pasted-98.png" alt="玖涯博客"></a></p>
+<p>根据信息，用StegSolve选择r,g,b的第0个bit，顺序rgb，LSBfirst，然后Save bin保存为zip，解压后发现一个没有后缀名的文件，用winhex看看文件头</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-99.png"><img src="http://yll0024.xyz/images/pasted-99.png" alt="玖涯博客"></a></p>
+<p>文件头显示是linux可执行文件，拖入kali执行</p>
+<p><a target="_blank" rel="noopener" href="http://yll0024.xyz/images/pasted-100.png"><img src="http://yll0024.xyz/images/pasted-100.png" alt="玖涯博客"></a></p>
+<p>flag:<code>flag&#123;dd0gf4c3tok3yb0ard4g41n~~~&#125;</code></p>
+<h2 id="假如给我三天光明"><a href="#假如给我三天光明" class="headerlink" title="假如给我三天光明"></a>假如给我三天光明</h2><p>得到图片和音频压缩包文件，图片下面的猜测为摩尔斯电码（错误），猜测为01二进制ASCII编码（错误），参看网上writeup了解为盲文。对照盲文对照表得：<code>kmdonowg</code>。猜测是压缩包的密码，解压得到音频，听着是摩尔斯电码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-.-.  -  ..-.  .--  .--.  .  ..  -----  ---..  --...  ...--  ..---  ..--..  ..---  ...--  -..  --..</span><br></pre></td></tr></table></figure>
+
+<p>解密得：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CTFWPEI08732?23DZ</span><br></pre></td></tr></table></figure>
+
+<p>将CTF去掉改成flag提交：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;wpei08732?23dz&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="隐藏的钥匙"><a href="#隐藏的钥匙" class="headerlink" title="隐藏的钥匙"></a>隐藏的钥匙</h2><p>下载的图片使用hxd查看，搜索txt未果，搜索flag，成功找到。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212407937-826374983.png" alt="image-20201113135149881"></p>
+<p>括号中的进行base64解密得到flag：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;377cbadda1eca2f2f73d36277781f00a&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="最简单的misc-y1ng"><a href="#最简单的misc-y1ng" class="headerlink" title="最简单的misc-y1ng"></a>最简单的misc-y1ng</h2><p>下载的压缩包需要解密，题目没有密码提示，猜测伪加密，放入hxd中拉到最后发现还有pk开头的，将pk开头的再横向偏移四个单位，将09 00改为00 00，解压成功。将得到的secret文件放入进制查看器hxd中查看，没有开头，尾部为AE 42 60 82，这是png文件的尾部格式。故将文件头改为89 50 4E 47，保存为png文件，得到一张图片（我失败了，图片打不开，参看别人的writeup），打开显示一串数字和字母结合的字符，猜测为ASCII编码，且为16进制，用<strong>captfencoder-1.3.0</strong>工具解密得到：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BJD&#123;y1ngzuishuai&#125;</span><br></pre></td></tr></table></figure>
+
+<p>BJD改为flag即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;y1ngzuishuai&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>常见的文件头尾格式</strong>：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212440107-2049055665.png" alt="image-20201113141825962"></p>
+<h2 id="A-Beautiful-Picture"><a href="#A-Beautiful-Picture" class="headerlink" title="A_Beautiful_Picture"></a>A_Beautiful_Picture</h2><p>图片放入hxd和stegsolve中都没有发现什么，参看别人的writeup说是图片的长宽不对等，利用hxd将图片的宽修改为与长相等并保存：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212439092-2053554416.png" alt="image-20201113143400741"></p>
+<p>查看图片下方显示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BJD&#123;PnG_He1ghT_1s_WR0ng&#125;</span><br></pre></td></tr></table></figure>
+
+<p>将BJD改为flag提交。</p>
+<h2 id="神秘龙卷风"><a href="#神秘龙卷风" class="headerlink" title="神秘龙卷风"></a>神秘龙卷风</h2><p>根据题目提示：科学家用四位数字命名，即是此rar压缩包的加密方式，使用<strong>RARPasswordUnlocker</strong>暴力破解得到密码：<code>5463</code>。打开得到的txt文件，没见过此种编码方式：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212443246-1450103875.png" alt="image-20201119125844585"></p>
+<p>参看别人的writeup，说是<code>brainfuck</code>代码，使用在线网站工具<strong>建立新的工程</strong>并将txt中的东西复制粘贴到代码区运行得到flag。此网站链接：<a target="_blank" rel="noopener" href="http://bf.doleczek.pl/">http://bf.doleczek.pl/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;e4bbef8bdf9743f8bf5b727a9f6332a8&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="小姐姐-y1ng"><a href="#小姐姐-y1ng" class="headerlink" title="小姐姐-y1ng"></a>小姐姐-y1ng</h2><p>图片用hxd查看，直接搜索BJD没搜到，搜txt没搜到，stegsolve无果，参看别人题解在进制查看器（hxd、winhex都是）中搜索bjd即有flag。why/(ㄒoㄒ)/。也不知道自己第一次怎么搜的居然没搜到T^T。bjd改为flag提交。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BJD&#123;haokanma_xjj&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="后门查杀"><a href="#后门查杀" class="headerlink" title="后门查杀"></a>后门查杀</h2><p>下载得到一个html文件夹，后门查杀和webshell是知识盲区。一个个找确实费时，参看网上的writeup得知有个专门扫描webshell、网站木马等的安全软件叫：<strong>D盾</strong>。下载D盾压缩包，打开<strong>D_Safe_Manage.exe</strong>，在查杀中将待查杀的文件拖入，如图：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212447450-1533339998.png" alt="image-20201114090443329"></p>
+<p>打开对应文件，md5码只有pass处。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;6ac45fb83b3bc355c024f5034b947dd3&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="荷兰宽带数据泄露"><a href="#荷兰宽带数据泄露" class="headerlink" title="荷兰宽带数据泄露"></a>荷兰宽带数据泄露</h2><p>用进制查看器等打开都没啥信息，无头绪，宽带数据泄露，此前没碰到过，果断参看别人writeup得知：宽带数据也就是路由器信息数据需要用<strong>RouterPassView（路由器通行证视图）</strong>查看，去网上下载，打开查看，题目对flag没有任何提示，直接搜flag未果。之前有题的flag是管理员的登录密码，路由器信息数据中一般也会包含账号密码，搜密码，包上flag，错误，测试账号，正确。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;053700357621&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45897326/article/details/103936479">https://blog.csdn.net/weixin_45897326/article/details/103936479</a></p>
+<h2 id="来首歌吧"><a href="#来首歌吧" class="headerlink" title="来首歌吧"></a>来首歌吧</h2><p>用<strong>audacity</strong>打开，发现：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212456892-564557737.png" alt="image-20201116150005316"></p>
+<p>将其放大（Ctrl+鼠标滚轮），发现其特征像摩尔斯电码，短杆敲为. 长杆敲为-。间隔地方用空格隔开，可得：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">..... -... -.-. ----. ..--- ..... -.... ....- ----. -.-. -... ----- .---- ---.. ---.. ..-. ..... ..--- . -.... .---- --... -.. --... ----- ----. ..--- ----. .---- ----. .---- -.-.</span><br></pre></td></tr></table></figure>
+
+<p>用在线摩尔斯电码工具解得：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5BC925649CB0188F52E617D70929191C</span><br></pre></td></tr></table></figure>
+
+<p>包上flag：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;5BC925649CB0188F52E617D70929191C&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>总结</strong>：不知道为何用<strong>CaptfEncoder-win-x64-1.3.0.exe</strong>解得的摩尔斯电码结果有点出入，需要了解下原因，不止一次了（很有可能格式不对）。</p>
+<h2 id="数据包中的线索"><a href="#数据包中的线索" class="headerlink" title="数据包中的线索"></a>数据包中的线索</h2><p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212500195-122901242.png" alt="image-20201117154111788"></p>
+<p>至此，无头绪了，参看他人writeup，说这块数据是base64加密的图片，拉到最下面撇去最后一行的那个0，确实是以=结尾，导出http对象，打开fenxi.php文件，整个文件内的内容就是base64加密后的图片，将此数据完善一下，开头加上：<code>data:image/png;base64,</code>编码内容紧跟其后，输入浏览器（学到了）：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212511593-884384661.png" alt="image-20201117154630905"></p>
+<p>即可展示出图片：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212508710-508016229.png" alt="image-20201117154718954"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;209acebf6324a09671abc31c869de72c&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://blog.csdn.net/l11III1111/article/details/107804111">https://blog.csdn.net/l11III1111/article/details/107804111</a></p>
+<h2 id="九连环"><a href="#九连环" class="headerlink" title="九连环*"></a>九连环*</h2><p>图片用hxd查看，发现是个zip，里面带有一个加密压缩包和图片，用<strong>foremost</strong>分离：<code>foremost [文件名]</code>。得到一个加密压缩包，题目没有提示，猜测是伪加密，但是我破解不了。参看别人writeup得：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212514318-1349362796.png" alt="image-20201118155703851"></p>
+<p>标记处原本为<code>01</code>，伪加密了，改成<code>00</code>。查看全局处最上面asd/PK处，没有进行伪加密，解压压缩包。</p>
+<p><strong>注</strong>：不知为何我照着做一遍，内部的图片就是出不来，存在问题。</p>
+<p>另外需要用到的工具：<strong>steghide</strong>，用于分析隐藏在图片中的信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;1RTo8w@&amp;4nK@z*XL&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yunqian2017/p/13298178.html">https://www.cnblogs.com/yunqian2017/p/13298178.html</a></p>
+<h2 id="面具下的flag"><a href="#面具下的flag" class="headerlink" title="面具下的flag"></a>面具下的flag</h2><p>下载得到的图片放入hxd中查看，开头是被篡改的文件。拉到尾部发现压缩包，并进行了伪加密，修改09为00，另存为zip压缩包，解压得到：<code>flag.vmdk</code>文件，这是虚拟机文件的格式，猜想这要是放到vmare虚拟机中有点不太可能，无解了。参看别人witeup：可用7z解压vmdk文件，在kali中进行解压，语句：<code>7z x flag.vmdk -o./</code>，得到了四个文件夹：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212519780-643061161.png" alt="image-20201119125413231"></p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212522466-977633396.png" alt="image-20201119125501501"></p>
+<p>其中有一个key_part_one和key_part_two。打开key_part_one，得到的编码方式与<strong>神秘龙卷风</strong>中的编码方式很像，即<code>brainfuck</code>编码，放入brainfuck和ook编码的集合在线网站（<a target="_blank" rel="noopener" href="https://www.splitbrain.org/services/ook%EF%BC%89%E4%B8%AD%E8%A7%A3%E7%A0%81%E5%BE%97%E5%88%B0%EF%BC%9A">https://www.splitbrain.org/services/ook）中解码得到：</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;N7F5_AD5</span><br></pre></td></tr></table></figure>
+
+<p>在key_part_two文件夹中，有俩个文件夹，此文件夹<img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212525083-1818141137.png" alt="image-20201119130330723">明确说明了第二部分的flag在里面，打开，全是Ook。放入上述网站中解码得到：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
+
+<p>合并flag：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;N7F5_AD5_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45485719/article/details/107417878">https://blog.csdn.net/weixin_45485719/article/details/107417878</a></p>
+<h2 id="webshell后门"><a href="#webshell后门" class="headerlink" title="webshell后门"></a>webshell后门</h2><p>借鉴前面后门查杀的思路，将得到的压缩包解压到webshell后门文件夹，拖入到D盾中进行扫描：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212528917-1290385871.png" alt="image-20201120101432083"></p>
+<p>目标锁定上面三个文件，按顺序寻找，右键点击打开文件，发现上图打框的文件就有flag。搜索password不行，md5码写在pass，直接搜索pass即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;ba8e6c6f35a53933b871480bb9a9545c&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/BUU-MISC/" rel="tag"># BUU MISC</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/07/13/SQL%E6%B3%A8%E5%85%A5%E5%8E%9F%E7%90%86/" rel="next" title="SQL注入原理分析">
+                <i class="fa fa-chevron-left"></i> SQL注入原理分析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/08/11/WEB%E5%AE%89%E5%85%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="prev" title="WEB安全前后端基础">
+                WEB安全前后端基础 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/katu.jfif"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/teener666" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:3057434264@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/@rohY90krMaSgS41" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.freebuf.com/author/无名草talent" target="_blank" title="Freebuf">
+                      
+                        <i class="fa fa-fw fa-stack-overflow"></i>Freebuf</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BUUCTF-MISC-WP-%E4%B8%80"><span class="nav-text">BUUCTF MISC WP(一)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AD%BE%E5%88%B0"><span class="nav-text">签到</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%99%BD%E6%8D%A1-flag-flag-buu-ctf"><span class="nav-text">白捡 flag:flag{buu_ctf}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%91%E4%B8%89%E8%83%96"><span class="nav-text">金三胖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E7%A0%81"><span class="nav-text">二维码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#N%E7%A7%8D%E6%96%B9%E6%B3%95%E8%A7%A3%E5%86%B3"><span class="nav-text">N种方法解决</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%A0%E7%AB%9F%E7%84%B6%E8%B5%B6%E6%88%91%E8%B5%B0"><span class="nav-text">你竟然赶我走</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E7%99%BD"><span class="nav-text">大白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E7%A0%B4%E8%A7%A3"><span class="nav-text">基础破解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%8C%E9%95%87%E5%B3%B0%E4%BC%9A%E7%A7%8D%E5%9B%BE"><span class="nav-text">乌镇峰会种图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LSB"><span class="nav-text">LSB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%A7%98%E5%AF%86"><span class="nav-text">文件中的秘密</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#wireshark"><span class="nav-text">wireshark</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rar"><span class="nav-text">rar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#qr"><span class="nav-text">qr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip%E4%BC%AA%E5%8A%A0%E5%AF%86"><span class="nav-text">zip伪加密</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A2%AB%E5%97%85%E6%8E%A2%E7%9A%84%E6%B5%81%E9%87%8F"><span class="nav-text">被嗅探的流量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ningen"><span class="nav-text">ningen</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%AD%90%E9%87%8C%E9%9D%A2%E7%9A%84%E4%B8%96%E7%95%8C"><span class="nav-text">镜子里面的世界</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E6%98%8E%E7%9A%84%E4%BF%9D%E9%99%A9%E7%AE%B1"><span class="nav-text">小明的保险箱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6"><span class="nav-text">爱因斯坦</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#easycap"><span class="nav-text">easycap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AA%E4%B8%96%E7%95%8C"><span class="nav-text">另外一个世界</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FLAG"><span class="nav-text">FLAG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%81%87%E5%A6%82%E7%BB%99%E6%88%91%E4%B8%89%E5%A4%A9%E5%85%89%E6%98%8E"><span class="nav-text">假如给我三天光明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%90%E8%97%8F%E7%9A%84%E9%92%A5%E5%8C%99"><span class="nav-text">隐藏的钥匙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84misc-y1ng"><span class="nav-text">最简单的misc-y1ng</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-Beautiful-Picture"><span class="nav-text">A_Beautiful_Picture</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A5%9E%E7%A7%98%E9%BE%99%E5%8D%B7%E9%A3%8E"><span class="nav-text">神秘龙卷风</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E5%A7%90%E5%A7%90-y1ng"><span class="nav-text">小姐姐-y1ng</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E9%97%A8%E6%9F%A5%E6%9D%80"><span class="nav-text">后门查杀</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8D%B7%E5%85%B0%E5%AE%BD%E5%B8%A6%E6%95%B0%E6%8D%AE%E6%B3%84%E9%9C%B2"><span class="nav-text">荷兰宽带数据泄露</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A5%E9%A6%96%E6%AD%8C%E5%90%A7"><span class="nav-text">来首歌吧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%8C%85%E4%B8%AD%E7%9A%84%E7%BA%BF%E7%B4%A2"><span class="nav-text">数据包中的线索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D%E8%BF%9E%E7%8E%AF"><span class="nav-text">九连环*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%85%B7%E4%B8%8B%E7%9A%84flag"><span class="nav-text">面具下的flag</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#webshell%E5%90%8E%E9%97%A8"><span class="nav-text">webshell后门</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">teener666</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">11.5k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lab/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lab/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lab/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lab/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lab/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lab/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lab/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/ni-j.model.json"},"display":{"position":"right","width":200,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+<!--人体时钟背景白-->
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script>
+<!-- 雪花特效 -->
+<script type="text/javascript" src="\js\snow.js"></script>

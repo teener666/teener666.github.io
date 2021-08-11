@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="Kali linux," />
+  <meta name="keywords" content="渗透测试学习," />
 
 
 
@@ -82,21 +82,34 @@
 
 
 
-<meta name="description" content="文件路径绝对路径   文件在硬盘上真正存在的路径。 ​     如:&#x2F;etc&#x2F;init&#x2F;  (看到&#x2F;开头就是liunx的绝对路径了) ​        C:\Users\Admin.android\avd （看到盘符就绝对是WINDOWS绝对路径了) 相对路径">
+<meta name="description" content="后端基础PHP—表单验证1.什么是表单 表单在网页中主要负责数据采集功能。 一个表单有三个基本组成部分： 表单标签：这里面包含了处理表单数据所用CGI程序的URL以及数据提交到服务器的方法。 表单域：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。 表单按钮：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的CGI脚本或者取消输入，还可以用表单按钮来控">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux系统文件的结构">
-<meta property="og:url" content="https://teener666.github.io/2021/07/05/Linux%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84/index.html">
+<meta property="og:title" content="WEB安全前后端基础">
+<meta property="og:url" content="https://teener666.github.io/2021/08/11/WEB%E5%AE%89%E5%85%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Teener666&#39;s blogs">
-<meta property="og:description" content="文件路径绝对路径   文件在硬盘上真正存在的路径。 ​     如:&#x2F;etc&#x2F;init&#x2F;  (看到&#x2F;开头就是liunx的绝对路径了) ​        C:\Users\Admin.android\avd （看到盘符就绝对是WINDOWS绝对路径了) 相对路径">
+<meta property="og:description" content="后端基础PHP—表单验证1.什么是表单 表单在网页中主要负责数据采集功能。 一个表单有三个基本组成部分： 表单标签：这里面包含了处理表单数据所用CGI程序的URL以及数据提交到服务器的方法。 表单域：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。 表单按钮：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的CGI脚本或者取消输入，还可以用表单按钮来控">
 <meta property="og:locale">
-<meta property="og:image" content="https://image.3001.net/images/20210525/1621945396_60acec34a72df81d3def8.png!small?1621945395271">
-<meta property="og:image" content="https://image.3001.net/images/20210525/1621945418_60acec4a3ccfce64ffbde.png!small?1621945416855">
-<meta property="article:published_time" content="2021-07-05T11:07:48.000Z">
-<meta property="article:modified_time" content="2021-07-05T11:09:17.520Z">
+<meta property="og:image" content="https://image.3001.net/images/20210623/1624438454_60d2f6b6405b378f2606d.png!small?1624438452911">
+<meta property="og:image" content="https://image.3001.net/images/20210623/1624438465_60d2f6c12dae5263df296.png!small?1624438463812">
+<meta property="og:image" content="https://image.3001.net/images/20210623/1624441055_60d300dfa6f3e4754ea6a.png!small?1624441056111">
+<meta property="og:image" content="https://image.3001.net/images/20210623/1624450284_60d324ec5bc6aa512727d.png!small?1624450283323">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624528657_60d4571133038ff0d55ac.png!small?1624528656766">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624529846_60d45bb63da0302387c4e.png!small?1624529845333">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624529943_60d45c17734543437f575.png!small?1624529942612">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624530250_60d45d4a6a7de3ac4faa5.png!small?1624530249488">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624531757_60d4632d620bf53af1639.png!small?1624531756343">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624544316_60d4943cb360b417bbd2b.png!small?1624544316102">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624544596_60d495544ee6d317aa949.png!small?1624544595651">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624544731_60d495dbdd6c44ea96595.png!small?1624544731388">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624545148_60d4977c5062aaec45202.png!small?1624545147472">
+<meta property="og:image" content="https://image.3001.net/images/20210624/1624545156_60d497844c41a348ba64a.png!small?1624545155462">
+<meta property="og:image" content="https://image.3001.net/images/20210625/1624598320_60d56730f08e6ffb24be5.png!small?1624598321664">
+<meta property="article:published_time" content="2021-08-11T03:37:06.000Z">
+<meta property="article:modified_time" content="2021-08-11T03:41:03.359Z">
 <meta property="article:author" content="teener666">
-<meta property="article:tag" content="Kali linux">
+<meta property="article:tag" content="渗透测试学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://image.3001.net/images/20210525/1621945396_60acec34a72df81d3def8.png!small?1621945395271">
+<meta name="twitter:image" content="https://image.3001.net/images/20210623/1624438454_60d2f6b6405b378f2606d.png!small?1624438452911">
 
 
 
@@ -126,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="https://teener666.github.io/2021/07/05/Linux系统文件的结构/"/>
+  <link rel="canonical" href="https://teener666.github.io/2021/08/11/WEB安全前后端基础/"/>
 
 
 
@@ -146,7 +159,7 @@
         border-left-color: #1E92FB;    /*左边框颜色*/
     }
 </style>
-  <title>Linux系统文件的结构 | Teener666's blogs</title>
+  <title>WEB安全前后端基础 | Teener666's blogs</title>
   
 
 
@@ -324,7 +337,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://teener666.github.io/2021/07/05/Linux%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84/">
+    <link itemprop="mainEntityOfPage" href="https://teener666.github.io/2021/08/11/WEB%E5%AE%89%E5%85%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -341,7 +354,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux系统文件的结构</h1>
+          <h1 class="post-title" itemprop="name headline">WEB安全前后端基础</h1>
         
 
         <div class="post-meta">
@@ -353,8 +366,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-05T19:07:48+08:00">
-                2021-07-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-11T11:37:06+08:00">
+                2021-08-11
               </time>
             
 
@@ -376,8 +389,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -412,7 +425,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  587
+                  2.7k
                 </span>
               
 
@@ -428,7 +441,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2 minute 
+                  11 minute 
                 </span>
               
             </div>
@@ -449,23 +462,309 @@
       
 
       
-        <h2 id="文件路径"><a href="#文件路径" class="headerlink" title="文件路径"></a>文件路径</h2><h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><p>   文件在硬盘上<strong>真正存在</strong>的路径。</p>
-<p>​     如:/etc/init/  (看到/开头就是liunx的绝对路径了)</p>
-<p>​        C:\Users\Admin.android\avd （看到盘符就绝对是WINDOWS绝对路径了)</p>
-<h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><span id="more"></span>
+        <h2 id="后端基础PHP—表单验证"><a href="#后端基础PHP—表单验证" class="headerlink" title="后端基础PHP—表单验证"></a>后端基础PHP—表单验证</h2><h3 id="1-什么是表单"><a href="#1-什么是表单" class="headerlink" title="1.什么是表单"></a>1.什么是表单</h3><blockquote>
+<p>表单在网页中主要<strong>负责数据采集</strong>功能。</p>
+<p>一个表单有<strong>三个基本组成部分</strong>：</p>
+<p><strong>表单标签</strong>：这里面包含了处理表单数据所用CGI程序的URL以及数据提交到服务器的方法。</p>
+<p><strong>表单域</strong>：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。</p>
+<p><strong>表单按钮</strong>：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的CGI脚本或者取消输入，还可以用表单按钮来控制其他定义了处理脚本的处理工作。</p>
+<span id="more"></span>
+</blockquote>
+<p>使用场景：</p>
+<p><strong>登录框 搜索框 留言框 上传框</strong>……（各种框）</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://image.3001.net/images/20210623/1624438454_60d2f6b6405b378f2606d.png!small?1624438452911" alt="1624438454_60d2f6b6405b378f2606d.png!small?1624438452911"></th>
+<th><img src="https://image.3001.net/images/20210623/1624438465_60d2f6c12dae5263df296.png!small?1624438463812" alt="1624438465_60d2f6c12dae5263df296.png!small?1624438463812"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-如何创建一个表单"><a href="#2-如何创建一个表单" class="headerlink" title="2.如何创建一个表单"></a>2.如何创建一个表单</h3><blockquote>
+<p><strong>表单标签</strong>： <form action="URL" method="GET/POST"></form></p>
+<p><strong>表单域</strong>：即表单组件，主要有 文本框、密码框、隐藏域、复选框、单选框、文件上传框 多行文本框(文本域) 下拉选择框 ……</p>
+<p><strong>表单按钮</strong>： 提交按钮 复位按钮 一般按钮</p>
+</blockquote>
+<p><img src="https://image.3001.net/images/20210623/1624441055_60d300dfa6f3e4754ea6a.png!small?1624441056111" alt="1624441055_60d300dfa6f3e4754ea6a.png!small?1624441056111"></p>
+<h3 id="3-PHP和数据库交互"><a href="#3-PHP和数据库交互" class="headerlink" title="3.PHP和数据库交互"></a>3.PHP和数据库交互</h3><blockquote>
+<p>PHP如何实现人机交互，用户如何才能把自己写的东西给PHP PHP如何接收？</p>
+<p><strong>提交使用的就是表单</strong></p>
+<p>接收分为<strong>三种</strong></p>
+<p><strong>$_GET</strong> //接收GET传参</p>
+<p><strong>$_POST</strong>//接收POST传参</p>
+<p><strong>$_REQUEST</strong>//接收POST 和 GET传参</p>
+<p>数组如何命名**$cars=array(“Volvo”,”BMW”,”Toyota”);**</p>
+</blockquote>
+<p><strong>表单实际上做到的是将数据提交到后端脚本，然后后端脚本接受后进行处理</strong>。</p>
+<p>我们这里说的是<strong>PHP和mysql数据库</strong>交互：</p>
+<blockquote>
+<p>我们会用到一个PHP的扩展mysqli （不用担心，这是自带的插件，我们可以理解为是一套函数就行了） <strong>连接数据库</strong>:mysqli_connect(‘127.0.0.1’,’root’,’root’,’3_9’) (连接地址,连接账户,连接密码,连接数据库）</p>
+<p><strong>执行数据库语句</strong>：mysqli_query($conn,$sql)  （数据库连接函数，执行的SQL语句）</p>
+<p>通过数据库查询语句<strong>执行后得到的数据是一个对象</strong>，</p>
+<p>我们需要<strong>将对象转化为数组</strong></p>
+<p>从结果<strong>集取所有对象变为数组 mysqli_fetch_array($result)</strong> （执行数据库获得的结果集）</p>
+<p><img src="https://image.3001.net/images/20210623/1624450284_60d324ec5bc6aa512727d.png!small?1624450283323" alt="1624450284_60d324ec5bc6aa512727d.png!small?1624450283323"></p>
+<p>数据库基础结构：</p>
+<p><strong>库 表 字段 数据</strong>=&gt; 库就是仓库 表就如同xls表，字段就是表头，数据就是内容</p>
+</blockquote>
+<h3 id="4-实战"><a href="#4-实战" class="headerlink" title="4.实战"></a>4.实战</h3><blockquote>
+<p>描述：写一个登陆表单，并实现其注册 + 登录功能。</p>
+<p>2、注册和登录功能都必须有</p>
+<p>提示：     登录成功后需要给回显</p>
+</blockquote>
+<p>\1) 在Phpstudy的<strong>根目录</strong>(一般在Phpstudy的WWW目录)创建 <strong>login.php和register.php</strong></p>
+<p><img src="https://image.3001.net/images/20210624/1624528657_60d4571133038ff0d55ac.png!small?1624528656766" alt="1624528657_60d4571133038ff0d55ac.png!small?1624528656766"></p>
+<p>\2) <strong>创建自己的库，表，字段，数据</strong>。可以用<strong>MySQL-Front</strong></p>
+<p><strong>3) 代码</strong></p>
+<p><strong>login.php：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;登录网页&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;h1&gt;欢迎来到登陆界面! &lt;/h1&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form name=&quot;login&quot; action=&quot;login.php&quot; method=&quot;post&quot;&gt;</span><br><span class="line">        用户名:&lt;p&gt;&lt;input type=text name=&quot;name&quot;&gt;&lt;/p&gt;</span><br><span class="line">        密码:&lt;p&gt;&lt;input type=password name=&quot;password&quot;&gt;&lt;/p&gt;</span><br><span class="line">        &lt;input type=&quot;submit&quot;  name=&quot;submit&quot; value=&quot;登录&quot; &gt;</span><br><span class="line">    &lt;p&gt;还没有账号?请去&lt;a href=&quot;./register.php&quot;&gt;注册账号&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">@$a = $_POST[&#x27;name&#x27;];//&#x27;@&#x27;清除报错信息</span><br><span class="line">@$b = $_POST[&#x27;password&#x27;]; //获取表单数据</span><br><span class="line">$c = mysqli_connect(&#x27;127.0.0.1&#x27;,&#x27;root&#x27;,&#x27;root&#x27;,&#x27;txtx&#x27;); //链接数据库</span><br><span class="line">$s =&quot;select*from wlb where username=&#x27;$a&#x27; and password=&#x27;$b&#x27;&quot;; //查询数据库记录</span><br><span class="line">$result = mysqli_query($c,$s); //执行函数</span><br><span class="line">$d = mysqli_fetch_array($result);  //从结果集中取得一行作为关联数组</span><br><span class="line">if (empty($_POST[&#x27;name&#x27;]) || empty($_POST[&#x27;password&#x27;])) &#123;</span><br><span class="line">    die(&#x27;用户名或密码为空&#x27;);</span><br><span class="line">    &#125; //判断数据是否为空数据</span><br><span class="line">if</span><br><span class="line"> ($a == $d[&#x27;username&#x27;] and $b == $d[&#x27;password&#x27;]) //比对数据库数据并判断</span><br><span class="line">&#123;</span><br><span class="line">    echo $a.&#x27;,欢迎回来 &#x27;; </span><br><span class="line">    exit;</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">echo&quot;登录失败，用户名不存在或密码错误&quot;;</span><br><span class="line">&#125; </span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
-<p>   自己相对与目标位置。</p>
-<p>假设 你要引入文件的页面名称为test.htm,它存在叫www的文件夹里（绝对路径D:/wamp/www/test.htm）</p>
-<p>那么引用同时存在www文件夹里的“icon.jpg”文件（绝对路径D:/wamp/www/icon.jpg)</p>
-<p>同一目录下相对路径icon.jpg （./icon.jpg  ../）</p>
-<p>如果文件“icon.jpg”存在img文文件夹中（绝对路径D:/wamp/www/img/icon.jpg),那么相对路径./img/icon.jpg。</p>
-<h2 id="查看系统文件目录"><a href="#查看系统文件目录" class="headerlink" title="查看系统文件目录"></a>查看系统文件目录</h2><p>登录系统后在命令窗输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls /</span><br></pre></td></tr></table></figure>
+<p><strong>register.php：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;用户注册页面&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;注册页面&lt;/h1&gt;</span><br><span class="line">&lt;form action=&quot;register.php&quot; method=&quot;post&quot;&gt;</span><br><span class="line">&lt;p&gt;用户名：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;密 码： &lt;input type=&quot;password&quot; name=&quot;password&quot; &gt;&lt;/p&gt;</span><br><span class="line">&lt;input  type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;注册&quot;  &gt;</span><br><span class="line">&lt;p&gt;已有账号？请前往&lt;a href=&quot;./login.php&quot;&gt;登录&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;	 </span><br><span class="line">   </span><br><span class="line">&lt;?php@$name=$_POST[&#x27;name&#x27;];@$password=$_POST[&#x27;password&#x27;]; //获取表单数据$conn = mysqli_connect(&#x27;127.0.0.1&#x27;,&#x27;root&#x27;,&#x27;root&#x27;,&#x27;txtx&#x27;); //链接数据库$sql=&quot;select *from wlb where username=&#x27;$name&#x27;&quot;;$result = mysqli_query($conn,$sql); //执行函数$fetch = mysqli_fetch_array($result); if (!isset($_POST[&#x27;name&#x27;]) || !isset($_POST[&#x27;password&#x27;])) &#123;die(&#x27;缺少用户名密码&#x27;); &#125;if (empty($_POST[&#x27;name&#x27;]) || empty($_POST[&#x27;password&#x27;])) &#123;die(&#x27;用户名或密码为空&#x27;);&#125; //判断数据是否为空数据if($fetch[&#x27;username&#x27;]==$name)&#123;die(&#x27;该用户已注册&#x27;);&#125;else&#123;$insert=&quot;insert into wlb(username,password) values(&#x27;$name&#x27;,&#x27;$password&#x27;)&quot;;//往数据库插入表单数据mysqli_query($conn,$insert);echo &quot;注册成功&quot;;&#125;?&gt;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://image.3001.net/images/20210525/1621945396_60acec34a72df81d3def8.png!small?1621945395271" alt="1621945396_60acec34a72df81d3def8.png!small?1621945395271"></p>
-<p>树形结构图</p>
-<p><img src="https://image.3001.net/images/20210525/1621945418_60acec4a3ccfce64ffbde.png!small?1621945416855" alt="1621945418_60acec4a3ccfce64ffbde.png!small?1621945416855"></p>
-<h3 id="主要目录解析："><a href="#主要目录解析：" class="headerlink" title="主要目录解析："></a>主要目录解析：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">1./bin基础系统所需要的命令位于此目录，例如:ls, mount,cp, mkdir等等；这个目录中的文件都是可执行的，一般的用户都可以使用。2./boot包含Linux内核及系统引导程序所需要的文件,包括连接文件以及镜像文件。</span><br><span class="line"></span><br><span class="line">3./dev设备文件存储目录,这些不是常规文件,而是指系统上的各种硬件设备,包括硬盘驱动器</span><br><span class="line"></span><br><span class="line">4./etc存放系统程序或者一般工具的配置文件,配置文件会影响系统所有用户的系统环境。</span><br><span class="line"></span><br><span class="line">5./home普通用户默认存放目录 Linux 是多用户环境，所以每一个用户都有一个只有自己可以访问的目录（当然管理员也可以访问）。</span><br><span class="line"></span><br><span class="line">6./lib库文件存放目录这里包含了系统程序所需要的所有共享库文件,其作用类似于Windows里的DLL文件。</span><br><span class="line"></span><br><span class="line">7./lost+found：一般情况下为空的，系统非法关机后，这里就存放一些文件</span><br><span class="line"></span><br><span class="line">8./media即插即用型存储设备的挂载点自动在这个目录下创建</span><br><span class="line"></span><br><span class="line">9./mnt这个目录一般是用于存放挂载储存设备的挂载目录的</span><br><span class="line"></span><br><span class="line">10./opt表示的是可选择的意思，有些软件包也会被安装在这里，也就是自定义软件包。这个 目录包含所有默认系统安装之外的软件和添加的包。</span><br></pre></td></tr></table></figure>
+<p><strong>4)验证效果:</strong></p>
+<p><strong>进入登录页面</strong></p>
+<table>
+<thead>
+<tr>
+<th>输入正确的账号密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624529846_60d45bb63da0302387c4e.png!small?1624529845333" alt="1624529846_60d45bb63da0302387c4e.png!small?1624529845333"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>输入错误的账号密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624529943_60d45c17734543437f575.png!small?1624529942612" alt="1624529943_60d45c17734543437f575.png!small?1624529942612"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>输入空的账号或密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624530250_60d45d4a6a7de3ac4faa5.png!small?1624530249488" alt="1624530250_60d45d4a6a7de3ac4faa5.png!small?1624530249488"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>进入注册界面</strong></p>
+<table>
+<thead>
+<tr>
+<th>注册<strong>非空且账号不为wlb</strong>的 账号和密码:</th>
+<th><img src="https://image.3001.net/images/20210624/1624531757_60d4632d620bf53af1639.png!small?1624531756343" alt="1624531757_60d4632d620bf53af1639.png!small?1624531756343"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>注册的数据成功进入数据库</th>
+<th><img src="https://image.3001.net/images/20210624/1624544316_60d4943cb360b417bbd2b.png!small?1624544316102" alt="1624544316_60d4943cb360b417bbd2b.png!small?1624544316102"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>若注册空的账号或密码</th>
+<th><img src="https://image.3001.net/images/20210624/1624544596_60d495544ee6d317aa949.png!small?1624544595651" alt="1624544596_60d495544ee6d317aa949.png!small?1624544595651"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>若注册相同的用户名</th>
+<th><img src="https://image.3001.net/images/20210624/1624544731_60d495dbdd6c44ea96595.png!small?1624544731388" alt="1624544731_60d495dbdd6c44ea96595.png!small?1624544731388"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>用新的账号密码登录</strong></p>
+<table>
+<thead>
+<tr>
+<th><img src="https://image.3001.net/images/20210624/1624545148_60d4977c5062aaec45202.png!small?1624545147472" alt="1624545148_60d4977c5062aaec45202.png!small?1624545147472"></th>
+<th><img src="https://image.3001.net/images/20210624/1624545156_60d497844c41a348ba64a.png!small?1624545155462" alt="1624545156_60d497844c41a348ba64a.png!small?1624545155462"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="PHP后端基础—正则表达式"><a href="#PHP后端基础—正则表达式" class="headerlink" title="PHP后端基础—正则表达式"></a>PHP后端基础—正则表达式</h2><h3 id="1-初识别SQL注入"><a href="#1-初识别SQL注入" class="headerlink" title="1.初识别SQL注入"></a>1.初识别SQL注入</h3><p>登录代码<strong>后端的php代码</strong></p>
+<p><img src="https://image.3001.net/images/20210625/1624598320_60d56730f08e6ffb24be5.png!small?1624598321664" alt="1624598320_60d56730f08e6ffb24be5.png!small?1624598321664">发现在登录密码框里面写 ‘or 1=1#   <strong>也能登录成功</strong></p>
+<p><strong>什么是注入：</strong></p>
+<blockquote>
+<p>注入攻击的本质，是<strong>把用户输入的数据当做代码执行</strong>。</p>
+<p>两个关键条件：</p>
+<p>第一个 <strong>是用户能够控制输入</strong> </p>
+<p>第二个 <strong>是原本程序要执行的代码，拼接了用户输入的数据然后进行执行</strong> </p>
+</blockquote>
+<p><strong>SQL注入：</strong></p>
+<blockquote>
+<p>户输入的数据当做<strong>SQL语句</strong>的代码执行</p>
+</blockquote>
+<p><strong>常见的防护软件主流核心：</strong></p>
+<blockquote>
+<p><strong>通过正则来过滤传参</strong></p>
+</blockquote>
+<h3 id="2-什么是正则表达式？"><a href="#2-什么是正则表达式？" class="headerlink" title="2.什么是正则表达式？"></a>2.什么是正则表达式？</h3><blockquote>
+<p><strong>正则表达式</strong>（英语：Regular Expression，常简写为regex、regexp或RE），又称<strong>正则表示式</strong>、<strong>正则表示法</strong>、<strong>规则表达式</strong>、<strong>常规表示法</strong>，是计算机科学的一个概念。正则表达式使用<strong>单个字符串来描述、匹配一系列匹配某个句法规则的字符串</strong>。在很多文本编辑器里，正则表达式通常被用来<strong>检索、替换那些匹配某个模式的文本</strong>。</p>
+</blockquote>
+<p>正则表达式的<strong>特点</strong>：</p>
+<blockquote>
+<p>\1. 灵活性、逻辑性和功能性非常强；</p>
+<p>\2. 可以迅速地用极简单的方式达到字符串的复杂控制。</p>
+<p>\3. 对于刚接触的人来说，比较晦涩难懂。</p>
+</blockquote>
+<p>正则表达式<strong>用途</strong>：</p>
+<blockquote>
+<p><strong>判断字符串是否符合某一规则</strong>（判断是否符合手机号、邮箱规则）。</p>
+<p><strong>从一个字符串中找出符合规则的所有子字符串</strong>（取HTML标签名）。</p>
+</blockquote>
+<p><strong>3.PHP中的正则表达式：</strong></p>
+<p><strong>注：HP中使用正则规则一定要加代表正则的标识/ /</strong></p>
+<blockquote>
+<p><strong>preg_match_all</strong>(正则表达式、匹配字符串、匹配到的东西放入数组)</p>
+<p>返回<strong>匹配到的次数</strong> </p>
+<p><strong>preg_replace</strong> (正则表达式、替换成什么、匹配字符串)</p>
+<p>返回<strong>替换后的结果</strong> </p>
+<p>替换<strong>支持数组</strong>格式</p>
+</blockquote>
+<h3 id="4-正则表达式的语法"><a href="#4-正则表达式的语法" class="headerlink" title="4.正则表达式的语法"></a>4.正则表达式的语法</h3><p><strong>字符：</strong></p>
+<blockquote>
+<p>常用<strong>转义字符</strong>：</p>
+<p>数字：\d 非数字：\D</p>
+<p>空白字符（空格、制表符、换页符等）：\s 非空白字符：\S</p>
+<p>单词字符（26个英文字母+数字+下划线_）：\w 非单词字符：\W</p>
+</blockquote>
+<blockquote>
+<p><strong>自定义字符结合</strong></p>
+<p><strong>字符集合</strong>：[单个字符或字符区间]，用于<strong>匹配集合内字符.</strong></p>
+<p>如：</p>
+<p>**[a-z]**表示a-z这26个小写字母</p>
+<p>**[0-9a-z]**表示0-9这10个数字和a-z26个小写字母</p>
+<p>**[135a-h]**表示包含数字1，3，5和字母a-h这8个字母</p>
+<p>注意：两个不同字符段间请<strong>勿使用,隔开</strong>。</p>
+<p><strong>非集</strong>：[^单个字符或字符区间]，用于<strong>匹配非集合内字符</strong>。</p>
+<p>如：</p>
+<p>**[^0-9]**表示匹配所有非数字字符。</p>
+<p>**[^a-zA-Z]**表示匹配所以非字母字符。</p>
+</blockquote>
+<p><strong>关键字：</strong></p>
+<blockquote>
+<p>()    =&gt; 和数学一样很像，代表这是一个整体。</p>
+<p>^    =&gt;  匹配输入字符串的开始位置</p>
+<p>$    =&gt; 匹配输入字符串的结尾位置</p>
+<p>.     =&gt; 通配符[代表任意字符][不匹配换行]</p>
+<p>*     =&gt; 匹配0次或者多次</p>
+<p>+    =&gt; 匹配1次或者多次</p>
+<p>\     =&gt; 转义字符<br>|      =&gt;  两项之间的一个选择。</p>
+</blockquote>
+<p><strong>限定符加修饰符：</strong></p>
+<blockquote>
+<p><strong>限定符：</strong> </p>
+<p>{n}   =&gt; 例如:  0{8}   意思是指 只有连起来8个0才会被匹配</p>
+<p>{n,}   =&gt;例如： 0{2,}   意思是 只要有2个0及其以上的就会被匹配</p>
+<p>{n,m}  =&gt;  例如： 0{2,4} 意思是最少匹配2个0，最多匹配4个0</p>
+<p>注：被匹配时，<strong>默认匹配最多的次数</strong></p>
+<p><strong>修饰符：</strong></p>
+<p>/i   =&gt; <strong>不区分大小写</strong>  </p>
+<p>/A   =&gt; 匹配规则必须<strong>从头开始匹配</strong></p>
+<p>/s   =&gt; .将<strong>匹配一切字符</strong></p>
+<p>/x   =&gt; 正则表达式中的<strong>空白字符会被忽略</strong> </p>
+</blockquote>
+<h3 id="5-实战正则"><a href="#5-实战正则" class="headerlink" title="5.实战正则"></a>5.实战正则</h3><p><strong>代码段：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php  </span><br><span class="line">$key=&#x27;flag&#123;********************************&#125;&#x27;; </span><br><span class="line">$Regular= preg_match(&quot;/zkaq.*key.&#123;2,9&#125;:\/.*\/(key*key)/i&quot;, trim($_GET[&quot;id&quot;]), $match); </span><br><span class="line">if( $Regular )&#123;  </span><br><span class="line">  die(&#x27;key: &#x27;.$key); </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<p><strong>解题思路：</strong></p>
+<blockquote>
+<p>代码中当 <strong>if 语句</strong>中的 <strong>$Regular</strong> 为真时，<strong>结束运行并输出字符key:和变量key</strong>，从而<strong>得到flag</strong><br><strong>preg_match()函数：</strong>按正则表达式去匹配字符串，<strong>匹配到一次就停止并返回1，没有匹配到则返回0</strong>；<br>trim（）函数，<strong>去除字符串两端空白符</strong>；</p>
+</blockquote>
+<p><strong>正则解析：</strong></p>
+<table>
+<thead>
+<tr>
+<th>1.</th>
+<th>zkaq ==&gt;zkaq</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2.</td>
+<td>.* ==&gt;除换行符外匹配任意字符0次或多次(可选0次 直接忽略)</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>key ==&gt;key</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>.{2,9} ==&gt;除换行符外匹配任意字符最少2次最多9次(可选字符2和1)</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>: ==&gt;:</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>/ ==&gt;转义斜杠(/)</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>( ) ==&gt;代表一个整体</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>key* ==&gt;ke y*匹配0次或多次</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>/i ==&gt;不区分大小写</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>最后结果 ==&gt;zkaqkey21://kekey</td>
+</tr>
+</tbody></table>
+<p>将结果GET传参赋值给参数id,得到FLAG。</p>
+<p>分享一个掌控安全的0基础福利编程课程：</p>
+<p>====》先有了基础才能后面才能学的更快哦。</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1oVdSaSwWSoo0u0ASsNPhcA">https://pan.baidu.com/s/1oVdSaSwWSoo0u0ASsNPhcA</a><br>提取码：TXTX</p>
 
       
     </div>
@@ -483,7 +782,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Kali-linux/" rel="tag"># Kali linux</a>
+            <a href="/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0/" rel="tag"># 渗透测试学习</a>
           
         </div>
       
@@ -496,8 +795,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/07/05/G1CTF2021-SSTI/" rel="next" title="G1CTF2021 SSTI">
-                <i class="fa fa-chevron-left"></i> G1CTF2021 SSTI
+              <a href="/2021/08/11/CTF-MISC-%E4%B8%80/" rel="next" title="BUUCTF MISC 一">
+                <i class="fa fa-chevron-left"></i> BUUCTF MISC 一
               </a>
             
           </div>
@@ -505,10 +804,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/07/05/VMware%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E9%97%AE%E9%A2%98/" rel="prev" title="VMware无法上网问题">
-                VMware无法上网问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -672,7 +967,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84"><span class="nav-text">文件路径</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-text">绝对路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-text">相对路径</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95"><span class="nav-text">查看系统文件目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95%E8%A7%A3%E6%9E%90%EF%BC%9A"><span class="nav-text">主要目录解析：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80PHP%E2%80%94%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81"><span class="nav-text">后端基础PHP—表单验证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E8%A1%A8%E5%8D%95"><span class="nav-text">1.什么是表单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%A1%A8%E5%8D%95"><span class="nav-text">2.如何创建一个表单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-PHP%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%A4%E4%BA%92"><span class="nav-text">3.PHP和数据库交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%AE%9E%E6%88%98"><span class="nav-text">4.实战</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80%E2%80%94%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-text">PHP后端基础—正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%9D%E8%AF%86%E5%88%ABSQL%E6%B3%A8%E5%85%A5"><span class="nav-text">1.初识别SQL注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%9F"><span class="nav-text">2.什么是正则表达式？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="nav-text">4.正则表达式的语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%AE%9E%E6%88%98%E6%AD%A3%E5%88%99"><span class="nav-text">5.实战正则</span></a></li></ol></li></ol></div>
             
 
           </div>
