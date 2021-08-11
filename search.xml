@@ -249,6 +249,7 @@
 ]]></content>
       <categories>
         <category>CTF</category>
+        <category>GXYCTF 2019</category>
       </categories>
       <tags>
         <tag>GXYCTF 2019</tag>
@@ -282,6 +283,7 @@
 ]]></content>
       <categories>
         <category>CTF</category>
+        <category>G1CTF2021</category>
       </categories>
       <tags>
         <tag>G1CTF2021</tag>
@@ -314,6 +316,7 @@
 ]]></content>
       <categories>
         <category>CTF</category>
+        <category>G1CTF2021</category>
       </categories>
       <tags>
         <tag>G1CTF2021</tag>
@@ -357,6 +360,7 @@
 ]]></content>
       <categories>
         <category>CTF</category>
+        <category>G1CTF2021</category>
       </categories>
       <tags>
         <tag>G1CTF2021</tag>
@@ -383,6 +387,7 @@
 ]]></content>
       <categories>
         <category>CTF</category>
+        <category>G1CTF2021</category>
       </categories>
       <tags>
         <tag>G1CTF2021</tag>
@@ -502,7 +507,8 @@
 <p>   <strong>看到URL上有个Post传参，然后进行注入测试,没想到得到个FLAG</strong><img src="https://image.3001.net/images/20210611/1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852" alt="1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852"></p>
 ]]></content>
       <categories>
-        <category>ctf</category>
+        <category>CTF</category>
+        <category>Hacker101 CTF</category>
       </categories>
       <tags>
         <tag>Hacker101 CTF</tag>
@@ -745,6 +751,7 @@
 ]]></content>
       <categories>
         <category>CTF</category>
+        <category>BUUCTF</category>
       </categories>
       <tags>
         <tag>BUU MISC</tag>
