@@ -106,8 +106,13 @@
 <meta property="og:image" content="https://image.3001.net/images/20210611/1623409412_60c34304561d67a867af7.png!small?1623409410794">
 <meta property="og:image" content="https://image.3001.net/images/20210611/1623409423_60c3430fa570b171dde6e.png!small?1623409422106">
 <meta property="og:image" content="https://image.3001.net/images/20210611/1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852">
+<meta property="og:image" content="https://image.3001.net/images/20210819/1629368618_611e312aa006520200114.png!small">
+<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/QQ截图20210818215331.png">
+<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/题目/Snipaste_2021-08-19_11-12-58.png">
+<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/1.png">
+<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/Snipaste_2021-08-19_11-38-31.png">
 <meta property="article:published_time" content="2021-07-10T14:25:08.000Z">
-<meta property="article:modified_time" content="2021-08-11T08:35:28.850Z">
+<meta property="article:modified_time" content="2021-08-19T10:32:44.686Z">
 <meta property="article:author" content="teener666">
 <meta property="article:tag" content="Hacker101 CTF">
 <meta name="twitter:card" content="summary">
@@ -438,7 +443,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  399
+                  650
                 </span>
               
 
@@ -454,7 +459,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 minute 
+                  2 minute 
                 </span>
               
             </div>
@@ -522,6 +527,35 @@
 <p><img src="https://image.3001.net/images/20210611/1623409412_60c34304561d67a867af7.png!small?1623409410794" alt="1623409412_60c34304561d67a867af7.png!small?1623409410794"></p>
 <p><img src="https://image.3001.net/images/20210611/1623409423_60c3430fa570b171dde6e.png!small?1623409422106" alt="1623409423_60c3430fa570b171dde6e.png!small?1623409422106"></p>
 <p>   <strong>看到URL上有个Post传参，然后进行注入测试,没想到得到个FLAG</strong><img src="https://image.3001.net/images/20210611/1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852" alt="1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852"></p>
+<h2 id="Photo-Gallery"><a href="#Photo-Gallery" class="headerlink" title="Photo Gallery"></a>Photo Gallery</h2><h3 id="FLAG0-1"><a href="#FLAG0-1" class="headerlink" title="FLAG0"></a>FLAG0</h3><p>查看网页源码发现图片都是以  “<strong>fetch?id=</strong> “  加载的</p>
+<p>简单测试 发现存在SQL注入</p>
+<p>直接上 Salmap 得到f lag</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u &quot;http://35.227.24.107/d7f2b886cc/fetch?id=1&quot; --method=GET --dump -D level5 -T photos -p id --code=200 --ignore-code=500 --skip-waf --threads=2 -o</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://image.3001.net/images/20210819/1629368618_611e312aa006520200114.png!small" alt="img"></p>
+<h2 id="Cody’s-First-Blog"><a href="#Cody’s-First-Blog" class="headerlink" title="Cody’s First Blog"></a>Cody’s First Blog</h2><h3 id="FLAG0-2"><a href="#FLAG0-2" class="headerlink" title="FLAG0"></a>FLAG0</h3><p>该博客构建用了 PHP语言，并有个评论发表区域，</p>
+<p>试着写上代码提交</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php echo phpinfo();?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>得到flag</p>
+<p><img src="/.io//Users\ASUS\Desktop\QQ截图20210818215331.png" alt="QQ截图20210818215331"></p>
+<h3 id="FLAG1-1"><a href="#FLAG1-1" class="headerlink" title="FLAG1"></a>FLAG1</h3><p>查看主页网站源码发现代码段</p>
+<p><img src="/.io//Users\ASUS\Desktop\题目\Snipaste_2021-08-19_11-12-58.png" alt="Snipaste_2021-08-19_11-12-58"></p>
+<p>试着直接在 URL 后面加上 代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://34.94.3.143/fced531d14/?page=admin.auth.inc</span><br></pre></td></tr></table></figure>
+
+<p>发现一个登录框</p>
+<p><img src="/.io//Users\ASUS\Desktop\1.png" alt="1"></p>
+<p>先试着输入弱密码  无果</p>
+<p>然后输入万能密码  无果</p>
+<p>然后 爆破 无果</p>
+<p>可能思路错了</p>
+<p>返回主页面发现这里用了  include()函数的功能  </p>
+<p>并且刚刚的参数  <strong>?page=admin.auth.inc</strong>  是登录用的 PHP</p>
+<p>然后试着改为 <strong>?page=admin.inc</strong>  </p>
+<p>发现就可以 绕过了 登录 直接进入 Admin页面</p>
+<p>得到flag</p>
+<p><img src="/.io//Users\ASUS\Desktop\Snipaste_2021-08-19_11-38-31.png" alt="Snipaste_2021-08-19_11-38-31"></p>
 
       
     </div>
@@ -728,7 +762,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hacker101-CTF-%E8%83%8C%E6%99%AF"><span class="nav-text">Hacker101 CTF 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-little-something-to-get-you-started"><span class="nav-text">A little something to get you started</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Micro-CMS-v1"><span class="nav-text">Micro-CMS v1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG-0"><span class="nav-text">FLAG 0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG1"><span class="nav-text">FLAG1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG2"><span class="nav-text">FLAG2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG3"><span class="nav-text">FLAG3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Micro-CMS-v2"><span class="nav-text">Micro-CMS v2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG0-%E3%80%8B%E7%BB%95%E8%BF%87%E7%99%BB%E5%BD%95"><span class="nav-text">FLAG0&#x3D;&#x3D;》绕过登录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG1-%E3%80%8BPOST%E4%BC%A0%E5%8F%82"><span class="nav-text">FLAG1&#x3D;&#x3D;》POST传参</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG2-%E3%80%8B%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4"><span class="nav-text">FLAG2&#x3D;&#x3D;》密码爆破</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Encrypted-Pastebin"><span class="nav-text">Encrypted Pastebin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG0"><span class="nav-text">FLAG0</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hacker101-CTF-%E8%83%8C%E6%99%AF"><span class="nav-text">Hacker101 CTF 背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-little-something-to-get-you-started"><span class="nav-text">A little something to get you started</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Micro-CMS-v1"><span class="nav-text">Micro-CMS v1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG-0"><span class="nav-text">FLAG 0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG1"><span class="nav-text">FLAG1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG2"><span class="nav-text">FLAG2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG3"><span class="nav-text">FLAG3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Micro-CMS-v2"><span class="nav-text">Micro-CMS v2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG0-%E3%80%8B%E7%BB%95%E8%BF%87%E7%99%BB%E5%BD%95"><span class="nav-text">FLAG0&#x3D;&#x3D;》绕过登录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG1-%E3%80%8BPOST%E4%BC%A0%E5%8F%82"><span class="nav-text">FLAG1&#x3D;&#x3D;》POST传参</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG2-%E3%80%8B%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4"><span class="nav-text">FLAG2&#x3D;&#x3D;》密码爆破</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Encrypted-Pastebin"><span class="nav-text">Encrypted Pastebin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG0"><span class="nav-text">FLAG0</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Photo-Gallery"><span class="nav-text">Photo Gallery</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG0-1"><span class="nav-text">FLAG0</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cody%E2%80%99s-First-Blog"><span class="nav-text">Cody’s First Blog</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG0-2"><span class="nav-text">FLAG0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FLAG1-1"><span class="nav-text">FLAG1</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -762,7 +796,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">11.5k</span>
+    <span title="Site words total count">11.8k</span>
   
 </div>
 
