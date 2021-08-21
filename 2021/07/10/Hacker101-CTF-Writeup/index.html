@@ -106,13 +106,12 @@
 <meta property="og:image" content="https://image.3001.net/images/20210611/1623409412_60c34304561d67a867af7.png!small?1623409410794">
 <meta property="og:image" content="https://image.3001.net/images/20210611/1623409423_60c3430fa570b171dde6e.png!small?1623409422106">
 <meta property="og:image" content="https://image.3001.net/images/20210611/1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852">
-<meta property="og:image" content="https://image.3001.net/images/20210819/1629368618_611e312aa006520200114.png!small">
-<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/QQ截图20210818215331.png">
-<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/题目/Snipaste_2021-08-19_11-12-58.png">
-<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/1.png">
-<meta property="og:image" content="https://teener666.github.io/.io//Users/ASUS/Desktop/Snipaste_2021-08-19_11-38-31.png">
+<meta property="og:image" content="https://image.3001.net/images/20210819/1629368618_611e312aa006520200114.png!small?1629368619041">
+<meta property="og:image" content="https://image.3001.net/images/20210819/1629368627_611e31335c94c4cc4b163.png!small?1629368627779">
+<meta property="og:image" content="https://image.3001.net/images/20210819/1629368686_611e316ea13f942ac7cf4.png!small?1629368687075">
+<meta property="og:image" content="https://image.3001.net/images/20210819/1629368704_611e31807c6f3ed7f68f1.png!small?1629368704916">
 <meta property="article:published_time" content="2021-07-10T14:25:08.000Z">
-<meta property="article:modified_time" content="2021-08-19T10:32:44.686Z">
+<meta property="article:modified_time" content="2021-08-21T03:01:25.679Z">
 <meta property="article:author" content="teener666">
 <meta property="article:tag" content="Hacker101 CTF">
 <meta name="twitter:card" content="summary">
@@ -443,7 +442,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  650
+                  646
                 </span>
               
 
@@ -527,35 +526,34 @@
 <p><img src="https://image.3001.net/images/20210611/1623409412_60c34304561d67a867af7.png!small?1623409410794" alt="1623409412_60c34304561d67a867af7.png!small?1623409410794"></p>
 <p><img src="https://image.3001.net/images/20210611/1623409423_60c3430fa570b171dde6e.png!small?1623409422106" alt="1623409423_60c3430fa570b171dde6e.png!small?1623409422106"></p>
 <p>   <strong>看到URL上有个Post传参，然后进行注入测试,没想到得到个FLAG</strong><img src="https://image.3001.net/images/20210611/1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852" alt="1623409995_60c3454b60285b2dc5e2b.png!small?1623409993852"></p>
-<h2 id="Photo-Gallery"><a href="#Photo-Gallery" class="headerlink" title="Photo Gallery"></a>Photo Gallery</h2><h3 id="FLAG0-1"><a href="#FLAG0-1" class="headerlink" title="FLAG0"></a>FLAG0</h3><p>查看网页源码发现图片都是以  “<strong>fetch?id=</strong> “  加载的</p>
+<h2 id="Photo-Gallery"><a href="#Photo-Gallery" class="headerlink" title="Photo Gallery"></a>Photo Gallery</h2><h3 id="FLAG0-1"><a href="#FLAG0-1" class="headerlink" title="FLAG0"></a>FLAG0</h3><p>查看网页源码发现图片都是以 “<strong>fetch?id=</strong>“ 加载的</p>
 <p>简单测试 发现存在SQL注入</p>
-<p>直接上 Salmap 得到f lag</p>
+<p>直接上 Salmap</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u &quot;http://35.227.24.107/d7f2b886cc/fetch?id=1&quot; --method=GET --dump -D level5 -T photos -p id --code=200 --ignore-code=500 --skip-waf --threads=2 -o</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://image.3001.net/images/20210819/1629368618_611e312aa006520200114.png!small" alt="img"></p>
+<p><img src="https://image.3001.net/images/20210819/1629368618_611e312aa006520200114.png!small?1629368619041" alt="1629368618_611e312aa006520200114.png!small?1629368619041"></p>
 <h2 id="Cody’s-First-Blog"><a href="#Cody’s-First-Blog" class="headerlink" title="Cody’s First Blog"></a>Cody’s First Blog</h2><h3 id="FLAG0-2"><a href="#FLAG0-2" class="headerlink" title="FLAG0"></a>FLAG0</h3><p>该博客构建用了 PHP语言，并有个评论发表区域，</p>
 <p>试着写上代码提交</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php echo phpinfo();?&gt;</span><br></pre></td></tr></table></figure>
 
 <p>得到flag</p>
-<p><img src="/.io//Users\ASUS\Desktop\QQ截图20210818215331.png" alt="QQ截图20210818215331"></p>
+<p><img src="https://image.3001.net/images/20210819/1629368627_611e31335c94c4cc4b163.png!small?1629368627779" alt="1629368627_611e31335c94c4cc4b163.png!small?1629368627779"></p>
 <h3 id="FLAG1-1"><a href="#FLAG1-1" class="headerlink" title="FLAG1"></a>FLAG1</h3><p>查看主页网站源码发现代码段</p>
-<p><img src="/.io//Users\ASUS\Desktop\题目\Snipaste_2021-08-19_11-12-58.png" alt="Snipaste_2021-08-19_11-12-58"></p>
 <p>试着直接在 URL 后面加上 代码</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://34.94.3.143/fced531d14/?page=admin.auth.inc</span><br></pre></td></tr></table></figure>
 
 <p>发现一个登录框</p>
-<p><img src="/.io//Users\ASUS\Desktop\1.png" alt="1"></p>
-<p>先试着输入弱密码  无果</p>
-<p>然后输入万能密码  无果</p>
+<p><img src="https://image.3001.net/images/20210819/1629368686_611e316ea13f942ac7cf4.png!small?1629368687075" alt="1629368686_611e316ea13f942ac7cf4.png!small?1629368687075"></p>
+<p>先试着输入弱密码 无果</p>
+<p>然后输入万能密码 无果</p>
 <p>然后 爆破 无果</p>
 <p>可能思路错了</p>
-<p>返回主页面发现这里用了  include()函数的功能  </p>
-<p>并且刚刚的参数  <strong>?page=admin.auth.inc</strong>  是登录用的 PHP</p>
-<p>然后试着改为 <strong>?page=admin.inc</strong>  </p>
+<p>返回主页面发现这里用了 include()函数的功能</p>
+<p>并且刚刚的参数 <strong>?page=admin.auth.inc</strong>是登录用的 PHP</p>
+<p>然后试着改为 <strong>?page=admin.inc</strong></p>
 <p>发现就可以 绕过了 登录 直接进入 Admin页面</p>
 <p>得到flag</p>
-<p><img src="/.io//Users\ASUS\Desktop\Snipaste_2021-08-19_11-38-31.png" alt="Snipaste_2021-08-19_11-38-31"></p>
+<p><img src="https://image.3001.net/images/20210819/1629368704_611e31807c6f3ed7f68f1.png!small?1629368704916" alt="1629368704_611e31807c6f3ed7f68f1.png!small?1629368704916"></p>
 
       
     </div>
@@ -679,7 +677,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -690,7 +688,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -701,7 +699,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -796,7 +794,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">11.8k</span>
+    <span title="Site words total count">13.6k</span>
   
 </div>
 
