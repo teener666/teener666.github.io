@@ -1157,7 +1157,7 @@ echo base64_encode($real_flag);
     <url>/2021/08/29/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E7%AF%87/</url>
     <content><![CDATA[<p><img src="https://image.3001.net/images/20210708/1625737579_60e6c96b90a9a315c7890.png!small?1625737579288" alt="1625737579_60e6c96b90a9a315c7890.png!small?1625737579288"></p>
 <span id="more"></span>
-<h1>前言</h1>
+<h2 id="前言">前言</h2>
 <h3 id="信息收集的重要性">信息收集的重要性</h3>
 <blockquote>
 <p>进行渗透测试之前，<strong>最重要的一步就是信息收集</strong>。</p>
@@ -1174,7 +1174,7 @@ echo base64_encode($real_flag);
 通过<strong>第三方服务来间接获取目标网络相关信息</strong>，如通过Google、fofa等搜索引擎方式来搜集信息。</p>
 </blockquote>
 <p>这两种方式都有各自的优点和缺点,一般在渗透测试过程中，我们需要进行很多次的信息收集，同时也要运用不同的收集方式，才能<strong>保证信息收集的完整性</strong>。</p>
-<h1>收集什么信息</h1>
+<h2 id="收集什么信息">收集什么信息</h2>
 <blockquote>
 <p>1.Whois</p>
 <p>2.端口探测</p>
@@ -1185,7 +1185,7 @@ echo base64_encode($real_flag);
 <p>7.指纹识别</p>
 <p>8.内容敏感信息泄露</p>
 </blockquote>
-<h1>Whois</h1>
+<h2 id="Whois">Whois</h2>
 <blockquote>
 <p>Whois是用来<strong>查询互联网中域名的IP以及所有者等信息</strong>的传输协议。</p>
 <p>可以<strong>获取关键注册人的信息</strong>，包括注册商、所有者、邮箱、联系电话、域名状态、域名注册时间、域名到期时间、DNS服务器等。</p>
@@ -1235,7 +1235,7 @@ echo base64_encode($real_flag);
 <p><a href="http://whois.chinaz.com/reverse?ddlSearchMode=1">邮箱反查</a></p>
 <p><a href="http://whois.chinaz.com/reverse?ddlSearchMode=3">电话反查</a></p>
 </blockquote>
-<h1>端口探测</h1>
+<h2 id="端口探测">端口探测</h2>
 <blockquote>
 <p>端口是服务器和客户端<strong>交互的接口</strong>，一个端口对应一个不同的WEB网站。</p>
 </blockquote>
@@ -1265,7 +1265,7 @@ echo base64_encode($real_flag);
 <p><a href="https://tool.chinaz.com/port">站长之家</a></p>
 <p><a href="http://coolaf.com/tool/port">PostJson</a></p>
 </blockquote>
-<h1>子域名</h1>
+<h2 id="子域名">子域名</h2>
 <blockquote>
 <p><strong>子域名</strong>（或<strong>子域</strong>；英语：Subdomain）是在域名系统等级中，属于更高一层域的域。顶级域名下的二级域名或者三级甚至更多级的域名都属于子域名。</p>
 </blockquote>
@@ -1297,7 +1297,7 @@ echo base64_encode($real_flag);
 <blockquote>
 <p><a href="https://link.zhihu.com/?target=https%3A//crt.sh/">https://crt.sh/</a><a href="https://censys.io/">https://censys.io/</a></p>
 </blockquote>
-<h1>旁站</h1>
+<h2 id="旁站">旁站</h2>
 <blockquote>
 <p>旁站其实就是同IP的站点，一定和目标站点在<strong>同一个内网或者是同一台服务器</strong>。</p>
 </blockquote>
@@ -1308,13 +1308,13 @@ echo base64_encode($real_flag);
 <p><a href="https://www.webscan.cc/">https://www.webscan.cc/</a></p>
 <p><img src="https://image.3001.net/images/20210705/1625495948_60e3198ce851c5c70b997.png!small?1625495949154" alt="1625495948_60e3198ce851c5c70b997.png!small?1625495949154"></p>
 </blockquote>
-<h1>C段</h1>
+<h2 id="C段">C段</h2>
 <blockquote>
 <p>是和目标服务器ip处在同一个C段的其它服务器,可能是同一个内网，同一个公司。</p>
 </blockquote>
 <h3 id="在线平台：http-www-bug8-me-bing-bing-php">在线平台：<a href="http://www.bug8.me/bing/bing.php">http://www.bug8.me/bing/bing.php</a></h3>
 <h3 id="常用工具：webscancc，Nmap，K8">常用工具：webscancc，Nmap，K8</h3>
-<h1>目录扫描</h1>
+<h2 id="目录扫描">目录扫描</h2>
 <blockquote>
 <p>由于发布网站时，服务器配置问题，导致目录浏览器能打开，从而引起信息泄露。</p>
 <p>用扫描器扫描目录，这时候需要一本强大的字典。</p>
@@ -1328,7 +1328,7 @@ echo base64_encode($real_flag);
 <p><strong>dirb</strong></p>
 <p><strong>wwwscan</strong></p>
 </blockquote>
-<h1>指纹识别</h1>
+<h2 id="指纹识别">指纹识别</h2>
 <blockquote>
 <p>识别CMS，寻找通杀漏洞,快速渗透目标；</p>
 </blockquote>
@@ -1338,7 +1338,7 @@ echo base64_encode($real_flag);
 <p><a href="http://finger.tidesec.com/">潮汐指纹</a></p>
 <p><a href="https://x.threatbook.cn/">微步社区</a></p>
 </blockquote>
-<h1>内容敏感信息泄露</h1>
+<h2 id="内容敏感信息泄露">内容敏感信息泄露</h2>
 <blockquote>
 <p>利用Google搜索相关信息并进行入侵的过程就叫做Google Hack。</p>
 </blockquote>
