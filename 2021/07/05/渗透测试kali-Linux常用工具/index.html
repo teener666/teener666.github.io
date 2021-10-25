@@ -82,12 +82,12 @@
 
 
 
-<meta name="description" content="kali Linux工具帮你评估 Web 服务器的安全性，并帮助你执行黑客渗透测试。 注意：这里不是所提及的所有工具都是开源的。">
+<meta name="description" content="kali Linux工具帮你评估 Web 服务器的安全性，并帮助你执行黑客渗透测试。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="渗透测试kali Linux常用工具">
 <meta property="og:url" content="https://teener666.github.io/2021/07/05/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95kali-Linux%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/index.html">
 <meta property="og:site_name" content="Teener666&#39;s blogs">
-<meta property="og:description" content="kali Linux工具帮你评估 Web 服务器的安全性，并帮助你执行黑客渗透测试。 注意：这里不是所提及的所有工具都是开源的。">
+<meta property="og:description" content="kali Linux工具帮你评估 Web 服务器的安全性，并帮助你执行黑客渗透测试。">
 <meta property="og:locale">
 <meta property="og:image" content="https://image.3001.net/images/20210521/1621571329_60a73701d9767251e4748.png!small">
 <meta property="og:image" content="https://image.3001.net/images/20210520/1621507756_60a63eac521c0abeb99bc.png!small?1621507755558">
@@ -103,7 +103,7 @@
 <meta property="og:image" content="https://image.3001.net/images/20210521/1621571845_60a7390565d22fd5ad546.png!small?1621571846484">
 <meta property="og:image" content="https://image.3001.net/images/20210521/1621573031_60a73da7e023739dc8878.png!small?1621573033546">
 <meta property="article:published_time" content="2021-07-05T03:09:48.000Z">
-<meta property="article:modified_time" content="2021-08-29T05:09:27.201Z">
+<meta property="article:modified_time" content="2021-10-25T09:22:31.704Z">
 <meta property="article:author" content="teener666">
 <meta property="article:tag" content="Kali linux">
 <meta name="twitter:card" content="summary">
@@ -473,24 +473,27 @@
       
         <p><img src="https://image.3001.net/images/20210521/1621571329_60a73701d9767251e4748.png!small" alt="img"></p>
 <p><strong>kali Linux工具帮你评估 Web 服务器的安全性，并帮助你执行黑客渗透测试。</strong></p>
-<h3 id="注意：这里不是所提及的所有工具都是开源的。"><a href="#注意：这里不是所提及的所有工具都是开源的。" class="headerlink" title="注意：这里不是所提及的所有工具都是开源的。"></a><strong>注意：这里不是所提及的所有工具都是开源的。</strong></h3><span id="more"></span>
-
-<h2 id="1-Nmap"><a href="#1-Nmap" class="headerlink" title="1. Nmap"></a>1. Nmap</h2><p><img src="https://image.3001.net/images/20210520/1621507756_60a63eac521c0abeb99bc.png!small?1621507755558" alt="1621507756_60a63eac521c0abeb99bc.png!small?1621507755558"></p>
+<span id="more"></span>
+<h3 id="注意：这里不是所提及的所有工具都是开源的。"><strong>注意：这里不是所提及的所有工具都是开源的。</strong></h3>
+<h2 id="1-Nmap">1. Nmap</h2>
+<p><img src="https://image.3001.net/images/20210520/1621507756_60a63eac521c0abeb99bc.png!small?1621507755558" alt="1621507756_60a63eac521c0abeb99bc.png!small?1621507755558"></p>
 <p><strong>Nmap</strong>（<strong>网络映射器</strong>）是一款用于<strong>网络发现</strong>和<strong>安全审计</strong>的<strong>网络安全</strong>工具.</p>
 <p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Nmap#Nmap_%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD">核心功能</a><strong><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Nmap#Nmap_%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD">:  主机发现,端口扫描,版本侦测,操作系统侦测,防火墙/IDS规避和哄骗</a></strong></p>
 <p>Nmap 基本语法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap [ &lt;扫描类型&gt; ...] [ &lt;选项&gt; ] &#123; &lt;扫描目标说明&gt; &#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>全面进攻性</strong>扫描（包括各种主机发现、端口扫描、版本扫描、OS扫描及默认脚本扫描）:</p>
 <p>nmap -A -v target_ip</p>
 <p><strong>ping</strong>扫描:    nmap -sn -v target_ip</p>
 <p><strong>快速端口</strong>扫描:nmap -F -v target_ip</p>
 <p><strong>版本</strong>扫描:    nmap -sV -v target_ip</p>
 <p><strong>操作系统</strong>扫描:nmap -O -v target_ip</p>
-<h2 id="2-Wireshark"><a href="#2-Wireshark" class="headerlink" title="2. Wireshark"></a>2. Wireshark</h2><p><img src="https://image.3001.net/images/20210520/1621519865_60a66df98359498712be9.png!small?1621519864772" alt="1621519865_60a66df98359498712be9.png!small?1621519864772"></p>
-<h2 id><a href="#" class="headerlink" title></a></h2><p><strong>Wireshark的</strong>是一个<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Free_software">自由</a>和<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Open-source_software">开源</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Packet_analyzer">数据包分析器,是 Kali Linux 上最受欢迎的网络分析仪。</a></p>
+<h2 id="2-Wireshark">2. Wireshark</h2>
+<p><img src="https://image.3001.net/images/20210520/1621519865_60a66df98359498712be9.png!small?1621519864772" alt="1621519865_60a66df98359498712be9.png!small?1621519864772"></p>
+<h2 id></h2>
+<p><strong>Wireshark的</strong>是一个<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Free_software">自由</a>和<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Open-source_software">开源</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Packet_analyzer">数据包分析器,是 Kali Linux 上最受欢迎的网络分析仪。</a></p>
 <p><strong>Wireshark</strong>使用WinPCAP作为接口，直接与<strong>网卡</strong>进行<strong>数据报文交换。</strong></p>
-<h2 id="3-Metasploit-Framework"><a href="#3-Metasploit-Framework" class="headerlink" title="3. Metasploit Framework"></a>3. Metasploit Framework</h2><p><img src="https://image.3001.net/images/20210520/1621522244_60a67744d96353fc7a85a.png!small?1621522243943" alt="1621522244_60a67744d96353fc7a85a.png!small?1621522243943"></p>
+<h2 id="3-Metasploit-Framework">3. Metasploit Framework</h2>
+<p><img src="https://image.3001.net/images/20210520/1621522244_60a67744d96353fc7a85a.png!small?1621522243943" alt="1621522244_60a67744d96353fc7a85a.png!small?1621522243943"></p>
 <p><strong>Metasploit Framework</strong>是一个旨在提供<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E9%9A%90%E6%82%A3">安全漏洞信息</a>计算机安全项目，可以协助安全工程师进行<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95">渗透测试</a>（penetration testing）及<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B%E7%B3%BB%E7%BB%9F">入侵检测系统</a>签名开发。</p>
 <p><strong>Metasploit Framework</strong>最为知名的子项目是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BC%80%E6%94%BE%E6%BA%90%E4%BB%A3%E7%A0%81">开源</a>的Metasploit框架，一套针对远程主机进行开发和执行“<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Exploit">exploit</a>代码”的工具</p>
 <p>使用<strong>Metasploit框架</strong>的基本步骤包括：</p>
@@ -499,41 +502,50 @@
 <p>选择并配置一个<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9C%89%E6%95%88%E8%B4%9F%E8%BD%BD">有效负载</a>(payload, 在成功进入后在目标系统上执行的代码）；</p>
 <p>选择编码方式，使<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%A5%E4%BE%B5%E9%A2%84%E9%98%B2%E7%B3%BB%E7%BB%9F">入侵预防系统</a>，忽略已被编码的有效负载；</p>
 <p>执行攻击代码。</p>
-<h2 id="4-Hydra"><a href="#4-Hydra" class="headerlink" title="4.Hydra"></a>4.Hydra</h2><p><img src="https://image.3001.net/images/20210521/1621557142_60a6ff96c05efacb613fa.png!small?1621557141539" alt="1621557142_60a6ff96c05efacb613fa.png!small?1621557141539"></p>
+<h2 id="4-Hydra">4.Hydra</h2>
+<p><img src="https://image.3001.net/images/20210521/1621557142_60a6ff96c05efacb613fa.png!small?1621557141539" alt="1621557142_60a6ff96c05efacb613fa.png!small?1621557141539"></p>
 <p><strong>Hydra</strong>是<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Parallel_computing">并行化的</a>网络<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Password_cracking">登录破解程序，</a>内置于各种操作系统中。</p>
 <p><strong>Hydra</strong>通过使用<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Brute-force_attacks">暴力攻击</a>，猜测正确的用户名和<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Password">密码</a>。</p>
 <p><strong>kali</strong>下是默认安装的，几乎支持<strong>所有协议</strong>的在线破解</p>
-<h2 id="5-Aircrack-ng"><a href="#5-Aircrack-ng" class="headerlink" title="5.Aircrack-ng"></a>5.Aircrack-ng</h2><p><img src="https://image.3001.net/images/20210521/1621558601_60a705494e04e16c4a9ea.png!small?1621558601612" alt="1621558601_60a705494e04e16c4a9ea.png!small?1621558601612"></p>
-<p><strong>Aircrack-ng</strong>是一个与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/802.11">802.11</a>标准的无线网络分析有关的安全软件，主要功能有：网络侦测，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%97%85%E6%8E%A2">数据包嗅探</a>，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B7%9A%E7%AD%89%E6%95%88%E5%8A%A0%E5%AF%86">WEP</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/WPA">WPA</a>/<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=WPA2-PSK&action=edit&redlink=1">WPA2-PSK</a>破解。</p>
+<h2 id="5-Aircrack-ng">5.Aircrack-ng</h2>
+<p><img src="https://image.3001.net/images/20210521/1621558601_60a705494e04e16c4a9ea.png!small?1621558601612" alt="1621558601_60a705494e04e16c4a9ea.png!small?1621558601612"></p>
+<p><strong>Aircrack-ng</strong>是一个与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/802.11">802.11</a>标准的无线网络分析有关的安全软件，主要功能有：网络侦测，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%97%85%E6%8E%A2">数据包嗅探</a>，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B7%9A%E7%AD%89%E6%95%88%E5%8A%A0%E5%AF%86">WEP</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/WPA">WPA</a>/<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=WPA2-PSK&amp;action=edit&amp;redlink=1">WPA2-PSK</a>破解。</p>
 <p><strong>Aircrack-ng可以</strong>用于<strong>监视</strong>，<strong>收集</strong>有关WiFi的信息SSID（服务集标识符）IP和MAC地址以及WiFi的破解密码</p>
-<h2 id="6-Nessus"><a href="#6-Nessus" class="headerlink" title="6.Nessus"></a>6.Nessus</h2><p><img src="https://image.3001.net/images/20210521/1621559138_60a70762f130c4c142c9d.png!small?1621559139366" alt="1621559138_60a70762f130c4c142c9d.png!small?1621559139366"></p>
+<h2 id="6-Nessus">6.Nessus</h2>
+<p><img src="https://image.3001.net/images/20210521/1621559138_60a70762f130c4c142c9d.png!small?1621559139366" alt="1621559138_60a70762f130c4c142c9d.png!small?1621559139366"></p>
 <p><strong>Nessus</strong>为一款<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B3%BB%E7%BB%9F">系统</a>弱点<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%89%AB%E6%8F%8F">扫描</a>与分析软件。能够协助<strong>检测和修复</strong>各种操作系统、应用程序、乃至设备上的漏洞、恶意软件、配置错误、及补丁的缺失。</p>
 <p>但是，它不再是免费的工具了，免费的功能受限制。</p>
-<h2 id="7-WafW00f"><a href="#7-WafW00f" class="headerlink" title="7.WafW00f"></a>7.WafW00f</h2><p><img src="https://image.3001.net/images/20210521/1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391" alt="1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391"></p>
-<p>**Wafw00f –**防火墙检测工具，</p>
+<h2 id="7-WafW00f">7.WafW00f</h2>
+<p><img src="https://image.3001.net/images/20210521/1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391" alt="1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391"></p>
+<p>**Wafw00f --**防火墙检测工具，</p>
 <p><strong>Wafw00f</strong> 使用一组HTTP请求和方法查询Web服务器,分析来自它们的响应并检测防火墙</p>
-<h2 id="8-Burp-Suite"><a href="#8-Burp-Suite" class="headerlink" title="8. Burp Suite"></a>8. Burp Suite</h2><p><img src="https://image.3001.net/images/20210520/1621526092_60a6864c6294e11a17405.png!small?1621526091423" alt="1621526092_60a6864c6294e11a17405.png!small?1621526091423"></p>
+<h2 id="8-Burp-Suite">8. Burp Suite</h2>
+<p><img src="https://image.3001.net/images/20210520/1621526092_60a6864c6294e11a17405.png!small?1621526091423" alt="1621526092_60a6864c6294e11a17405.png!small?1621526091423"></p>
 <p><strong>Burp Suite</strong>是一个用于测试网络应用程序安全性的图形化工具，出色的网络安全分析工具。</p>
 <p><strong>主要模块</strong>介绍:</p>
 <p><strong>HTTP代理</strong>— 它作为一个 Web 代理服务器运行，并且位于浏览器和目标 Web 服务器之间。这允许拦截、检查和修改在两个方向上通过的原始流量。</p>
 <p><strong>Scanner</strong>(扫描器)— 一个 Web 应用程序安全扫描器，用于执行 Web 应用程序的自动漏洞扫描。</p>
 <p><strong>Intruder</strong>(入侵)— 此工具可以对 Web 应用程序执行自动攻击。该工具提供了一种可配置的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95">算法</a>，可以生成恶意 HTTP 请求。Intruder 工具可以测试和检测 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/SQL%E8%B3%87%E6%96%99%E9%9A%B1%E7%A2%BC%E6%94%BB%E6%93%8A">SQL 注入</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%B6%B2%E7%AB%99%E6%8C%87%E4%BB%A4%E7%A2%BC">跨站脚本</a>、参数篡改和易受蛮力攻击的漏洞。</p>
-<p>**Spider(蜘蛛)**— 一个自动抓取 Web 应用程序的工具。</p>
-<p>**Repeater(中继器)**— 一个可以用来手动测试应用程序的简单工具。它可以用于修改对服务器的请求，重新发送它们并观察结果。</p>
+<p><strong>Spider(蜘蛛)</strong>— 一个自动抓取 Web 应用程序的工具。</p>
+<p><strong>Repeater(中继器)</strong>— 一个可以用来手动测试应用程序的简单工具。它可以用于修改对服务器的请求，重新发送它们并观察结果。</p>
 <p><strong>Decoder</strong>(解码器)— 一种将已编码的数据转换为其规范形式，或将原始数据转换为各种编码和散列形式的工具。它能够利用启发式技术智能识别多种编码格式。</p>
 <p><strong>Comparer</strong>(比较)— 在任意两个数据项之间执行比较（一个可视化的“差异”）的工具。</p>
 <p><strong>Extender</strong>(扩展)— 允许安全测试人员加载 Burp 扩展，使用安全测试人员自己的或第三方代码扩展 Burp 的功能</p>
 <p><strong>Sequencer</strong>(会话)— 一种分析数据项样本随机性的工具。它可以用于测试应用程序的会话令牌或其他重要的数据项，如反 CSRF 令牌、密码重置令牌等。</p>
-<h2 id="9-Maltego"><a href="#9-Maltego" class="headerlink" title="9.Maltego"></a>9.Maltego</h2><p><img src="https://image.3001.net/images/20210521/1621568089_60a72a59da57f1f4697a9.png!small?1621568090170" alt="1621568089_60a72a59da57f1f4697a9.png!small?1621568090170"></p>
+<h2 id="9-Maltego">9.Maltego</h2>
+<p><img src="https://image.3001.net/images/20210521/1621568089_60a72a59da57f1f4697a9.png!small?1621568090170" alt="1621568089_60a72a59da57f1f4697a9.png!small?1621568090170"></p>
 <p><strong>Maltego</strong>–是一个<strong>开源情报</strong>（OSINT）和<strong>图形链接分析</strong>工具,用于<strong>收集和连接</strong>用于调查任务的信息。</p>
 <p><strong>Maltego  以简单,智能,功能强大受安全人员喜爱。</strong></p>
-<h2 id="10-W3AF"><a href="#10-W3AF" class="headerlink" title="10.W3AF"></a>10.W3AF</h2><p><img src="https://image.3001.net/images/20210521/1621570653_60a7345de36022a563727.png!small?1621570654103" alt="1621570653_60a7345de36022a563727.png!small?1621570654103"></p>
+<h2 id="10-W3AF">10.W3AF</h2>
+<p><img src="https://image.3001.net/images/20210521/1621570653_60a7345de36022a563727.png!small?1621570654103" alt="1621570653_60a7345de36022a563727.png!small?1621570654103"></p>
 <p><strong>W3AF</strong>是一个<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90">开源</a>的Web应用程序安全扫描器。该项目为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Web%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">Web应用程序</a>提供了一个漏洞扫描器和漏洞利用工具。它提供了有关<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E9%9A%90%E6%82%A3">安全性漏洞</a>的信息，以便在<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95">渗透测试</a>项目中使用</p>
 <p><strong>W3AF</strong>能用Web应用程序攻击和审核框架的Arconym，来查找网站中的缺陷</p>
-<h2 id="11-Wpscan"><a href="#11-Wpscan" class="headerlink" title="11.Wpscan"></a>11.Wpscan</h2><p><img src="https://image.3001.net/images/20210521/1621571845_60a7390565d22fd5ad546.png!small?1621571846484" alt="1621571845_60a7390565d22fd5ad546.png!small?1621571846484"></p>
+<h2 id="11-Wpscan">11.Wpscan</h2>
+<p><img src="https://image.3001.net/images/20210521/1621571845_60a7390565d22fd5ad546.png!small?1621571846484" alt="1621571845_60a7390565d22fd5ad546.png!small?1621571846484"></p>
 <p><strong>Wpscan</strong>是Kali Linux 自带的一款漏洞扫描工具，它采用Ruby 编写，能够扫描WordPress 网站中的多种安全漏洞，它可以为所有Web开发人员扫描 WordPress漏洞并在他们开发前找到并解决问题。</p>
-<p>WordPress（WP，WordPress.org）是一个<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Free_and_open-source_software">免费的开源</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Content_management_system">内容管理系统</a>（CMS）</p>
-<h2 id="12-sqlmap"><a href="#12-sqlmap" class="headerlink" title="12.sqlmap"></a>12.sqlmap</h2><p><img src="https://image.3001.net/images/20210521/1621573031_60a73da7e023739dc8878.png!small?1621573033546" alt="1621573031_60a73da7e023739dc8878.png!small?1621573033546"></p>
+<p>WordPress（WP，<a target="_blank" rel="noopener" href="http://WordPress.org">WordPress.org</a>）是一个<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Free_and_open-source_software">免费的开源</a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Content_management_system">内容管理系统</a>（CMS）</p>
+<h2 id="12-sqlmap">12.sqlmap</h2>
+<p><img src="https://image.3001.net/images/20210521/1621573031_60a73da7e023739dc8878.png!small?1621573033546" alt="1621573031_60a73da7e023739dc8878.png!small?1621573033546"></p>
 <p><strong>sqlmap</strong>是一个开源的渗透测试工具，可以用来进行自动化检测，能自动化利用 SQL 注入漏洞的过程，帮助你接管数据库服务器</p>
 
       
@@ -676,7 +688,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -793,7 +805,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">21.7k</span>
+    <span title="Site words total count">22.4k</span>
   
 </div>
 

