@@ -1754,7 +1754,7 @@ echo base64_encode($real_flag);
       </tags>
   </entry>
   <entry>
-    <title>BUUCTF-MISC-三</title>
+    <title></title>
     <url>/2021/10/25/BUUCTF-MISC-%E4%B8%89/</url>
     <content><![CDATA[<h2 id="FLAG">FLAG</h2>
 <p>binwalk没分离出来,zsteg发现zip压缩包</p>
@@ -1774,7 +1774,7 @@ echo base64_encode($real_flag);
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;wpei08732?23dz&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="隐藏的钥匙">隐藏的钥匙</h2>
 <p>下载的图片使用hxd查看，搜索txt未果，搜索flag，成功找到。</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212407937-826374983.png" alt="image-20201113135149881"></p>
+<p><img src="https://image.3001.net/images/20211025/1635174941_6176ca1def128170a5392.png!small" alt="img"></p>
 <p>括号中的进行base64解密得到flag：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;377cbadda1eca2f2f73d36277781f00a&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="最简单的misc-y1ng">最简单的misc-y1ng</h2>
@@ -1783,16 +1783,16 @@ echo base64_encode($real_flag);
 <p>BJD改为flag即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;y1ngzuishuai&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>常见的文件头尾格式</strong>：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212440107-2049055665.png" alt="image-20201113141825962"></p>
+<p><img src="https://image.3001.net/images/20211025/1635174848_6176c9c012201faa85d64.png!small" alt="img"></p>
 <h2 id="A-Beautiful-Picture">A_Beautiful_Picture</h2>
 <p>图片放入hxd和stegsolve中都没有发现什么，参看别人的writeup说是图片的长宽不对等，利用hxd将图片的宽修改为与长相等并保存：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212439092-2053554416.png" alt="image-20201113143400741"></p>
+<p><img src="https://image.3001.net/images/20211025/1635174962_6176ca32d7ec2d504d57b.png!small" alt="img"></p>
 <p>查看图片下方显示：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;PnG_He1ghT_1s_WR0ng&#125;</span><br></pre></td></tr></table></figure>
 <p>将BJD改为flag提交。</p>
 <h2 id="神秘龙卷风">神秘龙卷风</h2>
 <p>根据题目提示：科学家用四位数字命名，即是此rar压缩包的加密方式，使用<strong>RARPasswordUnlocker</strong>暴力破解得到密码：<code>5463</code>。打开得到的txt文件，没见过此种编码方式：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212443246-1450103875.png" alt="image-20201119125844585"></p>
+<p><img src="https://image.3001.net/images/20211025/1635174973_6176ca3db680839337e73.png!small" alt="img"></p>
 <p>参看别人的writeup，说是<code>brainfuck</code>代码，使用在线网站工具<strong>建立新的工程</strong>并将txt中的东西复制粘贴到代码区运行得到flag。此网站链接：<a href="http://bf.doleczek.pl/">http://bf.doleczek.pl/</a></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;e4bbef8bdf9743f8bf5b727a9f6332a8&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="小姐姐-y1ng">小姐姐-y1ng</h2>
@@ -1800,7 +1800,7 @@ echo base64_encode($real_flag);
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BJD&#123;haokanma_xjj&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="后门查杀">后门查杀</h2>
 <p>下载得到一个html文件夹，后门查杀和webshell是知识盲区。一个个找确实费时，参看网上的writeup得知有个专门扫描webshell、网站木马等的安全软件叫：<strong>D盾</strong>。下载D盾压缩包，打开<strong>D_Safe_Manage.exe</strong>，在查杀中将待查杀的文件拖入，如图：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212447450-1533339998.png" alt="image-20201114090443329"></p>
+<p><img src="https://image.3001.net/images/20211025/1635174990_6176ca4e6b77694cba012.png!small" alt="img"></p>
 <p>打开对应文件，md5码只有pass处。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;6ac45fb83b3bc355c024f5034b947dd3&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="荷兰宽带数据泄露">荷兰宽带数据泄露</h2>
@@ -1809,7 +1809,7 @@ echo base64_encode($real_flag);
 <p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45897326/article/details/103936479">https://blog.csdn.net/weixin_45897326/article/details/103936479</a></p>
 <h2 id="来首歌吧">来首歌吧</h2>
 <p>用<strong>audacity</strong>打开，发现：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212456892-564557737.png" alt="image-20201116150005316"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175007_6176ca5f1a382e8805a51.png!small" alt="img"></p>
 <p>将其放大（Ctrl+鼠标滚轮），发现其特征像摩尔斯电码，短杆敲为. 长杆敲为-。间隔地方用空格隔开，可得：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">..... -... -.-. ----. ..--- ..... -.... ....- ----. -.-. -... ----- .---- ---.. ---.. ..-. ..... ..--- . -.... .---- --... -.. --... ----- ----. ..--- ----. .---- ----. .---- -.-.</span><br></pre></td></tr></table></figure>
 <p>用在线摩尔斯电码工具解得：</p>
@@ -1817,65 +1817,24 @@ echo base64_encode($real_flag);
 <p>包上flag：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;5BC925649CB0188F52E617D70929191C&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>总结</strong>：不知道为何用<strong>CaptfEncoder-win-x64-1.3.0.exe</strong>解得的摩尔斯电码结果有点出入，需要了解下原因，不止一次了（很有可能格式不对）。</p>
-<h2 id="数据包中的线索">数据包中的线索</h2>
-<p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212500195-122901242.png" alt="image-20201117154111788"></p>
-<p>至此，无头绪了，参看他人writeup，说这块数据是base64加密的图片，拉到最下面撇去最后一行的那个0，确实是以=结尾，导出http对象，打开fenxi.php文件，整个文件内的内容就是base64加密后的图片，将此数据完善一下，开头加上：<code>data:image/png;base64,</code>编码内容紧跟其后，输入浏览器（学到了）：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212511593-884384661.png" alt="image-20201117154630905"></p>
-<p>即可展示出图片：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212508710-508016229.png" alt="image-20201117154718954"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;209acebf6324a09671abc31c869de72c&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>参考</strong>：<a href="https://blog.csdn.net/l11III1111/article/details/107804111">https://blog.csdn.net/l11III1111/article/details/107804111</a></p>
-<h2 id="九连环">九连环*</h2>
-<p>图片用hxd查看，发现是个zip，里面带有一个加密压缩包和图片，用<strong>foremost</strong>分离：<code>foremost [文件名]</code>。得到一个加密压缩包，题目没有提示，猜测是伪加密，但是我破解不了。参看别人writeup得：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212514318-1349362796.png" alt="image-20201118155703851"></p>
-<p>标记处原本为<code>01</code>，伪加密了，改成<code>00</code>。查看全局处最上面asd/PK处，没有进行伪加密，解压压缩包。</p>
-<p><strong>注</strong>：不知为何我照着做一遍，内部的图片就是出不来，存在问题。</p>
-<p>另外需要用到的工具：<strong>steghide</strong>，用于分析隐藏在图片中的信息。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;1RTo8w@&amp;4nK@z*XL&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>参考</strong>：<a href="https://www.cnblogs.com/yunqian2017/p/13298178.html">https://www.cnblogs.com/yunqian2017/p/13298178.html</a></p>
-<h2 id="面具下的flag">面具下的flag</h2>
-<p>下载得到的图片放入hxd中查看，开头是被篡改的文件。拉到尾部发现压缩包，并进行了伪加密，修改09为00，另存为zip压缩包，解压得到：<code>flag.vmdk</code>文件，这是虚拟机文件的格式，猜想这要是放到vmare虚拟机中有点不太可能，无解了。参看别人witeup：可用7z解压vmdk文件，在kali中进行解压，语句：<code>7z x flag.vmdk -o./</code>，得到了四个文件夹：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212519780-643061161.png" alt="image-20201119125413231"></p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212522466-977633396.png" alt="image-20201119125501501"></p>
-<p>其中有一个key_part_one和key_part_two。打开key_part_one，得到的编码方式与<strong>神秘龙卷风</strong>中的编码方式很像，即<code>brainfuck</code>编码，放入brainfuck和ook编码的集合在线网站（<a href="https://www.splitbrain.org/services/ook%EF%BC%89%E4%B8%AD%E8%A7%A3%E7%A0%81%E5%BE%97%E5%88%B0%EF%BC%9A">https://www.splitbrain.org/services/ook）中解码得到：</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5</span><br></pre></td></tr></table></figure>
-<p>在key_part_two文件夹中，有俩个文件夹，此文件夹<img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212525083-1818141137.png" alt="image-20201119130330723">明确说明了第二部分的flag在里面，打开，全是Ook。放入上述网站中解码得到：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
-<p>合并flag：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45485719/article/details/107417878">https://blog.csdn.net/weixin_45485719/article/details/107417878</a></p>
-<h2 id="webshell后门">webshell后门</h2>
-<p>借鉴前面后门查杀的思路，将得到的压缩包解压到webshell后门文件夹，拖入到D盾中进行扫描：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212528917-1290385871.png" alt="image-20201120101432083"></p>
-<p>目标锁定上面三个文件，按顺序寻找，右键点击打开文件，发现上图打框的文件就有flag。搜索password不行，md5码写在pass，直接搜索pass即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;ba8e6c6f35a53933b871480bb9a9545c&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
-      <categories>
-        <category>CTF</category>
-        <category>BUUCTF</category>
-        <category>Misc</category>
-      </categories>
-      <tags>
-        <tag>BUU MISC</tag>
-      </tags>
   </entry>
   <entry>
-    <title>BUUCTF-MISC-四</title>
+    <title></title>
     <url>/2021/10/25/BUUCTF-MISC-%E5%9B%9B/</url>
     <content><![CDATA[<h2 id="数据包中的线索">数据包中的线索</h2>
 <p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
 <span id="more"></span>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212500195-122901242.png" alt="image-20201117154111788"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175535_6176cc6f90974acc05a30.png!small" alt="img"></p>
 <p>至此，无头绪了，参看他人writeup，说这块数据是base64加密的图片，拉到最下面撇去最后一行的那个0，确实是以=结尾，导出http对象，打开fenxi.php文件，整个文件内的内容就是base64加密后的图片，将此数据完善一下，开头加上：<code>data:image/png;base64,</code>编码内容紧跟其后，输入浏览器（学到了）：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212511593-884384661.png" alt="image-20201117154630905"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175544_6176cc7802b95d511a47a.png!small" alt="img"></p>
 <p>即可展示出图片：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212508710-508016229.png" alt="image-20201117154718954"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175554_6176cc82c01eef69ac84a.png!small" alt="img"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;209acebf6324a09671abc31c869de72c&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>参考</strong>：<a href="https://blog.csdn.net/l11III1111/article/details/107804111">https://blog.csdn.net/l11III1111/article/details/107804111</a></p>
 <h2 id="九连环">九连环*</h2>
 <p>图片用hxd查看，发现是个zip，里面带有一个加密压缩包和图片，用<strong>foremost</strong>分离：<code>foremost [文件名]</code>。得到一个加密压缩包，题目没有提示，猜测是伪加密，但是我破解不了。参看别人writeup得：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212514318-1349362796.png" alt="image-20201118155703851"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175564_6176cc8c3a2e10714ca7c.png!small" alt="img"></p>
 <p>标记处原本为<code>01</code>，伪加密了，改成<code>00</code>。查看全局处最上面asd/PK处，没有进行伪加密，解压压缩包。</p>
 <p><strong>注</strong>：不知为何我照着做一遍，内部的图片就是出不来，存在问题。</p>
 <p>另外需要用到的工具：<strong>steghide</strong>，用于分析隐藏在图片中的信息。</p>
@@ -1883,28 +1842,20 @@ echo base64_encode($real_flag);
 <p><strong>参考</strong>：<a href="https://www.cnblogs.com/yunqian2017/p/13298178.html">https://www.cnblogs.com/yunqian2017/p/13298178.html</a></p>
 <h2 id="面具下的flag">面具下的flag</h2>
 <p>下载得到的图片放入hxd中查看，开头是被篡改的文件。拉到尾部发现压缩包，并进行了伪加密，修改09为00，另存为zip压缩包，解压得到：<code>flag.vmdk</code>文件，这是虚拟机文件的格式，猜想这要是放到vmare虚拟机中有点不太可能，无解了。参看别人witeup：可用7z解压vmdk文件，在kali中进行解压，语句：<code>7z x flag.vmdk -o./</code>，得到了四个文件夹：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212519780-643061161.png" alt="image-20201119125413231"></p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212522466-977633396.png" alt="image-20201119125501501"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175575_6176cc97707db34b76a2a.png!small" alt="img"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175582_6176cc9e86ed1706fd18f.png!small" alt="img"></p>
 <p>其中有一个key_part_one和key_part_two。打开key_part_one，得到的编码方式与<strong>神秘龙卷风</strong>中的编码方式很像，即<code>brainfuck</code>编码，放入brainfuck和ook编码的集合在线网站（<a href="https://www.splitbrain.org/services/ook%EF%BC%89%E4%B8%AD%E8%A7%A3%E7%A0%81%E5%BE%97%E5%88%B0%EF%BC%9A">https://www.splitbrain.org/services/ook）中解码得到：</a></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5</span><br></pre></td></tr></table></figure>
-<p>在key_part_two文件夹中，有俩个文件夹，此文件夹<img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212525083-1818141137.png" alt="image-20201119130330723">明确说明了第二部分的flag在里面，打开，全是Ook。放入上述网站中解码得到：</p>
+<p>在key_part_two文件夹中，有俩个文件夹，此文件夹<img src="https://image.3001.net/images/20211025/1635175602_6176ccb281a74259ceb46.png!small" alt="img">明确说明了第二部分的flag在里面，打开，全是Ook。放入上述网站中解码得到：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
 <p>合并flag：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;N7F5_AD5_i5_funny!&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>参考</strong>：<a href="https://blog.csdn.net/weixin_45485719/article/details/107417878">https://blog.csdn.net/weixin_45485719/article/details/107417878</a></p>
 <h2 id="webshell后门">webshell后门</h2>
 <p>借鉴前面后门查杀的思路，将得到的压缩包解压到webshell后门文件夹，拖入到D盾中进行扫描：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1669984/202011/1669984-20201128212528917-1290385871.png" alt="image-20201120101432083"></p>
+<p><img src="https://image.3001.net/images/20211025/1635175618_6176ccc2b524acb680875.png!small" alt="img"></p>
 <p>目标锁定上面三个文件，按顺序寻找，右键点击打开文件，发现上图打框的文件就有flag。搜索password不行，md5码写在pass，直接搜索pass即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;ba8e6c6f35a53933b871480bb9a9545c&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
-      <categories>
-        <category>CTF</category>
-        <category>BUUCTF</category>
-        <category>Misc</category>
-      </categories>
-      <tags>
-        <tag>BUU MISC</tag>
-      </tags>
   </entry>
 </search>
