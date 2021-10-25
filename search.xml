@@ -142,11 +142,11 @@
 <p><img src="https://image.3001.net/images/20210602/1622610443_60b7120b36e4506e29553.png!small?1622610443324" alt="1622610443_60b7120b36e4506e29553.png!small?1622610443324"></p>
 ]]></content>
       <categories>
-        <category>学习笔记</category>
         <category>渗透测试</category>
+        <category>Web服务器通信原理</category>
       </categories>
       <tags>
-        <tag>渗透测试学习</tag>
+        <tag>渗透测试</tag>
       </tags>
   </entry>
   <entry>
@@ -598,11 +598,11 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>学习笔记</category>
         <category>渗透测试</category>
+        <category>SQL注入原理分析</category>
       </categories>
       <tags>
-        <tag>渗透测试学习</tag>
+        <tag>渗透测试</tag>
       </tags>
   </entry>
   <entry>
@@ -913,11 +913,11 @@
 <p>链接：<a href="https://pan.baidu.com/s/1oVdSaSwWSoo0u0ASsNPhcA">https://pan.baidu.com/s/1oVdSaSwWSoo0u0ASsNPhcA</a><br>提取码：TXTX</p>
 ]]></content>
       <categories>
-        <category>学习笔记</category>
         <category>渗透测试</category>
+        <category>Web安全前后端基础</category>
       </categories>
       <tags>
-        <tag>渗透测试学习</tag>
+        <tag>渗透测试</tag>
       </tags>
   </entry>
   <entry>
@@ -1158,13 +1158,209 @@ echo base64_encode($real_flag);
   <entry>
     <title>渗透测试之信息收集篇</title>
     <url>/2021/08/29/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E7%AF%87/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><img src="https://image.3001.net/images/20210708/1625737579_60e6c96b90a9a315c7890.png!small?1625737579288" alt="1625737579_60e6c96b90a9a315c7890.png!small?1625737579288"></p>
+<span id="more"></span>
+<h1>前言</h1>
+<h3 id="信息收集的重要性">信息收集的重要性</h3>
+<blockquote>
+<p>进行渗透测试之前，<strong>最重要的一步就是信息收集</strong>。</p>
+<p>信息收集可以让渗透者选择合适和准确的渗透测试攻击方式,<strong>缩短渗透测试时间</strong>。</p>
+<p>所谓知己知彼,百战不殆，我们越了解测试目标，测试的<strong>工作就越容易</strong>。</p>
+<p>最后能否成功渗透进入目标,很大程度上<strong>取决于信息搜集</strong>。</p>
+</blockquote>
+<h3 id="信息搜集的分类">信息搜集的分类</h3>
+<p>信息收集的方式有两种：<strong>主动和被动</strong>。</p>
+<blockquote>
+<p>主动式信息搜集（能获取到较多的信息，但易被发现）</p>
+<p>通过<strong>直接发起与被测目标网络之间的互动</strong>来获取相关信息，这种流量<strong>将流经网站</strong>。如通过Nmap扫描目标。<br>
+被动式信息搜集（搜集到的信息较少，但不易被发现）<br>
+通过<strong>第三方服务来间接获取目标网络相关信息</strong>，如通过Google、fofa等搜索引擎方式来搜集信息。</p>
+</blockquote>
+<p>这两种方式都有各自的优点和缺点,一般在渗透测试过程中，我们需要进行很多次的信息收集，同时也要运用不同的收集方式，才能<strong>保证信息收集的完整性</strong>。</p>
+<h1>收集什么信息</h1>
+<blockquote>
+<p>1.Whois</p>
+<p>2.端口探测</p>
+<p>3.子域名</p>
+<p>4.旁站</p>
+<p>5.C段</p>
+<p>6.目录扫描</p>
+<p>7.指纹识别</p>
+<p>8.内容敏感信息泄露</p>
+</blockquote>
+<h1>Whois</h1>
+<blockquote>
+<p>Whois是用来<strong>查询互联网中域名的IP以及所有者等信息</strong>的传输协议。</p>
+<p>可以<strong>获取关键注册人的信息</strong>，包括注册商、所有者、邮箱、联系电话、域名状态、域名注册时间、域名到期时间、DNS服务器等。</p>
+<p>可以对其进行邮箱<strong>反查域名，社工，寻找旁站</strong>等等。</p>
+</blockquote>
+<h3 id="Whois常用工具："><strong>Whois常用工具</strong>：</h3>
+<p><strong>在线</strong>工具：</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th><a href="https://www.whois.com/">whois.com</a></th>
+<th><img src="https://image.3001.net/images/20210630/1625064887_60dc85b7840d66dc3180a.png!small?1625064886910" alt="1625064887_60dc85b7840d66dc3180a.png!small?1625064886910"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://whois.chinaz.com/">站长之家</a></td>
+<td><img src="https://image.3001.net/images/20210630/1625065304_60dc87582d3af193e59eb.png!small?1625065303445" alt="1625065304_60dc87582d3af193e59eb.png!small?1625065303445"></td>
+</tr>
+<tr>
+<td><a href="https://baidurank.aizhan.com/">爱站网</a></td>
+<td><img src="https://image.3001.net/images/20210630/1625065440_60dc87e04843b34be4c4a.png!small?1625065439546" alt="1625065440_60dc87e04843b34be4c4a.png!small?1625065439546"></td>
+</tr>
+<tr>
+<td><a href="https://www.whois365.com/cn/">全球WHOIS查询</a></td>
+<td><img src="https://image.3001.net/images/20210630/1625065939_60dc89d31e833cb6a076c.png!small?1625065938400" alt="1625065939_60dc89d31e833cb6a076c.png!small?1625065938400"></td>
+</tr>
+<tr>
+<td><a href="https://www.virustotal.com/">VirusTotal</a></td>
+<td><img src="https://image.3001.net/images/20210630/1625067168_60dc8ea0df05effd9e1ce.png!small?1625067168103" alt="1625067168_60dc8ea0df05effd9e1ce.png!small?1625067168103"></td>
+</tr>
+<tr>
+<td><a href="https://whois.aliyun.com/">阿里云</a></td>
+<td><img src="https://image.3001.net/images/20210630/1625067449_60dc8fb994ebdafcfd68a.png!small?1625067449109" alt="1625067449_60dc8fb994ebdafcfd68a.png!small?1625067449109"></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>在<strong>Kali系统中默认安装</strong></p>
+<p>用法 : <strong>whois 域名</strong></p>
+<p><img src="https://image.3001.net/images/20210630/1625064120_60dc82b82eae8943b7392.png!small?1625064119877" alt="1625064120_60dc82b82eae8943b7392.png!small?1625064119877"></p>
+<h3 id="Whois反查">Whois反查</h3>
+<blockquote>
+<p><strong>用whois查询出来信息之后，可以根据查询出来的邮箱，注册人，电话等信息进行whois反查。</strong></p>
+<p><a href="http://whois.chinaz.com/reverse?ddlSearchMode=2">注册人反查</a></p>
+<p><a href="http://whois.chinaz.com/reverse?ddlSearchMode=1">邮箱反查</a></p>
+<p><a href="http://whois.chinaz.com/reverse?ddlSearchMode=3">电话反查</a></p>
+</blockquote>
+<h1>端口探测</h1>
+<blockquote>
+<p>端口是服务器和客户端<strong>交互的接口</strong>，一个端口对应一个不同的WEB网站。</p>
+</blockquote>
+<p>常见服务器端口漏洞：</p>
+<blockquote>
+<p>21 =====》FTP 爆破</p>
+<p>22 =====》SSH 弱口令/后门</p>
+<p>873 =====》Rsync 未授权访问漏洞</p>
+<p>3306=====》Mysql 弱口令</p>
+<p>3389=====》Windows远程桌面 Rdp 暴力破解/远程桌面漏洞</p>
+<p>6379=====》Redis 未授权访问漏洞/爆破弱密码</p>
+</blockquote>
+<h3 id="常用工具：Namp-准确性高-较慢-kali自带-，masscan-快-准确性较低">常用工具：Namp(准确性高,较慢)[kali自带]，masscan(快,准确性较低).</h3>
+<p><strong>Nmap 基本语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nmap [ &lt;扫描类型&gt; ...] [ &lt;选项&gt; ] &#123; &lt;扫描目标说明&gt; &#125;j</span><br><span class="line">基础命令：</span><br><span class="line">-A  全面扫描</span><br><span class="line">-sP Ping 扫描 - 只需确定主机是否在线</span><br><span class="line">-v  显示扫描过程</span><br><span class="line">-O  探测主机操作系统</span><br><span class="line">-p  指定端口扫描</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>基础扫描：</strong></p>
+<p><strong>全面进攻性</strong>扫描（包括各种主机发现、端口扫描、版本扫描、OS扫描及默认脚本扫描）:</p>
+<p>nmap -A -v target_ip</p>
+<p><strong>ping</strong>扫描:    nmap -sn -v target_ip</p>
+<p><strong>快速端口</strong>扫描: nmap -F -v target_ip</p>
+<p><strong>版本</strong>扫描:   nmap -sV -v target_ip</p>
+<p><strong>操作系统</strong>扫描: nmap -O -v target_ip</p>
+</blockquote>
+<p><strong>在线工具：</strong></p>
+<blockquote>
+<p><a href="https://tool.chinaz.com/port">站长之家</a></p>
+<p><a href="http://coolaf.com/tool/port">PostJson</a></p>
+</blockquote>
+<h1>子域名</h1>
+<blockquote>
+<p><strong>子域名</strong>（或<strong>子域</strong>；英语：Subdomain）是在域名系统等级中，属于更高一层域的域。顶级域名下的二级域名或者三级甚至更多级的域名都属于子域名。</p>
+</blockquote>
+<h3 id="为什么要收集子域名">为什么要收集子域名</h3>
+<blockquote>
+<p>子域名可以扩大攻击的范围，同一个域名下的二级域名都属于相同资产，一般而言都有一定的联系。</p>
+<p>收集子域名可以发现更多渗透测试范围内的域名/子域名，来增加发现</p>
+<p>漏洞的机率；</p>
+</blockquote>
+<h3 id="收集方式1：谷歌语法">收集方式1：谷歌语法</h3>
+<blockquote>
+<p>site: 指定域名</p>
+</blockquote>
+<p><img src="https://image.3001.net/images/20210705/1625491714_60e30902de25a707980bf.png!small?1625491713373" alt="1625491714_60e30902de25a707980bf.png!small?1625491713373"></p>
+<h3 id="收集方式2：在线平台">收集方式2：在线平台</h3>
+<blockquote>
+<p>潮汐指纹 <a href="http://finger.tidesec.com/">http://finger.tidesec.com/</a></p>
+<p>ip反查域名 <a href="https://dns.aizhan.com/">https://dns.aizhan.com/</a></p>
+<p><a href="https://reverseip.domaintools.com/">https://reverseip.domaintools.com/</a></p>
+<p>微步社区 <a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></p>
+<p>站长工具 <a href="http://tool.chinaz.com/subdomain/">http://tool.chinaz.com/subdomain/</a></p>
+</blockquote>
+<h3 id="收集方式3：工具">收集方式3：工具</h3>
+<blockquote>
+<p>子域名挖掘机：<strong>Layer.exe</strong></p>
+<p>Python：<strong>subDomainsBrute <a href="https://github.com/lijiejie/subDomainsBrute">https://github.com/lijiejie/subDomainsBrute</a></strong></p>
+</blockquote>
+<h3 id="收集方式4：证书透明度公开日志枚举">收集方式4：证书透明度公开日志枚举</h3>
+<blockquote>
+<p><a href="https://link.zhihu.com/?target=https%3A//crt.sh/">https://crt.sh/</a><a href="https://censys.io/">https://censys.io/</a></p>
+</blockquote>
+<h1>旁站</h1>
+<blockquote>
+<p>旁站其实就是同IP的站点，一定和目标站点在<strong>同一个内网或者是同一台服务器</strong>。</p>
+</blockquote>
+<p>查询工具</p>
+<blockquote>
+<p><a href="http://stool.chinaz.com/same">http://stool.chinaz.com/same</a></p>
+<p><img src="https://image.3001.net/images/20210705/1625495938_60e31982ef0f952c15c8b.png!small?1625495939396" alt="1625495938_60e31982ef0f952c15c8b.png!small?1625495939396"></p>
+<p><a href="https://www.webscan.cc/">https://www.webscan.cc/</a></p>
+<p><img src="https://image.3001.net/images/20210705/1625495948_60e3198ce851c5c70b997.png!small?1625495949154" alt="1625495948_60e3198ce851c5c70b997.png!small?1625495949154"></p>
+</blockquote>
+<h1>C段</h1>
+<blockquote>
+<p>是和目标服务器ip处在同一个C段的其它服务器,可能是同一个内网，同一个公司。</p>
+</blockquote>
+<h3 id="在线平台：http-www-bug8-me-bing-bing-php">在线平台：<a href="http://www.bug8.me/bing/bing.php">http://www.bug8.me/bing/bing.php</a></h3>
+<h3 id="常用工具：webscancc，Nmap，K8">常用工具：webscancc，Nmap，K8</h3>
+<h1>目录扫描</h1>
+<blockquote>
+<p>由于发布网站时，服务器配置问题，导致目录浏览器能打开，从而引起信息泄露。</p>
+<p>用扫描器扫描目录，这时候需要一本强大的字典。</p>
+<p>主要扫出网站的管理员入口，一些敏感文件（.mdb,.excel,.word,.zip,.rar）,压缩包源码、编辑器目录、废弃页面和其他站点等等。</p>
+</blockquote>
+<h3 id="常用的工具：">常用的工具：</h3>
+<blockquote>
+<p><strong>御剑</strong></p>
+<p><strong>DirBrute</strong></p>
+<p><strong>Dirsearch</strong></p>
+<p><strong>dirb</strong></p>
+<p><strong>wwwscan</strong></p>
+</blockquote>
+<h1>指纹识别</h1>
+<blockquote>
+<p>识别CMS，寻找通杀漏洞,快速渗透目标；</p>
+</blockquote>
+<p>识别工具：</p>
+<blockquote>
+<p><a href="http://whatweb.bugscaner.com/look/">在线指纹识别</a></p>
+<p><a href="http://finger.tidesec.com/">潮汐指纹</a></p>
+<p><a href="https://x.threatbook.cn/">微步社区</a></p>
+</blockquote>
+<h1>内容敏感信息泄露</h1>
+<blockquote>
+<p>利用Google搜索相关信息并进行入侵的过程就叫做Google Hack。</p>
+</blockquote>
+<p>常用的谷歌语法：</p>
+<blockquote>
+<p>site: 指定域名</p>
+<p>filetype: 指定文件类型</p>
+<p>inurl: 指定URL</p>
+<p>intitle: 指定title</p>
+<p>intext: 指定内容</p>
+<p>link: 包含指定网页的链接的网页</p>
+</blockquote>
+]]></content>
       <categories>
-        <category>学习笔记</category>
         <category>渗透测试</category>
+        <category>信息收集</category>
       </categories>
       <tags>
-        <tag>渗透测试学习</tag>
+        <tag>渗透测试</tag>
       </tags>
   </entry>
   <entry>
