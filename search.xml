@@ -1820,8 +1820,8 @@ echo base64_encode($real_flag);
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2021/10/25/BUUCTF-MISC-%E5%9B%9B/</url>
+    <title>BUUCTF MISC 四</title>
+    <url>/2021/08/11/BUUCTF-MISC-%E5%9B%9B/</url>
     <content><![CDATA[<h2 id="数据包中的线索">数据包中的线索</h2>
 <p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
 <span id="more"></span>
@@ -1857,5 +1857,13 @@ echo base64_encode($real_flag);
 <p>目标锁定上面三个文件，按顺序寻找，右键点击打开文件，发现上图打框的文件就有flag。搜索password不行，md5码写在pass，直接搜索pass即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;ba8e6c6f35a53933b871480bb9a9545c&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>CTF</category>
+        <category>BUUCTF</category>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>BUU MISC</tag>
+      </tags>
   </entry>
 </search>
