@@ -1696,7 +1696,7 @@ echo base64_encode($real_flag);
   </entry>
   <entry>
     <title>BUUCTF-MISC-二</title>
-    <url>/2021/10/25/BUUCTF-MISC-%E4%BA%8C/</url>
+    <url>/2021/10/01/BUUCTF-MISC-%E4%BA%8C/</url>
     <content><![CDATA[<h2 id="rar">rar</h2>
 <p>4位数字密码爆破，做过多次了</p>
 <p>flag:<code>flag&#123;1773c5da790bd3caff38e3decd180eb7&#125;</code></p>
@@ -1754,8 +1754,8 @@ echo base64_encode($real_flag);
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2021/10/25/BUUCTF-MISC-%E4%B8%89/</url>
+    <title>BUUCTF-MISC-三</title>
+    <url>/2021/10/14/BUUCTF-MISC-%E4%B8%89/</url>
     <content><![CDATA[<h2 id="FLAG">FLAG</h2>
 <p>binwalk没分离出来,zsteg发现zip压缩包</p>
 <span id="more"></span>
@@ -1818,10 +1818,18 @@ echo base64_encode($real_flag);
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flag&#123;5BC925649CB0188F52E617D70929191C&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>总结</strong>：不知道为何用<strong>CaptfEncoder-win-x64-1.3.0.exe</strong>解得的摩尔斯电码结果有点出入，需要了解下原因，不止一次了（很有可能格式不对）。</p>
 ]]></content>
+      <categories>
+        <category>CTF</category>
+        <category>BUUCTF</category>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>BUU MISC</tag>
+      </tags>
   </entry>
   <entry>
     <title>BUUCTF MISC 四</title>
-    <url>/2021/08/11/BUUCTF-MISC-%E5%9B%9B/</url>
+    <url>/2021/10/15/BUUCTF-MISC-%E5%9B%9B/</url>
     <content><![CDATA[<h2 id="数据包中的线索">数据包中的线索</h2>
 <p>题目说在线交流的数据包，追踪http协议的TCP流发现像是在传输什么，没有任何提示。</p>
 <span id="more"></span>
